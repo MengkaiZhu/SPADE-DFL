@@ -1,0 +1,2030 @@
+{
+  "pdf_sha256": "73b433c67cba991a67b3173f5b640bb787f873321cfb8218ac2d2185fc5d4afb",
+  "fields": 326,
+  "differences": [
+    {
+      "field": "TableII/mnist/iid/delta_best",
+      "pdf": "3.18",
+      "computed": "3.17",
+      "match": false,
+      "subtraction_of_displayed_means": "3.18",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/alzheimer/iid/delta_best",
+      "pdf": "3.28",
+      "computed": "3.29",
+      "match": false,
+      "subtraction_of_displayed_means": "3.28",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/alzheimer/pathological/delta_best",
+      "pdf": "4.03",
+      "computed": "4.04",
+      "match": false,
+      "subtraction_of_displayed_means": "4.03",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/brain/pathological/delta_best",
+      "pdf": "1.24",
+      "computed": "1.23",
+      "match": false,
+      "subtraction_of_displayed_means": "1.24",
+      "pdf_matches_displayed_subtraction": true
+    }
+  ],
+  "records": [
+    {
+      "field": "mnist/iid/zo2_lt_admm_vr/mean_percent",
+      "pdf": "85.30",
+      "computed": "85.30",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/zo2_lt_admm_vr/sd_percent",
+      "pdf": "7.35",
+      "computed": "7.35",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/zo2_lt_admm/mean_percent",
+      "pdf": "92.22",
+      "computed": "92.22",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/zo2_lt_admm/sd_percent",
+      "pdf": "3.97",
+      "computed": "3.97",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/zo2_dp_sgd/mean_percent",
+      "pdf": "55.81",
+      "computed": "55.81",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/zo2_dp_sgd/sd_percent",
+      "pdf": "13.16",
+      "computed": "13.16",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/zo2_dp_fedavg/mean_percent",
+      "pdf": "71.69",
+      "computed": "71.69",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/zo2_dp_fedavg/sd_percent",
+      "pdf": "8.96",
+      "computed": "8.96",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/one_point_dsg/mean_percent",
+      "pdf": "62.15",
+      "computed": "62.15",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/one_point_dsg/sd_percent",
+      "pdf": "12.91",
+      "computed": "12.91",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/one_point_dsgt/mean_percent",
+      "pdf": "76.58",
+      "computed": "76.58",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/one_point_dsgt/sd_percent",
+      "pdf": "11.20",
+      "computed": "11.20",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/spade_dfl/mean_percent",
+      "pdf": "95.40",
+      "computed": "95.40",
+      "match": true
+    },
+    {
+      "field": "mnist/iid/spade_dfl/sd_percent",
+      "pdf": "3.24",
+      "computed": "3.24",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/zo2_lt_admm_vr/mean_percent",
+      "pdf": "83.95",
+      "computed": "83.95",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/zo2_lt_admm_vr/sd_percent",
+      "pdf": "7.29",
+      "computed": "7.29",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/zo2_lt_admm/mean_percent",
+      "pdf": "92.04",
+      "computed": "92.04",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/zo2_lt_admm/sd_percent",
+      "pdf": "5.01",
+      "computed": "5.01",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/zo2_dp_sgd/mean_percent",
+      "pdf": "55.81",
+      "computed": "55.81",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/zo2_dp_sgd/sd_percent",
+      "pdf": "13.16",
+      "computed": "13.16",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/zo2_dp_fedavg/mean_percent",
+      "pdf": "71.68",
+      "computed": "71.68",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/zo2_dp_fedavg/sd_percent",
+      "pdf": "9.11",
+      "computed": "9.11",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/one_point_dsg/mean_percent",
+      "pdf": "61.81",
+      "computed": "61.81",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/one_point_dsg/sd_percent",
+      "pdf": "12.81",
+      "computed": "12.81",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/one_point_dsgt/mean_percent",
+      "pdf": "75.68",
+      "computed": "75.68",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/one_point_dsgt/sd_percent",
+      "pdf": "11.33",
+      "computed": "11.33",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/spade_dfl/mean_percent",
+      "pdf": "95.31",
+      "computed": "95.31",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.6/spade_dfl/sd_percent",
+      "pdf": "2.68",
+      "computed": "2.68",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/zo2_lt_admm_vr/mean_percent",
+      "pdf": "85.07",
+      "computed": "85.07",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/zo2_lt_admm_vr/sd_percent",
+      "pdf": "6.97",
+      "computed": "6.97",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/zo2_lt_admm/mean_percent",
+      "pdf": "91.55",
+      "computed": "91.55",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/zo2_lt_admm/sd_percent",
+      "pdf": "4.75",
+      "computed": "4.75",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/zo2_dp_sgd/mean_percent",
+      "pdf": "55.81",
+      "computed": "55.81",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/zo2_dp_sgd/sd_percent",
+      "pdf": "13.16",
+      "computed": "13.16",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/zo2_dp_fedavg/mean_percent",
+      "pdf": "71.75",
+      "computed": "71.75",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/zo2_dp_fedavg/sd_percent",
+      "pdf": "9.15",
+      "computed": "9.15",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/one_point_dsg/mean_percent",
+      "pdf": "61.15",
+      "computed": "61.15",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/one_point_dsg/sd_percent",
+      "pdf": "12.78",
+      "computed": "12.78",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/one_point_dsgt/mean_percent",
+      "pdf": "75.45",
+      "computed": "75.45",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/one_point_dsgt/sd_percent",
+      "pdf": "11.17",
+      "computed": "11.17",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/spade_dfl/mean_percent",
+      "pdf": "95.15",
+      "computed": "95.15",
+      "match": true
+    },
+    {
+      "field": "mnist/dir_0.3/spade_dfl/sd_percent",
+      "pdf": "3.13",
+      "computed": "3.13",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/zo2_lt_admm_vr/mean_percent",
+      "pdf": "85.21",
+      "computed": "85.21",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/zo2_lt_admm_vr/sd_percent",
+      "pdf": "7.48",
+      "computed": "7.48",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/zo2_lt_admm/mean_percent",
+      "pdf": "92.05",
+      "computed": "92.05",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/zo2_lt_admm/sd_percent",
+      "pdf": "4.85",
+      "computed": "4.85",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/zo2_dp_sgd/mean_percent",
+      "pdf": "55.81",
+      "computed": "55.81",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/zo2_dp_sgd/sd_percent",
+      "pdf": "13.16",
+      "computed": "13.16",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/zo2_dp_fedavg/mean_percent",
+      "pdf": "71.69",
+      "computed": "71.69",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/zo2_dp_fedavg/sd_percent",
+      "pdf": "9.11",
+      "computed": "9.11",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/one_point_dsg/mean_percent",
+      "pdf": "61.98",
+      "computed": "61.98",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/one_point_dsg/sd_percent",
+      "pdf": "12.97",
+      "computed": "12.97",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/one_point_dsgt/mean_percent",
+      "pdf": "75.97",
+      "computed": "75.97",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/one_point_dsgt/sd_percent",
+      "pdf": "11.81",
+      "computed": "11.81",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/spade_dfl/mean_percent",
+      "pdf": "95.37",
+      "computed": "95.37",
+      "match": true
+    },
+    {
+      "field": "mnist/pathological/spade_dfl/sd_percent",
+      "pdf": "3.08",
+      "computed": "3.08",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/zo2_lt_admm_vr/mean_percent",
+      "pdf": "84.95",
+      "computed": "84.95",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/zo2_lt_admm_vr/sd_percent",
+      "pdf": "5.94",
+      "computed": "5.94",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/zo2_lt_admm/mean_percent",
+      "pdf": "88.74",
+      "computed": "88.74",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/zo2_lt_admm/sd_percent",
+      "pdf": "4.03",
+      "computed": "4.03",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/zo2_dp_sgd/mean_percent",
+      "pdf": "57.33",
+      "computed": "57.33",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/zo2_dp_sgd/sd_percent",
+      "pdf": "13.79",
+      "computed": "13.79",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/zo2_dp_fedavg/mean_percent",
+      "pdf": "70.67",
+      "computed": "70.67",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/zo2_dp_fedavg/sd_percent",
+      "pdf": "9.98",
+      "computed": "9.98",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/one_point_dsg/mean_percent",
+      "pdf": "58.01",
+      "computed": "58.01",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/one_point_dsg/sd_percent",
+      "pdf": "12.37",
+      "computed": "12.37",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/one_point_dsgt/mean_percent",
+      "pdf": "74.43",
+      "computed": "74.43",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/one_point_dsgt/sd_percent",
+      "pdf": "11.36",
+      "computed": "11.36",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/spade_dfl/mean_percent",
+      "pdf": "93.28",
+      "computed": "93.28",
+      "match": true
+    },
+    {
+      "field": "fashion/iid/spade_dfl/sd_percent",
+      "pdf": "2.21",
+      "computed": "2.21",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/zo2_lt_admm_vr/mean_percent",
+      "pdf": "84.48",
+      "computed": "84.48",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/zo2_lt_admm_vr/sd_percent",
+      "pdf": "6.51",
+      "computed": "6.51",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/zo2_lt_admm/mean_percent",
+      "pdf": "88.42",
+      "computed": "88.42",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/zo2_lt_admm/sd_percent",
+      "pdf": "4.68",
+      "computed": "4.68",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/zo2_dp_sgd/mean_percent",
+      "pdf": "57.33",
+      "computed": "57.33",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/zo2_dp_sgd/sd_percent",
+      "pdf": "13.79",
+      "computed": "13.79",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/zo2_dp_fedavg/mean_percent",
+      "pdf": "70.89",
+      "computed": "70.89",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/zo2_dp_fedavg/sd_percent",
+      "pdf": "10.04",
+      "computed": "10.04",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/one_point_dsg/mean_percent",
+      "pdf": "57.90",
+      "computed": "57.90",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/one_point_dsg/sd_percent",
+      "pdf": "13.03",
+      "computed": "13.03",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/one_point_dsgt/mean_percent",
+      "pdf": "74.92",
+      "computed": "74.92",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/one_point_dsgt/sd_percent",
+      "pdf": "10.46",
+      "computed": "10.46",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/spade_dfl/mean_percent",
+      "pdf": "93.25",
+      "computed": "93.25",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.6/spade_dfl/sd_percent",
+      "pdf": "1.87",
+      "computed": "1.87",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/zo2_lt_admm_vr/mean_percent",
+      "pdf": "84.12",
+      "computed": "84.12",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/zo2_lt_admm_vr/sd_percent",
+      "pdf": "6.86",
+      "computed": "6.86",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/zo2_lt_admm/mean_percent",
+      "pdf": "89.13",
+      "computed": "89.13",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/zo2_lt_admm/sd_percent",
+      "pdf": "3.22",
+      "computed": "3.22",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/zo2_dp_sgd/mean_percent",
+      "pdf": "57.33",
+      "computed": "57.33",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/zo2_dp_sgd/sd_percent",
+      "pdf": "13.79",
+      "computed": "13.79",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/zo2_dp_fedavg/mean_percent",
+      "pdf": "70.77",
+      "computed": "70.77",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/zo2_dp_fedavg/sd_percent",
+      "pdf": "10.18",
+      "computed": "10.18",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/one_point_dsg/mean_percent",
+      "pdf": "58.03",
+      "computed": "58.03",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/one_point_dsg/sd_percent",
+      "pdf": "12.94",
+      "computed": "12.94",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/one_point_dsgt/mean_percent",
+      "pdf": "75.09",
+      "computed": "75.09",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/one_point_dsgt/sd_percent",
+      "pdf": "10.63",
+      "computed": "10.63",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/spade_dfl/mean_percent",
+      "pdf": "93.36",
+      "computed": "93.36",
+      "match": true
+    },
+    {
+      "field": "fashion/dir_0.3/spade_dfl/sd_percent",
+      "pdf": "2.18",
+      "computed": "2.18",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/zo2_lt_admm_vr/mean_percent",
+      "pdf": "84.39",
+      "computed": "84.39",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/zo2_lt_admm_vr/sd_percent",
+      "pdf": "6.13",
+      "computed": "6.13",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/zo2_lt_admm/mean_percent",
+      "pdf": "89.32",
+      "computed": "89.32",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/zo2_lt_admm/sd_percent",
+      "pdf": "4.29",
+      "computed": "4.29",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/zo2_dp_sgd/mean_percent",
+      "pdf": "57.33",
+      "computed": "57.33",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/zo2_dp_sgd/sd_percent",
+      "pdf": "13.79",
+      "computed": "13.79",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/zo2_dp_fedavg/mean_percent",
+      "pdf": "70.49",
+      "computed": "70.49",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/zo2_dp_fedavg/sd_percent",
+      "pdf": "10.30",
+      "computed": "10.30",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/one_point_dsg/mean_percent",
+      "pdf": "57.69",
+      "computed": "57.69",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/one_point_dsg/sd_percent",
+      "pdf": "12.61",
+      "computed": "12.61",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/one_point_dsgt/mean_percent",
+      "pdf": "75.11",
+      "computed": "75.11",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/one_point_dsgt/sd_percent",
+      "pdf": "10.99",
+      "computed": "10.99",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/spade_dfl/mean_percent",
+      "pdf": "93.17",
+      "computed": "93.17",
+      "match": true
+    },
+    {
+      "field": "fashion/pathological/spade_dfl/sd_percent",
+      "pdf": "2.22",
+      "computed": "2.22",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/zo2_lt_admm_vr/mean_percent",
+      "pdf": "71.28",
+      "computed": "71.28",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/zo2_lt_admm_vr/sd_percent",
+      "pdf": "3.18",
+      "computed": "3.18",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/zo2_lt_admm/mean_percent",
+      "pdf": "73.99",
+      "computed": "73.99",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/zo2_lt_admm/sd_percent",
+      "pdf": "2.64",
+      "computed": "2.64",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/zo2_dp_sgd/mean_percent",
+      "pdf": "68.47",
+      "computed": "68.47",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/zo2_dp_sgd/sd_percent",
+      "pdf": "3.44",
+      "computed": "3.44",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/zo2_dp_fedavg/mean_percent",
+      "pdf": "71.10",
+      "computed": "71.10",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/zo2_dp_fedavg/sd_percent",
+      "pdf": "3.10",
+      "computed": "3.10",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/one_point_dsg/mean_percent",
+      "pdf": "57.11",
+      "computed": "57.11",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/one_point_dsg/sd_percent",
+      "pdf": "4.41",
+      "computed": "4.41",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/one_point_dsgt/mean_percent",
+      "pdf": "64.86",
+      "computed": "64.86",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/one_point_dsgt/sd_percent",
+      "pdf": "4.08",
+      "computed": "4.08",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/spade_dfl/mean_percent",
+      "pdf": "77.27",
+      "computed": "77.27",
+      "match": true
+    },
+    {
+      "field": "alzheimer/iid/spade_dfl/sd_percent",
+      "pdf": "2.91",
+      "computed": "2.91",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/zo2_lt_admm_vr/mean_percent",
+      "pdf": "70.34",
+      "computed": "70.34",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/zo2_lt_admm_vr/sd_percent",
+      "pdf": "3.32",
+      "computed": "3.32",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/zo2_lt_admm/mean_percent",
+      "pdf": "73.10",
+      "computed": "73.10",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/zo2_lt_admm/sd_percent",
+      "pdf": "3.24",
+      "computed": "3.24",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/zo2_dp_sgd/mean_percent",
+      "pdf": "68.47",
+      "computed": "68.47",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/zo2_dp_sgd/sd_percent",
+      "pdf": "3.44",
+      "computed": "3.44",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/zo2_dp_fedavg/mean_percent",
+      "pdf": "69.56",
+      "computed": "69.56",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/zo2_dp_fedavg/sd_percent",
+      "pdf": "3.43",
+      "computed": "3.43",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/one_point_dsg/mean_percent",
+      "pdf": "56.20",
+      "computed": "56.20",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/one_point_dsg/sd_percent",
+      "pdf": "4.95",
+      "computed": "4.95",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/one_point_dsgt/mean_percent",
+      "pdf": "63.56",
+      "computed": "63.56",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/one_point_dsgt/sd_percent",
+      "pdf": "4.49",
+      "computed": "4.49",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/spade_dfl/mean_percent",
+      "pdf": "77.31",
+      "computed": "77.31",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.6/spade_dfl/sd_percent",
+      "pdf": "2.86",
+      "computed": "2.86",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/zo2_lt_admm_vr/mean_percent",
+      "pdf": "69.33",
+      "computed": "69.33",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/zo2_lt_admm_vr/sd_percent",
+      "pdf": "3.93",
+      "computed": "3.93",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/zo2_lt_admm/mean_percent",
+      "pdf": "72.02",
+      "computed": "72.02",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/zo2_lt_admm/sd_percent",
+      "pdf": "3.60",
+      "computed": "3.60",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/zo2_dp_sgd/mean_percent",
+      "pdf": "68.47",
+      "computed": "68.47",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/zo2_dp_sgd/sd_percent",
+      "pdf": "3.44",
+      "computed": "3.44",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/zo2_dp_fedavg/mean_percent",
+      "pdf": "68.18",
+      "computed": "68.18",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/zo2_dp_fedavg/sd_percent",
+      "pdf": "3.51",
+      "computed": "3.51",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/one_point_dsg/mean_percent",
+      "pdf": "56.49",
+      "computed": "56.49",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/one_point_dsg/sd_percent",
+      "pdf": "4.75",
+      "computed": "4.75",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/one_point_dsgt/mean_percent",
+      "pdf": "63.27",
+      "computed": "63.27",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/one_point_dsgt/sd_percent",
+      "pdf": "4.54",
+      "computed": "4.54",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/spade_dfl/mean_percent",
+      "pdf": "75.73",
+      "computed": "75.73",
+      "match": true
+    },
+    {
+      "field": "alzheimer/dir_0.3/spade_dfl/sd_percent",
+      "pdf": "3.62",
+      "computed": "3.62",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/zo2_lt_admm_vr/mean_percent",
+      "pdf": "68.56",
+      "computed": "68.56",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/zo2_lt_admm_vr/sd_percent",
+      "pdf": "3.72",
+      "computed": "3.72",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/zo2_lt_admm/mean_percent",
+      "pdf": "71.61",
+      "computed": "71.61",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/zo2_lt_admm/sd_percent",
+      "pdf": "3.02",
+      "computed": "3.02",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/zo2_dp_sgd/mean_percent",
+      "pdf": "68.47",
+      "computed": "68.47",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/zo2_dp_sgd/sd_percent",
+      "pdf": "3.44",
+      "computed": "3.44",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/zo2_dp_fedavg/mean_percent",
+      "pdf": "70.17",
+      "computed": "70.17",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/zo2_dp_fedavg/sd_percent",
+      "pdf": "3.05",
+      "computed": "3.05",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/one_point_dsg/mean_percent",
+      "pdf": "55.42",
+      "computed": "55.42",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/one_point_dsg/sd_percent",
+      "pdf": "4.93",
+      "computed": "4.93",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/one_point_dsgt/mean_percent",
+      "pdf": "61.84",
+      "computed": "61.84",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/one_point_dsgt/sd_percent",
+      "pdf": "4.95",
+      "computed": "4.95",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/spade_dfl/mean_percent",
+      "pdf": "75.64",
+      "computed": "75.64",
+      "match": true
+    },
+    {
+      "field": "alzheimer/pathological/spade_dfl/sd_percent",
+      "pdf": "2.58",
+      "computed": "2.58",
+      "match": true
+    },
+    {
+      "field": "brain/iid/zo2_lt_admm_vr/mean_percent",
+      "pdf": "51.46",
+      "computed": "51.46",
+      "match": true
+    },
+    {
+      "field": "brain/iid/zo2_lt_admm_vr/sd_percent",
+      "pdf": "5.42",
+      "computed": "5.42",
+      "match": true
+    },
+    {
+      "field": "brain/iid/zo2_lt_admm/mean_percent",
+      "pdf": "60.06",
+      "computed": "60.06",
+      "match": true
+    },
+    {
+      "field": "brain/iid/zo2_lt_admm/sd_percent",
+      "pdf": "4.47",
+      "computed": "4.47",
+      "match": true
+    },
+    {
+      "field": "brain/iid/zo2_dp_sgd/mean_percent",
+      "pdf": "61.40",
+      "computed": "61.40",
+      "match": true
+    },
+    {
+      "field": "brain/iid/zo2_dp_sgd/sd_percent",
+      "pdf": "3.79",
+      "computed": "3.79",
+      "match": true
+    },
+    {
+      "field": "brain/iid/zo2_dp_fedavg/mean_percent",
+      "pdf": "73.52",
+      "computed": "73.52",
+      "match": true
+    },
+    {
+      "field": "brain/iid/zo2_dp_fedavg/sd_percent",
+      "pdf": "0.75",
+      "computed": "0.75",
+      "match": true
+    },
+    {
+      "field": "brain/iid/one_point_dsg/mean_percent",
+      "pdf": "32.28",
+      "computed": "32.28",
+      "match": true
+    },
+    {
+      "field": "brain/iid/one_point_dsg/sd_percent",
+      "pdf": "6.81",
+      "computed": "6.81",
+      "match": true
+    },
+    {
+      "field": "brain/iid/one_point_dsgt/mean_percent",
+      "pdf": "47.35",
+      "computed": "47.35",
+      "match": true
+    },
+    {
+      "field": "brain/iid/one_point_dsgt/sd_percent",
+      "pdf": "7.86",
+      "computed": "7.86",
+      "match": true
+    },
+    {
+      "field": "brain/iid/spade_dfl/mean_percent",
+      "pdf": "74.38",
+      "computed": "74.38",
+      "match": true
+    },
+    {
+      "field": "brain/iid/spade_dfl/sd_percent",
+      "pdf": "0.52",
+      "computed": "0.52",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/zo2_lt_admm_vr/mean_percent",
+      "pdf": "52.09",
+      "computed": "52.09",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/zo2_lt_admm_vr/sd_percent",
+      "pdf": "7.11",
+      "computed": "7.11",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/zo2_lt_admm/mean_percent",
+      "pdf": "60.81",
+      "computed": "60.81",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/zo2_lt_admm/sd_percent",
+      "pdf": "4.06",
+      "computed": "4.06",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/zo2_dp_sgd/mean_percent",
+      "pdf": "61.40",
+      "computed": "61.40",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/zo2_dp_sgd/sd_percent",
+      "pdf": "3.79",
+      "computed": "3.79",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/zo2_dp_fedavg/mean_percent",
+      "pdf": "73.28",
+      "computed": "73.28",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/zo2_dp_fedavg/sd_percent",
+      "pdf": "0.79",
+      "computed": "0.79",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/one_point_dsg/mean_percent",
+      "pdf": "32.23",
+      "computed": "32.23",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/one_point_dsg/sd_percent",
+      "pdf": "7.24",
+      "computed": "7.24",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/one_point_dsgt/mean_percent",
+      "pdf": "47.95",
+      "computed": "47.95",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/one_point_dsgt/sd_percent",
+      "pdf": "7.35",
+      "computed": "7.35",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/spade_dfl/mean_percent",
+      "pdf": "74.35",
+      "computed": "74.35",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.6/spade_dfl/sd_percent",
+      "pdf": "0.55",
+      "computed": "0.55",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/zo2_lt_admm_vr/mean_percent",
+      "pdf": "50.50",
+      "computed": "50.50",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/zo2_lt_admm_vr/sd_percent",
+      "pdf": "7.08",
+      "computed": "7.08",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/zo2_lt_admm/mean_percent",
+      "pdf": "58.01",
+      "computed": "58.01",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/zo2_lt_admm/sd_percent",
+      "pdf": "5.35",
+      "computed": "5.35",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/zo2_dp_sgd/mean_percent",
+      "pdf": "61.40",
+      "computed": "61.40",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/zo2_dp_sgd/sd_percent",
+      "pdf": "3.79",
+      "computed": "3.79",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/zo2_dp_fedavg/mean_percent",
+      "pdf": "72.96",
+      "computed": "72.96",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/zo2_dp_fedavg/sd_percent",
+      "pdf": "0.92",
+      "computed": "0.92",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/one_point_dsg/mean_percent",
+      "pdf": "32.81",
+      "computed": "32.81",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/one_point_dsg/sd_percent",
+      "pdf": "6.40",
+      "computed": "6.40",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/one_point_dsgt/mean_percent",
+      "pdf": "48.22",
+      "computed": "48.22",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/one_point_dsgt/sd_percent",
+      "pdf": "6.26",
+      "computed": "6.26",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/spade_dfl/mean_percent",
+      "pdf": "74.07",
+      "computed": "74.07",
+      "match": true
+    },
+    {
+      "field": "brain/dir_0.3/spade_dfl/sd_percent",
+      "pdf": "0.80",
+      "computed": "0.80",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/zo2_lt_admm_vr/mean_percent",
+      "pdf": "53.81",
+      "computed": "53.81",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/zo2_lt_admm_vr/sd_percent",
+      "pdf": "6.08",
+      "computed": "6.08",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/zo2_lt_admm/mean_percent",
+      "pdf": "59.61",
+      "computed": "59.61",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/zo2_lt_admm/sd_percent",
+      "pdf": "4.86",
+      "computed": "4.86",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/zo2_dp_sgd/mean_percent",
+      "pdf": "61.40",
+      "computed": "61.40",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/zo2_dp_sgd/sd_percent",
+      "pdf": "3.79",
+      "computed": "3.79",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/zo2_dp_fedavg/mean_percent",
+      "pdf": "73.20",
+      "computed": "73.20",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/zo2_dp_fedavg/sd_percent",
+      "pdf": "0.87",
+      "computed": "0.87",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/one_point_dsg/mean_percent",
+      "pdf": "32.03",
+      "computed": "32.03",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/one_point_dsg/sd_percent",
+      "pdf": "7.24",
+      "computed": "7.24",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/one_point_dsgt/mean_percent",
+      "pdf": "48.06",
+      "computed": "48.06",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/one_point_dsgt/sd_percent",
+      "pdf": "7.70",
+      "computed": "7.70",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/spade_dfl/mean_percent",
+      "pdf": "74.44",
+      "computed": "74.44",
+      "match": true
+    },
+    {
+      "field": "brain/pathological/spade_dfl/sd_percent",
+      "pdf": "0.63",
+      "computed": "0.63",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N30/epsilon32/mean_percent",
+      "pdf": "99.21",
+      "computed": "99.21",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N30/epsilon32/sd_percent",
+      "pdf": "0.15",
+      "computed": "0.15",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N40/epsilon32/mean_percent",
+      "pdf": "99.03",
+      "computed": "99.03",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N40/epsilon32/sd_percent",
+      "pdf": "0.15",
+      "computed": "0.15",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N50/epsilon32/mean_percent",
+      "pdf": "99.21",
+      "computed": "99.21",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N50/epsilon32/sd_percent",
+      "pdf": "0.19",
+      "computed": "0.19",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N75/epsilon32/mean_percent",
+      "pdf": "99.21",
+      "computed": "99.21",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N75/epsilon32/sd_percent",
+      "pdf": "0.23",
+      "computed": "0.23",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N100/epsilon32/mean_percent",
+      "pdf": "99.15",
+      "computed": "99.15",
+      "match": true
+    },
+    {
+      "field": "TableIII/mnist/N100/epsilon32/sd_percent",
+      "pdf": "0.11",
+      "computed": "0.11",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N30/epsilon32/mean_percent",
+      "pdf": "94.22",
+      "computed": "94.22",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N30/epsilon32/sd_percent",
+      "pdf": "0.67",
+      "computed": "0.67",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N40/epsilon32/mean_percent",
+      "pdf": "92.28",
+      "computed": "92.28",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N40/epsilon32/sd_percent",
+      "pdf": "0.98",
+      "computed": "0.98",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N50/epsilon32/mean_percent",
+      "pdf": "92.23",
+      "computed": "92.23",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N50/epsilon32/sd_percent",
+      "pdf": "1.03",
+      "computed": "1.03",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N75/epsilon32/mean_percent",
+      "pdf": "93.00",
+      "computed": "93.00",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N75/epsilon32/sd_percent",
+      "pdf": "0.90",
+      "computed": "0.90",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N100/epsilon32/mean_percent",
+      "pdf": "93.55",
+      "computed": "93.55",
+      "match": true
+    },
+    {
+      "field": "TableIII/fashion/N100/epsilon32/sd_percent",
+      "pdf": "0.70",
+      "computed": "0.70",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N30/epsilon32/mean_percent",
+      "pdf": "72.16",
+      "computed": "72.16",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N30/epsilon32/sd_percent",
+      "pdf": "0.79",
+      "computed": "0.79",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N40/epsilon32/mean_percent",
+      "pdf": "72.16",
+      "computed": "72.16",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N40/epsilon32/sd_percent",
+      "pdf": "1.43",
+      "computed": "1.43",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N50/epsilon32/mean_percent",
+      "pdf": "72.84",
+      "computed": "72.84",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N50/epsilon32/sd_percent",
+      "pdf": "0.89",
+      "computed": "0.89",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N75/epsilon32/mean_percent",
+      "pdf": "72.49",
+      "computed": "72.49",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N75/epsilon32/sd_percent",
+      "pdf": "1.06",
+      "computed": "1.06",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N100/epsilon32/mean_percent",
+      "pdf": "73.00",
+      "computed": "73.00",
+      "match": true
+    },
+    {
+      "field": "TableIII/alzheimer/N100/epsilon32/sd_percent",
+      "pdf": "0.48",
+      "computed": "0.48",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N30/epsilon32/mean_percent",
+      "pdf": "65.46",
+      "computed": "65.46",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N30/epsilon32/sd_percent",
+      "pdf": "3.72",
+      "computed": "3.72",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N40/epsilon32/mean_percent",
+      "pdf": "68.82",
+      "computed": "68.82",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N40/epsilon32/sd_percent",
+      "pdf": "3.56",
+      "computed": "3.56",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N50/epsilon32/mean_percent",
+      "pdf": "65.00",
+      "computed": "65.00",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N50/epsilon32/sd_percent",
+      "pdf": "2.34",
+      "computed": "2.34",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N75/epsilon32/mean_percent",
+      "pdf": "70.46",
+      "computed": "70.46",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N75/epsilon32/sd_percent",
+      "pdf": "3.02",
+      "computed": "3.02",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N100/epsilon32/mean_percent",
+      "pdf": "70.96",
+      "computed": "70.96",
+      "match": true
+    },
+    {
+      "field": "TableIII/brain/N100/epsilon32/sd_percent",
+      "pdf": "3.40",
+      "computed": "3.40",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon4/mean_percent",
+      "pdf": "93.32",
+      "computed": "93.32",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon4/sd_percent",
+      "pdf": "8.71",
+      "computed": "8.71",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon8/mean_percent",
+      "pdf": "97.98",
+      "computed": "97.98",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon8/sd_percent",
+      "pdf": "1.79",
+      "computed": "1.79",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon16/mean_percent",
+      "pdf": "99.05",
+      "computed": "99.05",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon16/sd_percent",
+      "pdf": "0.12",
+      "computed": "0.12",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon24/mean_percent",
+      "pdf": "99.15",
+      "computed": "99.15",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon24/sd_percent",
+      "pdf": "0.16",
+      "computed": "0.16",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon32/mean_percent",
+      "pdf": "99.15",
+      "computed": "99.15",
+      "match": true
+    },
+    {
+      "field": "TableIV/mnist/N100/epsilon32/sd_percent",
+      "pdf": "0.11",
+      "computed": "0.11",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon4/mean_percent",
+      "pdf": "92.50",
+      "computed": "92.50",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon4/sd_percent",
+      "pdf": "2.18",
+      "computed": "2.18",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon8/mean_percent",
+      "pdf": "93.38",
+      "computed": "93.38",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon8/sd_percent",
+      "pdf": "1.81",
+      "computed": "1.81",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon16/mean_percent",
+      "pdf": "93.43",
+      "computed": "93.43",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon16/sd_percent",
+      "pdf": "1.01",
+      "computed": "1.01",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon24/mean_percent",
+      "pdf": "93.58",
+      "computed": "93.58",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon24/sd_percent",
+      "pdf": "0.88",
+      "computed": "0.88",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon32/mean_percent",
+      "pdf": "93.55",
+      "computed": "93.55",
+      "match": true
+    },
+    {
+      "field": "TableIV/fashion/N100/epsilon32/sd_percent",
+      "pdf": "0.70",
+      "computed": "0.70",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon4/mean_percent",
+      "pdf": "61.05",
+      "computed": "61.05",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon4/sd_percent",
+      "pdf": "3.17",
+      "computed": "3.17",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon8/mean_percent",
+      "pdf": "67.26",
+      "computed": "67.26",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon8/sd_percent",
+      "pdf": "2.55",
+      "computed": "2.55",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon16/mean_percent",
+      "pdf": "71.56",
+      "computed": "71.56",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon16/sd_percent",
+      "pdf": "0.74",
+      "computed": "0.74",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon24/mean_percent",
+      "pdf": "72.81",
+      "computed": "72.81",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon24/sd_percent",
+      "pdf": "0.76",
+      "computed": "0.76",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon32/mean_percent",
+      "pdf": "73.00",
+      "computed": "73.00",
+      "match": true
+    },
+    {
+      "field": "TableIV/alzheimer/N100/epsilon32/sd_percent",
+      "pdf": "0.48",
+      "computed": "0.48",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon4/mean_percent",
+      "pdf": "43.29",
+      "computed": "43.29",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon4/sd_percent",
+      "pdf": "9.92",
+      "computed": "9.92",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon8/mean_percent",
+      "pdf": "54.00",
+      "computed": "54.00",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon8/sd_percent",
+      "pdf": "6.73",
+      "computed": "6.73",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon16/mean_percent",
+      "pdf": "64.18",
+      "computed": "64.18",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon16/sd_percent",
+      "pdf": "5.50",
+      "computed": "5.50",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon24/mean_percent",
+      "pdf": "69.25",
+      "computed": "69.25",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon24/sd_percent",
+      "pdf": "4.60",
+      "computed": "4.60",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon32/mean_percent",
+      "pdf": "70.96",
+      "computed": "70.96",
+      "match": true
+    },
+    {
+      "field": "TableIV/brain/N100/epsilon32/sd_percent",
+      "pdf": "3.40",
+      "computed": "3.40",
+      "match": true
+    },
+    {
+      "field": "TableII/mnist/iid/delta_best",
+      "pdf": "3.18",
+      "computed": "3.17",
+      "match": false,
+      "subtraction_of_displayed_means": "3.18",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/mnist/dir_0.6/delta_best",
+      "pdf": "3.27",
+      "computed": "3.27",
+      "match": true,
+      "subtraction_of_displayed_means": "3.27",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/mnist/dir_0.3/delta_best",
+      "pdf": "3.60",
+      "computed": "3.60",
+      "match": true,
+      "subtraction_of_displayed_means": "3.60",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/mnist/pathological/delta_best",
+      "pdf": "3.32",
+      "computed": "3.32",
+      "match": true,
+      "subtraction_of_displayed_means": "3.32",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/fashion/iid/delta_best",
+      "pdf": "4.54",
+      "computed": "4.54",
+      "match": true,
+      "subtraction_of_displayed_means": "4.54",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/fashion/dir_0.6/delta_best",
+      "pdf": "4.83",
+      "computed": "4.83",
+      "match": true,
+      "subtraction_of_displayed_means": "4.83",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/fashion/dir_0.3/delta_best",
+      "pdf": "4.23",
+      "computed": "4.23",
+      "match": true,
+      "subtraction_of_displayed_means": "4.23",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/fashion/pathological/delta_best",
+      "pdf": "3.85",
+      "computed": "3.85",
+      "match": true,
+      "subtraction_of_displayed_means": "3.85",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/alzheimer/iid/delta_best",
+      "pdf": "3.28",
+      "computed": "3.29",
+      "match": false,
+      "subtraction_of_displayed_means": "3.28",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/alzheimer/dir_0.6/delta_best",
+      "pdf": "4.21",
+      "computed": "4.21",
+      "match": true,
+      "subtraction_of_displayed_means": "4.21",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/alzheimer/dir_0.3/delta_best",
+      "pdf": "3.71",
+      "computed": "3.71",
+      "match": true,
+      "subtraction_of_displayed_means": "3.71",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/alzheimer/pathological/delta_best",
+      "pdf": "4.03",
+      "computed": "4.04",
+      "match": false,
+      "subtraction_of_displayed_means": "4.03",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/brain/iid/delta_best",
+      "pdf": "0.86",
+      "computed": "0.86",
+      "match": true,
+      "subtraction_of_displayed_means": "0.86",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/brain/dir_0.6/delta_best",
+      "pdf": "1.07",
+      "computed": "1.07",
+      "match": true,
+      "subtraction_of_displayed_means": "1.07",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/brain/dir_0.3/delta_best",
+      "pdf": "1.11",
+      "computed": "1.11",
+      "match": true,
+      "subtraction_of_displayed_means": "1.11",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "TableII/brain/pathological/delta_best",
+      "pdf": "1.24",
+      "computed": "1.23",
+      "match": false,
+      "subtraction_of_displayed_means": "1.24",
+      "pdf_matches_displayed_subtraction": true
+    },
+    {
+      "field": "Fig10/largest_budget",
+      "pdf": "29791",
+      "computed": "29791",
+      "match": true
+    },
+    {
+      "field": "Fig10/local_scalars",
+      "pdf": "768800",
+      "computed": "768800",
+      "match": true
+    },
+    {
+      "field": "Fig10/baseline_scalars",
+      "pdf": "23832800",
+      "computed": "23832800",
+      "match": true
+    },
+    {
+      "field": "Fig10/saving_percent",
+      "pdf": "96.8",
+      "computed": "96.8",
+      "match": true
+    },
+    {
+      "field": "Fig10/local_criterion",
+      "pdf": "0.010392",
+      "computed": "0.010392",
+      "match": true
+    },
+    {
+      "field": "Fig10/baseline_criterion",
+      "pdf": "0.000372",
+      "computed": "0.000372",
+      "match": true
+    }
+  ],
+  "scope": "Visible Table II-IV plus six Fig10 prose values. Does not check algorithm/every plotted point/provenance.",
+  "evidence_origin": "Prior independent audit of the specified PDF on 2026-09-18; not a new training result or a fresh PDF extraction during candidate packaging."
+}

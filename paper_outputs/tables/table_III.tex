@@ -1,0 +1,32 @@
+\begin{table}[htbp!]
+\centering
+
+\caption{Validation accuracy under varying client counts ($\varepsilon=32$).}
+\label{tab:client_count_accuracy}
+
+\scriptsize
+\setlength{\tabcolsep}{1.5pt}
+\setlength{\medmuskip}{0mu}
+\renewcommand{\arraystretch}{0.95}
+
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Dataset & $N=30$ & $N=40$ & $N=50$ & $N=75$ & $N=100$ \\
+\midrule
+MNIST
+& $99.21\pm0.15$ & $99.03\pm0.15$ & $99.21\pm0.19$
+& $99.21\pm0.23$ & $99.15\pm0.11$ \\
+Fashion-MNIST
+& $94.22\pm0.67$ & $92.28\pm0.98$ & $92.23\pm1.03$
+& $93.00\pm0.90$ & $93.55\pm0.70$ \\
+Alzheimer disease
+& $72.16\pm0.79$ & $72.16\pm1.43$ & $72.84\pm0.89$
+& $72.49\pm1.06$ & $73.00\pm0.48$ \\
+Brain Tumor MRI
+& $65.46\pm3.72$ & $68.82\pm3.56$ & $65.00\pm2.34$
+& $70.46\pm3.02$ & $70.96\pm3.40$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

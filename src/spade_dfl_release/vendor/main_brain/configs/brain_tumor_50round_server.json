@@ -1,0 +1,24 @@
+{
+  "profile": "server",
+  "dataset": "brain_tumor_mri",
+  "panels": ["dir_0.3", "dir_0.6", "iid", "pathological"],
+  "methods": [
+    "zo2_lt_admm_vr",
+    "zo2_lt_admm",
+    "zo2_dp_sgd",
+    "zo2_dp_fedavg",
+    "one_point_dsg",
+    "one_point_dsgt",
+    "spade_dfl"
+  ],
+  "n_rounds": 50,
+  "seeds": [
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+    20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+  ],
+  "frozen_parameters": "../frozen/selected_parameters_robust.json",
+  "frozen_baseline_parameters": "../frozen/baseline_selected_parameters.json",
+  "resume": true,
+  "official_test_role": "final_evaluation_only"
+}

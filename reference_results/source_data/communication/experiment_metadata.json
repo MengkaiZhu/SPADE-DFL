@@ -1,0 +1,50 @@
+{
+  "budgets": [
+    {
+      "K_baseline": 1000,
+      "K_local": 100,
+      "T": 1000,
+      "tau_baseline": 1,
+      "tau_local": 10
+    },
+    {
+      "K_baseline": 3375,
+      "K_local": 225,
+      "T": 3375,
+      "tau_baseline": 1,
+      "tau_local": 15
+    },
+    {
+      "K_baseline": 10648,
+      "K_local": 484,
+      "T": 10648,
+      "tau_baseline": 1,
+      "tau_local": 22
+    },
+    {
+      "K_baseline": 29791,
+      "K_local": 961,
+      "T": 29791,
+      "tau_baseline": 1,
+      "tau_local": 31
+    }
+  ],
+  "clipping_error": 0.0,
+  "config": {
+    "batch_size": 8,
+    "dimension": 20,
+    "eta0": 1.0,
+    "mu0": 1.0,
+    "n_clients": 20,
+    "rho": 1.0,
+    "samples_per_client": 100
+  },
+  "elapsed_seconds": 312.91766279999996,
+  "experiment": "Non-private SPADE-DFL communication-frequency diagnostic",
+  "hypothesis_tests": "None",
+  "interval": "Arithmetic mean with two-sided 95% Student-t confidence interval",
+  "n_seeds": 30,
+  "query_noise": 0.0,
+  "release_noise": 0.0,
+  "seed_definition": "Independent generated datasets; tau schedules paired by integer seed"
+}

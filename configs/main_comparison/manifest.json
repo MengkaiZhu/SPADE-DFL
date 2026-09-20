@@ -1,0 +1,1603 @@
+{
+  "datasets": {
+    "alzheimer": {
+      "config": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/configs/alzheimer_v4_cross_validation_5fold_30seed_50round_server.json",
+      "entrypoint": "spade_dfl.alzheimer_v4_cross_validation.run_v4_cross_validation",
+      "folds": 5,
+      "lazy_import_dependency_edges": {
+        "spade_dfl.alzheimer_contract": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.alzheimer_data": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.alzheimer_frozen_config": "spade_dfl.alzheimer_suite",
+        "spade_dfl.alzheimer_suite": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.alzheimer_tuning_protocol": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.alzheimer_v2_frozen": "spade_dfl.alzheimer_suite",
+        "spade_dfl.alzheimer_v2_protocol": "spade_dfl.alzheimer_v2_frozen",
+        "spade_dfl.alzheimer_v3_protocol": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.alzheimer_v3_tuning": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.alzheimer_v4_native_budget": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.alzheimer_validation_firewall": "spade_dfl.alzheimer_v4_native_budget",
+        "spade_dfl.artifacts": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.baselines": "spade_dfl.trainer",
+        "spade_dfl.config": "spade_dfl",
+        "spade_dfl.data": "spade_dfl.methods",
+        "spade_dfl.dp_baselines": "spade_dfl.methods",
+        "spade_dfl.dsg": "spade_dfl.methods",
+        "spade_dfl.dsgt": "spade_dfl.methods",
+        "spade_dfl.evaluation": "spade_dfl.trainer",
+        "spade_dfl.first_order_admm": "spade_dfl.methods",
+        "spade_dfl.graph": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.initialization": "spade_dfl.trainer",
+        "spade_dfl.methods": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.metrics": "spade_dfl.evaluation",
+        "spade_dfl.objectives": "spade_dfl.trainer",
+        "spade_dfl.partitioning": "spade_dfl.alzheimer_v4_cross_validation",
+        "spade_dfl.privacy": "spade_dfl.trainer",
+        "spade_dfl.trainer": "spade_dfl.methods",
+        "spade_dfl.two_point": "spade_dfl.first_order_admm",
+        "spade_dfl.vr": "spade_dfl.trainer",
+        "spade_dfl.zo": "spade_dfl.trainer"
+      },
+      "module_count": 33,
+      "package_relative": "alzheimer_spade_dfl",
+      "required_inputs": [
+        {
+          "filename_encoding": "ZIP legacy CP437 decoding of UTF-8 member-name bytes; configured name recovered exactly",
+          "path": "2\u3001Alzheimer disease dataset.zip",
+          "sha256": "280aa4437eedf969cb910e7e246b91a23477df3fba6519a771aeae2db3395cec",
+          "source_id": "server_archive",
+          "source_path": "SPADE-DFL/S72/S72_run/S72/2\u03c0\u00c7\u00fcAlzheimer disease dataset.zip"
+        }
+      ],
+      "rounds": 50,
+      "run_identity_evidence": {
+        "basis": "Exact selected archive history member identities; verified against Cartesian product before packaging.",
+        "folds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "member_prefix": "SPADE-DFL/S72/S72_run/S72/results/server_5fold_30seed_50round/",
+        "methods": [
+          "zo2_lt_admm_vr",
+          "zo2_lt_admm",
+          "zo2_dp_sgd",
+          "zo2_dp_fedavg",
+          "one_point_dsg",
+          "one_point_dsgt",
+          "spade_dfl"
+        ],
+        "ordered_identity_sha256": "523300ddf230719ec931605bbc726be0d1945840246ac84a50b5f04ef4b740e2",
+        "partitions": [
+          "iid",
+          "dir_0.6",
+          "dir_0.3",
+          "pathological"
+        ],
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "source_id": "server_archive",
+        "unique_run_count": 4200
+      },
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "source_archive_sha256": "9e3e21fb3191b97bfbacda15bb4e4631115e02923a89bacea06d88934b880e35",
+      "source_id": "server_archive",
+      "source_package": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/",
+      "vendor_root": "src/spade_dfl_release/vendor/main_alzheimer"
+    },
+    "brain_tumor_mri": {
+      "config": "src/spade_dfl_release/vendor/main_brain/configs/resnet18_server.json",
+      "entrypoint": "spade_dfl.brain_tumor_suite.run_brain_tumor_suite",
+      "folds": 1,
+      "formal_launcher": "scripts/run_resnet18_server_suite.py",
+      "lazy_import_dependency_edges": {
+        "spade_dfl.artifacts": "spade_dfl.brain_tumor_suite",
+        "spade_dfl.baselines": "spade_dfl.trainer",
+        "spade_dfl.brain_tumor_baselines": "spade_dfl.brain_tumor_suite",
+        "spade_dfl.brain_tumor_contract": "spade_dfl.brain_tumor_suite",
+        "spade_dfl.brain_tumor_data": "spade_dfl.brain_tumor_resnet18_data",
+        "spade_dfl.config": "spade_dfl.trainer",
+        "spade_dfl.data": "spade_dfl.brain_tumor_suite",
+        "spade_dfl.dp_baselines": "spade_dfl.methods",
+        "spade_dfl.dsg": "spade_dfl.methods",
+        "spade_dfl.dsgt": "spade_dfl.methods",
+        "spade_dfl.evaluation": "spade_dfl.trainer",
+        "spade_dfl.first_order_admm": "spade_dfl.methods",
+        "spade_dfl.graph": "spade_dfl.trainer",
+        "spade_dfl.initialization": "spade_dfl.trainer",
+        "spade_dfl.isolation": "spade_dfl.brain_tumor_formal_figures",
+        "spade_dfl.methods": "spade_dfl.brain_tumor_suite",
+        "spade_dfl.metrics": "spade_dfl.evaluation",
+        "spade_dfl.objectives": "spade_dfl.trainer",
+        "spade_dfl.partitioning": "spade_dfl.trainer",
+        "spade_dfl.privacy": "spade_dfl.trainer",
+        "spade_dfl.trainer": "spade_dfl.brain_tumor_suite",
+        "spade_dfl.two_point": "spade_dfl.first_order_admm",
+        "spade_dfl.vr": "spade_dfl.trainer",
+        "spade_dfl.zo": "spade_dfl.trainer"
+      },
+      "module_count": 28,
+      "optional_runtime_requirements": "requirements_resnet18_cpu.txt",
+      "package_relative": ".",
+      "required_inputs": [
+        {
+          "hash_field": "dataset_sha256",
+          "path": "../1\u3001Brain Tumor MRI Dataset.zip",
+          "sha256": "882817250048c78ef7a759cf23e540d7b581f2327b16663c9d3db12f5d2ffdb4",
+          "source_id": "brain_s0904_archive",
+          "source_path": "spade_dfl_brain_tumor_resnet18_pca10/configs/resnet18_server.json"
+        },
+        {
+          "path": "data/resnet18_v1_training_512d.npz",
+          "sha256": "9aaaccdba667743dc65d38110785e0a4e062830216c66eba7621d742a49be985",
+          "source_id": "brain_s0904_archive",
+          "source_path": "spade_dfl_brain_tumor_resnet18_pca10/data/resnet18_v1_training_512d.npz"
+        },
+        {
+          "path": "data/resnet18_v1_testing_512d.npz",
+          "sha256": "02b710179cd5637ba82d79ab79081b52b6d063a415f422abaa711bd8e6eaaa3e",
+          "source_id": "brain_s0904_archive",
+          "source_path": "spade_dfl_brain_tumor_resnet18_pca10/data/resnet18_v1_testing_512d.npz"
+        }
+      ],
+      "rounds": 50,
+      "run_identity_evidence": {
+        "basis": "Exact selected archive history member identities; verified against Cartesian product before packaging.",
+        "folds": [
+          0
+        ],
+        "member_prefix": "spade_dfl_brain_tumor_resnet18_pca10/results/server/",
+        "methods": [
+          "zo2_lt_admm_vr",
+          "zo2_lt_admm",
+          "zo2_dp_sgd",
+          "zo2_dp_fedavg",
+          "one_point_dsg",
+          "one_point_dsgt",
+          "spade_dfl"
+        ],
+        "ordered_identity_sha256": "9faef555917df159aed9235f0a206dbe3bdec4ab2dc66b8d315cf6c83f7aed57",
+        "partitions": [
+          "iid",
+          "dir_0.6",
+          "dir_0.3",
+          "pathological"
+        ],
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "source_id": "brain_s0904_archive",
+        "unique_run_count": 840
+      },
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "source_archive_sha256": "d01a7bd72e14ebeceeb3b702b26b94bd544b5b27011dd4483e102ad37ff5dfb3",
+      "source_id": "brain_s0904_archive",
+      "source_package": "spade_dfl_brain_tumor_resnet18_pca10/",
+      "vendor_root": "src/spade_dfl_release/vendor/main_brain"
+    },
+    "fashion01": {
+      "config": "src/spade_dfl_release/vendor/main_fashion/configs/spade_fashion_binary_50round_server.json",
+      "entrypoint": "spade_dfl.paper_suite.run_paper_suite",
+      "folds": 1,
+      "lazy_import_dependency_edges": {
+        "spade_dfl.artifacts": "spade_dfl.paper_suite",
+        "spade_dfl.baselines": "spade_dfl.trainer",
+        "spade_dfl.config": "spade_dfl.paper_suite",
+        "spade_dfl.data": "spade_dfl.paper_suite",
+        "spade_dfl.dp_baselines": "spade_dfl.methods",
+        "spade_dfl.dsg": "spade_dfl.methods",
+        "spade_dfl.dsgt": "spade_dfl.methods",
+        "spade_dfl.evaluation": "spade_dfl.trainer",
+        "spade_dfl.first_order_admm": "spade_dfl.methods",
+        "spade_dfl.graph": "spade_dfl.trainer",
+        "spade_dfl.initialization": "spade_dfl.trainer",
+        "spade_dfl.methods": "spade_dfl.paper_suite",
+        "spade_dfl.metrics": "spade_dfl.paper_suite",
+        "spade_dfl.objectives": "spade_dfl.trainer",
+        "spade_dfl.partitioning": "spade_dfl.paper_suite",
+        "spade_dfl.privacy": "spade_dfl.trainer",
+        "spade_dfl.trainer": "spade_dfl.methods",
+        "spade_dfl.two_point": "spade_dfl.first_order_admm",
+        "spade_dfl.vr": "spade_dfl.trainer",
+        "spade_dfl.zo": "spade_dfl.trainer"
+      },
+      "module_count": 22,
+      "package_relative": ".",
+      "required_inputs": [
+        {
+          "path": "data/fashion-mnist.npz",
+          "sha256": "1ef22c05129606271c1b3f85a35db31aedb66491efa96cb5d13786d64b65a34a",
+          "source_id": "server_archive",
+          "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/data/fashion-mnist.npz"
+        }
+      ],
+      "rounds": 50,
+      "run_identity_evidence": {
+        "basis": "Exact selected archive history member identities; verified against Cartesian product before packaging.",
+        "folds": [
+          0
+        ],
+        "member_prefix": "SPADE-DFL/S8/S8_run_20260720_120726/S8/results/fashion_server_50round_30seed/",
+        "methods": [
+          "zo2_lt_admm_vr",
+          "zo2_lt_admm",
+          "zo2_dp_sgd",
+          "zo2_dp_fedavg",
+          "one_point_dsg",
+          "one_point_dsgt",
+          "spade_dfl"
+        ],
+        "ordered_identity_sha256": "9faef555917df159aed9235f0a206dbe3bdec4ab2dc66b8d315cf6c83f7aed57",
+        "partitions": [
+          "iid",
+          "dir_0.6",
+          "dir_0.3",
+          "pathological"
+        ],
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "source_id": "server_archive",
+        "unique_run_count": 840
+      },
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "source_archive_sha256": "9e3e21fb3191b97bfbacda15bb4e4631115e02923a89bacea06d88934b880e35",
+      "source_id": "server_archive",
+      "source_package": "SPADE-DFL/S8/S8_run_20260720_120726/S8/",
+      "vendor_root": "src/spade_dfl_release/vendor/main_fashion"
+    },
+    "mnist67": {
+      "config": "src/spade_dfl_release/vendor/main_mnist/configs/spade_mnist_50round_server.json",
+      "entrypoint": "spade_dfl.paper_suite.run_paper_suite",
+      "folds": 1,
+      "lazy_import_dependency_edges": {
+        "spade_dfl.artifacts": "spade_dfl.paper_suite",
+        "spade_dfl.baselines": "spade_dfl.trainer",
+        "spade_dfl.config": "spade_dfl.paper_suite",
+        "spade_dfl.data": "spade_dfl.paper_suite",
+        "spade_dfl.dp_baselines": "spade_dfl.methods",
+        "spade_dfl.dsg": "spade_dfl.methods",
+        "spade_dfl.dsgt": "spade_dfl.methods",
+        "spade_dfl.evaluation": "spade_dfl.trainer",
+        "spade_dfl.first_order_admm": "spade_dfl.methods",
+        "spade_dfl.graph": "spade_dfl.trainer",
+        "spade_dfl.initialization": "spade_dfl.trainer",
+        "spade_dfl.methods": "spade_dfl.paper_suite",
+        "spade_dfl.metrics": "spade_dfl.paper_suite",
+        "spade_dfl.objectives": "spade_dfl.trainer",
+        "spade_dfl.partitioning": "spade_dfl.paper_suite",
+        "spade_dfl.privacy": "spade_dfl.trainer",
+        "spade_dfl.trainer": "spade_dfl.methods",
+        "spade_dfl.two_point": "spade_dfl.first_order_admm",
+        "spade_dfl.vr": "spade_dfl.trainer",
+        "spade_dfl.zo": "spade_dfl.trainer"
+      },
+      "module_count": 22,
+      "package_relative": ".",
+      "required_inputs": [
+        {
+          "path": "data/mnist.npz",
+          "sha256": "731c5ac602752760c8e48fbffcf8c3b850d9dc2a2aedcf2cc48468fc17b673d1",
+          "source_id": "server_archive",
+          "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/data/mnist.npz"
+        }
+      ],
+      "rounds": 50,
+      "run_identity_evidence": {
+        "basis": "Exact selected archive history member identities; verified against Cartesian product before packaging.",
+        "folds": [
+          0
+        ],
+        "member_prefix": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/results/server_50round_30seed/",
+        "methods": [
+          "zo2_lt_admm_vr",
+          "zo2_lt_admm",
+          "zo2_dp_sgd",
+          "zo2_dp_fedavg",
+          "one_point_dsg",
+          "one_point_dsgt",
+          "spade_dfl"
+        ],
+        "ordered_identity_sha256": "9faef555917df159aed9235f0a206dbe3bdec4ab2dc66b8d315cf6c83f7aed57",
+        "partitions": [
+          "iid",
+          "dir_0.6",
+          "dir_0.3",
+          "pathological"
+        ],
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "source_id": "server_archive",
+        "unique_run_count": 840
+      },
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "source_archive_sha256": "9e3e21fb3191b97bfbacda15bb4e4631115e02923a89bacea06d88934b880e35",
+      "source_id": "server_archive",
+      "source_package": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/",
+      "vendor_root": "src/spade_dfl_release/vendor/main_mnist"
+    }
+  },
+  "deviations": {
+    "alzheimer": "Formal S72 v4 entrypoint supersedes generic v2 entrypoint; frozen server archive source supersedes later local runtime that blocks formal execution."
+  },
+  "files": [
+    {
+      "bytes": 1590,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/configs/alzheimer_v3_tuning.json",
+      "sha256": "09e5f354712ddd739ad4e2436f1bfa92ddc121375d1496e40c302c2d65f405c0",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/configs/alzheimer_v3_tuning.json"
+    },
+    {
+      "bytes": 1097,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/configs/alzheimer_v4_cross_validation_5fold_30seed_50round_server.json",
+      "sha256": "5579b1ad3e3f0a1aa3e5ac190ad7373f56ec562067e2ca0a3b5f2ffbddac8973",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/configs/alzheimer_v4_cross_validation_5fold_30seed_50round_server.json"
+    },
+    {
+      "bytes": 177,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/__init__.py",
+      "sha256": "ccc178549bf853a388a9bcf627822f35aaac711332d3a017c22163c1d5c28cad",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/__init__.py"
+    },
+    {
+      "bytes": 459,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_contract.py",
+      "sha256": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_contract.py"
+    },
+    {
+      "bytes": 20632,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_data.py",
+      "sha256": "0e6aeff63cd88b2284845fb9df8d9be4b1eeed9575be5a45e309a723523efbd3",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_data.py"
+    },
+    {
+      "bytes": 21401,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_frozen_config.py",
+      "sha256": "f9461f711199a76f7e112e724d4b91c89c53fe29aab70e3d392038842e1423cb",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_frozen_config.py"
+    },
+    {
+      "bytes": 38461,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_suite.py",
+      "sha256": "971ef60f90778a690c046a5a368aba60ce5b0defa9d7390c11fe3cab81d22c9f",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_suite.py"
+    },
+    {
+      "bytes": 5798,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_tuning_protocol.py",
+      "sha256": "f9c9b08b7c13eb1655aa6e257c43098521546c9508c8884beb479ec821d44e79",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_tuning_protocol.py"
+    },
+    {
+      "bytes": 25047,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v2_frozen.py",
+      "sha256": "d9603b42ad8561d842de337397be1f9ed4352ea27d09b0f2bc2390e5ddd7429a",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v2_frozen.py"
+    },
+    {
+      "bytes": 8211,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v2_protocol.py",
+      "sha256": "5cf2635517fc2ee75f1ff3b2e4df19fd7ca15f0ddc564de6301e868fd8ce03ea",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v2_protocol.py"
+    },
+    {
+      "bytes": 9487,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v3_protocol.py",
+      "sha256": "1782aa5e3de19437a81f56bb396f2d5e036b1e4884737ac228ad9a48f4a7e71f",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v3_protocol.py"
+    },
+    {
+      "bytes": 30244,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v3_tuning.py",
+      "sha256": "67767e53f35d6f7a23be2adcd7c8653bee91be6eb3dfc6da37354e0f1c50bdf1",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v3_tuning.py"
+    },
+    {
+      "bytes": 23392,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v4_cross_validation.py",
+      "sha256": "0a1ebe2f86ab361c2261c5857bbc604d240ffeacecb927a83fe9c68b07302790",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v4_cross_validation.py"
+    },
+    {
+      "bytes": 13709,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v4_native_budget.py",
+      "sha256": "d386b8cb9e547afe2c599bcab2bae50e01fae527a7a315168e54cb6cf7f34e99",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_v4_native_budget.py"
+    },
+    {
+      "bytes": 2317,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/alzheimer_validation_firewall.py",
+      "sha256": "2f27e24583db6997dd0a3e6a724407aaaa6014ddde6f7dfd16f813c311e76119",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_validation_firewall.py"
+    },
+    {
+      "bytes": 10939,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/artifacts.py",
+      "sha256": "37b09a01e0e4815c6c7904c0d5b8bd50b33e6e66104bbe2dba4adcc19513f371",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/artifacts.py"
+    },
+    {
+      "bytes": 1279,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/baselines.py",
+      "sha256": "80a7af2af33c1d1213d849e011d2d600069867a83ad7d852f1ef1fedb87ebdbb",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/baselines.py"
+    },
+    {
+      "bytes": 37850,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/config.py",
+      "sha256": "8c57b2a326cb0f8faa77286c720d3cb286a59fcdbae7d3145dfaefff569d8ba5",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/config.py"
+    },
+    {
+      "bytes": 20567,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/data.py",
+      "sha256": "38f1753731780ef7a075979858d75d41973f2ddd1e7ca3211840fdf16fec89f5",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/data.py"
+    },
+    {
+      "bytes": 18855,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/dp_baselines.py",
+      "sha256": "326a7541a8ce1f4f5ef135c112f32683792e7c2ab6a40170216fe693285e91e4",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/dp_baselines.py"
+    },
+    {
+      "bytes": 6158,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/dsg.py",
+      "sha256": "8856e5c2a364dc41d124bdf94e0ee2072b0b72c0188b9228cb75e067a227cc3b",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/dsg.py"
+    },
+    {
+      "bytes": 7605,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/dsgt.py",
+      "sha256": "e165d3176ea3446cf05471665e31293d2f4ea38833125a31fb14e2cd29321e98",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/dsgt.py"
+    },
+    {
+      "bytes": 1944,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/evaluation.py",
+      "sha256": "998ad6fe9b19eb740c851bb5f8693dc764e5687a569793b2df95f5bc50a5a5a0",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/evaluation.py"
+    },
+    {
+      "bytes": 11356,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/first_order_admm.py",
+      "sha256": "99811461e6db8e07ea04cc4543526cdfd84c5ca90f161255c0bc50db20cc96fe",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/first_order_admm.py"
+    },
+    {
+      "bytes": 5867,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/graph.py",
+      "sha256": "2874a6fc50f1a42cc7139c49167d30c638a7090cf27730a98b31700b549d652b",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/graph.py"
+    },
+    {
+      "bytes": 1410,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/initialization.py",
+      "sha256": "b9e01ec4a68536d0b3b95979614db00bad4acd88f38fc755f297eaab44a474e3",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/initialization.py"
+    },
+    {
+      "bytes": 17456,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/methods.py",
+      "sha256": "649ce76d0f7eed0e013b9873f858b856545ce74cf07c8dc9bbfccb78286631c9",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/methods.py"
+    },
+    {
+      "bytes": 1372,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/metrics.py",
+      "sha256": "4a4ddfe5032abc4693616d3afc0575da1a27bed8589ee4515b5c8d46c6a78bbe",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/metrics.py"
+    },
+    {
+      "bytes": 15892,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/objectives.py",
+      "sha256": "7be7fcf07f2c2815cb3a90ead08c76c06813b129b2f2d6637942508fb4eea537",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/objectives.py"
+    },
+    {
+      "bytes": 8438,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/partitioning.py",
+      "sha256": "28270236975403c6eb9d146ccccb20e80a1caefcd946356cd67a45d7f6807f80",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/partitioning.py"
+    },
+    {
+      "bytes": 8207,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/privacy.py",
+      "sha256": "b735501b3ed33e34060077380ede5f9ac83c0ac05cb433121063c3c2100c64ca",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/privacy.py"
+    },
+    {
+      "bytes": 18663,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/trainer.py",
+      "sha256": "86c165628438edb4863d0ec35d3b25a107a934b8d78f5baff1c9d9e7df297213",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/trainer.py"
+    },
+    {
+      "bytes": 3551,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/two_point.py",
+      "sha256": "4c57c70463727bbb1140f8f96e07deeb7dfb6f4bcccbeb7598fbd15dfb6b032b",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/two_point.py"
+    },
+    {
+      "bytes": 2717,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/vr.py",
+      "sha256": "7e47bbe4f91b6bc1fd285c321a2b50fad398a38fbfa454b0dea668f3fa7599d2",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/vr.py"
+    },
+    {
+      "bytes": 3130,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/alzheimer_spade_dfl/src/spade_dfl/zo.py",
+      "sha256": "8054d45608c2bc68572ca03686e6797795815c0c90b4df833ebde088b218bc31",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/zo.py"
+    },
+    {
+      "bytes": 14094,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/results/parameter_validation_v3/selected_parameters.json",
+      "sha256": "498689f035cdd3334eec71390e74a9f2070f139c8e22ed13f03e79d246ee03cd",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/results/parameter_validation_v3/selected_parameters.json"
+    },
+    {
+      "bytes": 1179,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/results/parameter_validation_v3/validation_manifest.json",
+      "sha256": "79479b2cce017d9f009ccfd2af90a9cd6c53976d1c8835383ac08815fb3da073",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/results/parameter_validation_v3/validation_manifest.json"
+    },
+    {
+      "bytes": 17399,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/results/parameter_validation_v4_native_budget/selected_parameters.json",
+      "sha256": "85416e02e1c8afbbf2c44a2ecf24447501347bdf04cfc9908f8f21665969c60a",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/results/parameter_validation_v4_native_budget/selected_parameters.json"
+    },
+    {
+      "bytes": 1538,
+      "dataset": "alzheimer",
+      "packaged_path": "src/spade_dfl_release/vendor/main_alzheimer/results/parameter_validation_v4_native_budget/validation_manifest.json",
+      "sha256": "573e04568259b2cf82aaa0a64c240d40d4d2e0d9b752503a9fd820597050ba5e",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S72/S72_run/S72/results/parameter_validation_v4_native_budget/validation_manifest.json"
+    },
+    {
+      "bytes": 647,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/configs/brain_tumor_50round_server.json",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "917b9453d521a8a7ea909ba5ddf74a1e606e6ecbe9fe756f607b6b8f9ff2c17a",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/configs/brain_tumor_50round_server.json"
+    },
+    {
+      "bytes": 1128,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/configs/resnet18_server.json",
+      "sha256": "fa41b20bdcb62a6e5690e4d64a84cd7bf450db5849bb475ecc537cb380e80df6",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/configs/resnet18_server.json"
+    },
+    {
+      "bytes": 1002,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/configs/resnet18_smoke.json",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "19d85922c1f9d72f9b0d99d6be856280d2532e1030f5789d0329195510b7bbae",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/configs/resnet18_smoke.json"
+    },
+    {
+      "bytes": 2570,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/frozen/baseline_selected_parameters.json",
+      "sha256": "5ed75cedd0d1c8dcec6ed13ddee423a888216f38cb25ab12f02003c00f1b53a9",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/frozen/baseline_selected_parameters.json"
+    },
+    {
+      "bytes": 9757,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/frozen/selected_parameters_robust.json",
+      "sha256": "717aaf1a737e0ee3a93d5bcdee855681dd67851f95ae9e4a190fb897e9010f6b",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/frozen/selected_parameters_robust.json"
+    },
+    {
+      "bytes": 448,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/pyproject.toml",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "b732596f6c2bb0c9caaf99bb502815b49c1781e56000f6220d798c599d1d9718",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/pyproject.toml"
+    },
+    {
+      "bytes": 70,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/requirements.txt",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "42ceaab8fb9d95e9a5b31b5d99e439bb2243178ec0422e37d86322798b9647cb",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/requirements.txt"
+    },
+    {
+      "bytes": 96,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/requirements_resnet18_cpu.txt",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "691dbd272239b00147b56fd7a1380297a547dd9ef7788fc902cabc4ef65ef7b3",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/requirements_resnet18_cpu.txt"
+    },
+    {
+      "bytes": 93,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/run_server.ps1",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "3243029d322c67e812d9bbc9b20fbc5d45518a56591d45da513bb43a8560f941",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/run_server.ps1"
+    },
+    {
+      "bytes": 99,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/run_server.sh",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "09a1062f29dc03b2130fb0fec7d670abc86f88e816cfba497a8dacc638479836",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/run_server.sh"
+    },
+    {
+      "bytes": 3008,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/scripts/prepare_resnet18_features.py",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "8780d955f58509418d47c8604a10bdeedbabd5af4e5ddfb8b6b187b865534919",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/scripts/prepare_resnet18_features.py"
+    },
+    {
+      "bytes": 2946,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/scripts/run_brain_tumor_suite.py",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "64244392a8d2b0609dc7402dcb79e2c24381b8053a4a784ea75054620905c750",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/scripts/run_brain_tumor_suite.py"
+    },
+    {
+      "bytes": 9237,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/scripts/run_resnet18_server_suite.py",
+      "runtime_reason": "brain_tumor_suite.runtime_protocol_paths reads these bytes before every formal suite",
+      "sha256": "d84201a803f77cda4119da2cfc4e2993a4021e1024571c1af62ce3275b8cebbc",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/scripts/run_resnet18_server_suite.py"
+    },
+    {
+      "bytes": 62,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/__init__.py",
+      "sha256": "52f03475277af88d790b0d3c057f57cc0117a81f34a38e1a9a0c7ae19aeab869",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/__init__.py"
+    },
+    {
+      "bytes": 11000,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/artifacts.py",
+      "sha256": "990f8f49e6a1b85d242b6ad51a9e189f24b3ce217ee22e2f334801ee5b0f5622",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/artifacts.py"
+    },
+    {
+      "bytes": 1237,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/baselines.py",
+      "sha256": "945cf85d6be1c9d55186687443456b43411fde28e986fea788ef52b009602ef6",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/baselines.py"
+    },
+    {
+      "bytes": 3717,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/brain_tumor_baselines.py",
+      "sha256": "ed011aa22a571cbb26dc6bb46b5513650bd159641c3e12ffddcf79b035804719",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_baselines.py"
+    },
+    {
+      "bytes": 6165,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/brain_tumor_contract.py",
+      "sha256": "8cc130476af702df897940a6f6671817318031782bf0d0e3e10bfffb0ea40a2a",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_contract.py"
+    },
+    {
+      "bytes": 10134,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/brain_tumor_data.py",
+      "sha256": "08ad95de7d9f8fcdea8b2595a59227a9a901e577bf019fdf53f087b1226b66a5",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_data.py"
+    },
+    {
+      "bytes": 7287,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/brain_tumor_formal_figures.py",
+      "sha256": "889b5eb018dca2c57b235ce57dee800b9999773e0540a62cabe563d6b5d3dda2",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_formal_figures.py"
+    },
+    {
+      "bytes": 17148,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/brain_tumor_resnet18_data.py",
+      "sha256": "8f9317746269d10d42ac7b1905089a2972e30d563ca8864cc80748975a8e2d57",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_resnet18_data.py"
+    },
+    {
+      "bytes": 17831,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/brain_tumor_suite.py",
+      "sha256": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_suite.py"
+    },
+    {
+      "bytes": 37800,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/config.py",
+      "sha256": "9ca191711f6868e7fe3f2d1c71009e651bc3c6749d72e8c914dff4133ce85ba2",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/config.py"
+    },
+    {
+      "bytes": 694,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/data.py",
+      "sha256": "d22b372308c2fa881fb7890362d7826dcda9bf00ab05fec73b9587ce3ec1a581",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/data.py"
+    },
+    {
+      "bytes": 19475,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/dp_baselines.py",
+      "sha256": "99cab8d62fe971348a6a1cd41db043b42566d74c1cd7c9c6e2bc742f46b18cf4",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/dp_baselines.py"
+    },
+    {
+      "bytes": 5993,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/dsg.py",
+      "sha256": "1e5e36f3f256548200d93e0645265b214a55caae810a89814ba937323dfa0db6",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/dsg.py"
+    },
+    {
+      "bytes": 7425,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/dsgt.py",
+      "sha256": "35e27755d465c3617f0f35229595ff5c28d3e43e385054143aaa972545d90feb",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/dsgt.py"
+    },
+    {
+      "bytes": 1934,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/evaluation.py",
+      "sha256": "8b0e1fa9590fd7305ddcaaff0879f0e02fd86223124eadb9450faf2d3ed62463",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/evaluation.py"
+    },
+    {
+      "bytes": 11090,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/first_order_admm.py",
+      "sha256": "f15508cd476dcfe7a557a2c5c55b298415e38284fa6ac7388e24f93af07beffe",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/first_order_admm.py"
+    },
+    {
+      "bytes": 5732,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/graph.py",
+      "sha256": "e7a99138199e76699f5df4981798a292fc0a5f7718db79bf9eb254b720e53259",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/graph.py"
+    },
+    {
+      "bytes": 1368,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/initialization.py",
+      "sha256": "1cb46e9cf3409a3987ef2d2882bc0d3c0e96e60813bc76381a1db8deef1f7e28",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/initialization.py"
+    },
+    {
+      "bytes": 1271,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/isolation.py",
+      "sha256": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/isolation.py"
+    },
+    {
+      "bytes": 16996,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/methods.py",
+      "sha256": "fe5768e97a311cd479c21380921beeb0bf6dcdab88e8f03150e837213a974810",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/methods.py"
+    },
+    {
+      "bytes": 1339,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/metrics.py",
+      "sha256": "acbe8ff193b00997bf836e626e126a067c3b52bf6b872fe2bcff0e143d5c4c7a",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/metrics.py"
+    },
+    {
+      "bytes": 15481,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/objectives.py",
+      "sha256": "fbeee65ba642012b3d96e2f5f826439498c8941d5634eea01af40efdc08bebc2",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/objectives.py"
+    },
+    {
+      "bytes": 8290,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/partitioning.py",
+      "sha256": "7edb10f2f31fa234436e707f08db73e92fb1e84ab5e7267c72573d76e3804c67",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/partitioning.py"
+    },
+    {
+      "bytes": 7996,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/privacy.py",
+      "sha256": "c91d090921c37641a472e4902770c2230d6cc616c444b9510e16026da49b2da2",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/privacy.py"
+    },
+    {
+      "bytes": 18210,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/trainer.py",
+      "sha256": "361f3f900208eb9892d3a3552c8830fc8acf4e52ca1098b966c867993ee0893e",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/trainer.py"
+    },
+    {
+      "bytes": 3447,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/two_point.py",
+      "sha256": "6036bbab842d8a3b30c332d17da01df08d39c4e922d5646809d95588c152dad6",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/two_point.py"
+    },
+    {
+      "bytes": 2655,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/vr.py",
+      "sha256": "0fced808ba6a77246e01f22e8f43629280e21f3d8d4b0e5b882e5c2232b8052c",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/vr.py"
+    },
+    {
+      "bytes": 3035,
+      "dataset": "brain_tumor_mri",
+      "packaged_path": "src/spade_dfl_release/vendor/main_brain/src/spade_dfl/zo.py",
+      "sha256": "b2ff22e2d9a407e8a2809a94e684cd712eb8cfbc16c038a8f46a3e5f707d4ceb",
+      "source_id": "brain_s0904_archive",
+      "source_path": "spade_dfl_brain_tumor_resnet18_pca10/src/spade_dfl/zo.py"
+    },
+    {
+      "bytes": 8712,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/configs/spade_fashion_binary_50round_base.json",
+      "sha256": "b4167a2eba87017c4755274b951f832c4cffae680e22296359a2d85aeb3686f8",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/configs/spade_fashion_binary_50round_base.json"
+    },
+    {
+      "bytes": 446,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/configs/spade_fashion_binary_50round_server.json",
+      "sha256": "9b6d381fa4dd2b3694b9a623055cebd28543ca067fb5f954be5090133c505020",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/configs/spade_fashion_binary_50round_server.json"
+    },
+    {
+      "bytes": 171,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/__init__.py",
+      "sha256": "64066753584270bd4e1a4bc6aaed9b720426e8ef3d3301b4ffbbf607be1379ad",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/__init__.py"
+    },
+    {
+      "bytes": 10443,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/artifacts.py",
+      "sha256": "66aac2882c236dcf4e810787fe76a1a1dec5f518e1a830d0d9b09200a4a2ec04",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/artifacts.py"
+    },
+    {
+      "bytes": 1237,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/baselines.py",
+      "sha256": "945cf85d6be1c9d55186687443456b43411fde28e986fea788ef52b009602ef6",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/baselines.py"
+    },
+    {
+      "bytes": 23307,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/config.py",
+      "sha256": "2ddfbac07aeac1ca3e5561e9a3a66ffd1bf9fccb4720c78ba5822a7ff3ecd2c8",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/config.py"
+    },
+    {
+      "bytes": 5495,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/data.py",
+      "sha256": "52c7364ccda453eadece32c56a94f7eee0dfffeb45cbc7f394539d379238c996",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/data.py"
+    },
+    {
+      "bytes": 12543,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/dp_baselines.py",
+      "sha256": "f376ae75cecce4005e0acb1181644a3cd379ba046ffd546129464c2f52dbaade",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/dp_baselines.py"
+    },
+    {
+      "bytes": 5463,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/dsg.py",
+      "sha256": "12de3a6c0c8ea99b27431a3ab75f7063b4d50965a9937b51f175706ce0aa7134",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/dsg.py"
+    },
+    {
+      "bytes": 6178,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/dsgt.py",
+      "sha256": "4225bd9d25fbf9a2062b7f37fe0e0205ee4cca1f7034cd789a5ed9f546a9ef52",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/dsgt.py"
+    },
+    {
+      "bytes": 1934,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/evaluation.py",
+      "sha256": "8b0e1fa9590fd7305ddcaaff0879f0e02fd86223124eadb9450faf2d3ed62463",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/evaluation.py"
+    },
+    {
+      "bytes": 10715,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/first_order_admm.py",
+      "sha256": "2e8b5d02e2265a0c9ee2a69edb518a75f5cdb2b8edf9f936a58f2f82c30307c8",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/first_order_admm.py"
+    },
+    {
+      "bytes": 5732,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/graph.py",
+      "sha256": "e7a99138199e76699f5df4981798a292fc0a5f7718db79bf9eb254b720e53259",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/graph.py"
+    },
+    {
+      "bytes": 1368,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/initialization.py",
+      "sha256": "1cb46e9cf3409a3987ef2d2882bc0d3c0e96e60813bc76381a1db8deef1f7e28",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/initialization.py"
+    },
+    {
+      "bytes": 13130,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/methods.py",
+      "sha256": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/methods.py"
+    },
+    {
+      "bytes": 1339,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/metrics.py",
+      "sha256": "acbe8ff193b00997bf836e626e126a067c3b52bf6b872fe2bcff0e143d5c4c7a",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/metrics.py"
+    },
+    {
+      "bytes": 8519,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/objectives.py",
+      "sha256": "139c11959e1fbef987fa9ae47b7de0332aa699ee3d12ba7648b40c76771ccab9",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/objectives.py"
+    },
+    {
+      "bytes": 62233,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/paper_suite.py",
+      "sha256": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/paper_suite.py"
+    },
+    {
+      "bytes": 7333,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/partitioning.py",
+      "sha256": "ef24f86b972869ed061f43f872aa77da00d6516961295e52c501dba0de9f787a",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/partitioning.py"
+    },
+    {
+      "bytes": 4914,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/privacy.py",
+      "sha256": "1176aa85e3da36a90c1660c170ab613feeacc168ab6dda4fb07c8d0236b8dcb3",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/privacy.py"
+    },
+    {
+      "bytes": 17963,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/trainer.py",
+      "sha256": "57ec465f395aec20c624e6ee888f413804bc25e0fa9ff800bb8cd9cc3ed90af0",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/trainer.py"
+    },
+    {
+      "bytes": 1184,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/two_point.py",
+      "sha256": "587083b85501d8b8c873dbefa4e0a38b6ce4cb01291afdc6fedeadf4e0d38112",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/two_point.py"
+    },
+    {
+      "bytes": 2655,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/vr.py",
+      "sha256": "0fced808ba6a77246e01f22e8f43629280e21f3d8d4b0e5b882e5c2232b8052c",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/vr.py"
+    },
+    {
+      "bytes": 2936,
+      "dataset": "fashion01",
+      "packaged_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/zo.py",
+      "sha256": "4da1fac9ee7594a4e2dda0e374f2c26ae0cc75c7820058205546f944ed5c07c1",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S8/S8_run_20260720_120726/S8/src/spade_dfl/zo.py"
+    },
+    {
+      "bytes": 5243,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/configs/spade_mnist_50round_base.json",
+      "sha256": "2dcf60260f0ae92f5209d5152082776eccd1954668cb6d3ea1a82cd0ce0e7214",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/configs/spade_mnist_50round_base.json"
+    },
+    {
+      "bytes": 469,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/configs/spade_mnist_50round_server.json",
+      "sha256": "02097030360fb61d8ec5e408afa4bcafd5949c8573ef7b3b02bb676eb09de9db",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/configs/spade_mnist_50round_server.json"
+    },
+    {
+      "bytes": 171,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/__init__.py",
+      "sha256": "64066753584270bd4e1a4bc6aaed9b720426e8ef3d3301b4ffbbf607be1379ad",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/__init__.py"
+    },
+    {
+      "bytes": 5793,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/artifacts.py",
+      "sha256": "c3eb98c7207261adcab985b00d9010c1ebb555fcbda5533b1158a0eb680c5cab",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/artifacts.py"
+    },
+    {
+      "bytes": 1237,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/baselines.py",
+      "sha256": "945cf85d6be1c9d55186687443456b43411fde28e986fea788ef52b009602ef6",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/baselines.py"
+    },
+    {
+      "bytes": 21905,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/config.py",
+      "sha256": "437a2e61baf6c3d272a55a440c3e5b7b555b1241ebca8c33b11954e37291c24a",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/config.py"
+    },
+    {
+      "bytes": 3321,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/data.py",
+      "sha256": "fd438f973f4439d4ace9d1a121d609f2526cb9d4405d09c5ef94214dc71567ac",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/data.py"
+    },
+    {
+      "bytes": 12543,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/dp_baselines.py",
+      "sha256": "f376ae75cecce4005e0acb1181644a3cd379ba046ffd546129464c2f52dbaade",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/dp_baselines.py"
+    },
+    {
+      "bytes": 5463,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/dsg.py",
+      "sha256": "12de3a6c0c8ea99b27431a3ab75f7063b4d50965a9937b51f175706ce0aa7134",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/dsg.py"
+    },
+    {
+      "bytes": 6178,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/dsgt.py",
+      "sha256": "4225bd9d25fbf9a2062b7f37fe0e0205ee4cca1f7034cd789a5ed9f546a9ef52",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/dsgt.py"
+    },
+    {
+      "bytes": 1934,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/evaluation.py",
+      "sha256": "8b0e1fa9590fd7305ddcaaff0879f0e02fd86223124eadb9450faf2d3ed62463",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/evaluation.py"
+    },
+    {
+      "bytes": 10715,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/first_order_admm.py",
+      "sha256": "2e8b5d02e2265a0c9ee2a69edb518a75f5cdb2b8edf9f936a58f2f82c30307c8",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/first_order_admm.py"
+    },
+    {
+      "bytes": 5732,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/graph.py",
+      "sha256": "e7a99138199e76699f5df4981798a292fc0a5f7718db79bf9eb254b720e53259",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/graph.py"
+    },
+    {
+      "bytes": 1368,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/initialization.py",
+      "sha256": "1cb46e9cf3409a3987ef2d2882bc0d3c0e96e60813bc76381a1db8deef1f7e28",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/initialization.py"
+    },
+    {
+      "bytes": 13130,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/methods.py",
+      "sha256": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/methods.py"
+    },
+    {
+      "bytes": 1339,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/metrics.py",
+      "sha256": "acbe8ff193b00997bf836e626e126a067c3b52bf6b872fe2bcff0e143d5c4c7a",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/metrics.py"
+    },
+    {
+      "bytes": 8519,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/objectives.py",
+      "sha256": "139c11959e1fbef987fa9ae47b7de0332aa699ee3d12ba7648b40c76771ccab9",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/objectives.py"
+    },
+    {
+      "bytes": 48727,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/paper_suite.py",
+      "sha256": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/paper_suite.py"
+    },
+    {
+      "bytes": 7333,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/partitioning.py",
+      "sha256": "ef24f86b972869ed061f43f872aa77da00d6516961295e52c501dba0de9f787a",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/partitioning.py"
+    },
+    {
+      "bytes": 4914,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/privacy.py",
+      "sha256": "1176aa85e3da36a90c1660c170ab613feeacc168ab6dda4fb07c8d0236b8dcb3",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/privacy.py"
+    },
+    {
+      "bytes": 17963,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/trainer.py",
+      "sha256": "57ec465f395aec20c624e6ee888f413804bc25e0fa9ff800bb8cd9cc3ed90af0",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/trainer.py"
+    },
+    {
+      "bytes": 1184,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/two_point.py",
+      "sha256": "587083b85501d8b8c873dbefa4e0a38b6ce4cb01291afdc6fedeadf4e0d38112",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/two_point.py"
+    },
+    {
+      "bytes": 2655,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/vr.py",
+      "sha256": "0fced808ba6a77246e01f22e8f43629280e21f3d8d4b0e5b882e5c2232b8052c",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/vr.py"
+    },
+    {
+      "bytes": 2936,
+      "dataset": "mnist67",
+      "packaged_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/zo.py",
+      "sha256": "4da1fac9ee7594a4e2dda0e374f2c26ae0cc75c7820058205546f944ed5c07c1",
+      "source_id": "server_archive",
+      "source_path": "SPADE-DFL/S7/S7_run_20260717_215502/SPADE-DFL-S7/src/spade_dfl/zo.py"
+    }
+  ],
+  "schema_version": 1
+}

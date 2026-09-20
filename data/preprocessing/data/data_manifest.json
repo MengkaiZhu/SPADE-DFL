@@ -1,0 +1,49 @@
+{
+  "datasets": {
+    "mnist": {
+      "source_sha256": "731c5ac602752760c8e48fbffcf8c3b850d9dc2a2aedcf2cc48468fc17b673d1"
+    },
+    "fashion": {
+      "source_sha256": "1ef22c05129606271c1b3f85a35db31aedb66491efa96cb5d13786d64b65a34a"
+    },
+    "brain": {
+      "source_sha256": "882817250048c78ef7a759cf23e540d7b581f2327b16663c9d3db12f5d2ffdb4"
+    },
+    "alzheimer_fold0": {
+      "source_sha256": "280aa4437eedf969cb910e7e246b91a23477df3fba6519a771aeae2db3395cec",
+      "preprocessing": {
+        "split_seed": 1,
+        "n_folds": 5
+      }
+    },
+    "alzheimer_fold1": {
+      "source_sha256": "280aa4437eedf969cb910e7e246b91a23477df3fba6519a771aeae2db3395cec",
+      "preprocessing": {
+        "split_seed": 1,
+        "n_folds": 5
+      }
+    },
+    "alzheimer_fold2": {
+      "source_sha256": "280aa4437eedf969cb910e7e246b91a23477df3fba6519a771aeae2db3395cec",
+      "preprocessing": {
+        "split_seed": 1,
+        "n_folds": 5
+      }
+    },
+    "alzheimer_fold3": {
+      "source_sha256": "280aa4437eedf969cb910e7e246b91a23477df3fba6519a771aeae2db3395cec",
+      "preprocessing": {
+        "split_seed": 1,
+        "n_folds": 5
+      }
+    },
+    "alzheimer_fold4": {
+      "source_sha256": "280aa4437eedf969cb910e7e246b91a23477df3fba6519a771aeae2db3395cec",
+      "preprocessing": {
+        "split_seed": 1,
+        "n_folds": 5
+      }
+    }
+  }
+}
+

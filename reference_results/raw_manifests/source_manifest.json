@@ -1,0 +1,1027 @@
+{
+  "schema_version": 1,
+  "public_index_revision": 2,
+  "scope": "Minimal historical source records required by packaged provenance, source import and renderer lineage. Source identities, byte counts and SHA256 values are unchanged; omitted environment/cache records were metadata, not distributed payload files.",
+  "files": [
+    {
+      "source_id": "brain_s0904",
+      "path": "src/spade_dfl/brain_tumor_formal_figures.py",
+      "bytes": 7352,
+      "sha256": "5B360936482D070E3CA579320D94D38261C5897AAD8C226F08C4D1E23A645ACE"
+    },
+    {
+      "source_id": "brain_s0904",
+      "path": "src/spade_dfl/brain_tumor_suite.py",
+      "bytes": 17831,
+      "sha256": "78538F927541B1E044D5505D2091F94D4137B3DC1FE01475AE46897B18F7A652"
+    },
+    {
+      "source_id": "brain_s0904",
+      "path": "src/spade_dfl/isolation.py",
+      "bytes": 1271,
+      "sha256": "8A0CCE30F78716F337F44B7E5DF9EF88295CA0D2D3A43CB27E3C91ED0427ECF9"
+    },
+    {
+      "source_id": "brain_s0904_archive",
+      "path": "spade_dfl_brain_tumor_resnet18_pca10.zip",
+      "bytes": 221185549,
+      "sha256": "D01A7BD72E14EBECEEB3B702B26B94BD544B5B27011DD4483E102AD37FF5DFB3"
+    },
+    {
+      "source_id": "communication_figure10",
+      "path": "make_final_saving_band.py",
+      "bytes": 7787,
+      "sha256": "BA1A4AF77A0711D744942EA26BCDD81474454EAD15208FF9390FADA65E6EC22F"
+    },
+    {
+      "source_id": "communication_figure10",
+      "path": "make_style_comparison.py",
+      "bytes": 18725,
+      "sha256": "42A0438F61421BCE8FA5B9C94DC1CF7DC8EA3922881D49B61FBE78329463C8EB"
+    },
+    {
+      "source_id": "communication_figure10",
+      "path": "results/communication_cost_per_seed.csv",
+      "bytes": 39647,
+      "sha256": "5FA3C2ECEDBD192D5EC1185E7ECA353BCDFE3D217811C8451942FEBCA49C5A6A"
+    },
+    {
+      "source_id": "communication_figure10",
+      "path": "results/communication_cost_summary.csv",
+      "bytes": 2189,
+      "sha256": "7A5A392FAE60769E6ED2660717305FAB0438796E4EE8FD3C2FA76C0C63CADA0E"
+    },
+    {
+      "source_id": "communication_figure10",
+      "path": "results/experiment_metadata.json",
+      "bytes": 1145,
+      "sha256": "24BC92596571D8076C1C5EC62AA4804757DF5A007183D3542E7278DF3E9EF317"
+    },
+    {
+      "source_id": "communication_figure10",
+      "path": "run_experiment.py",
+      "bytes": 5764,
+      "sha256": "21F3C2C351C257617E4AB2ACB1F596C47A14ACBD6E8B91EED8AE7ECD73BBE2C3"
+    },
+    {
+      "source_id": "communication_figure10",
+      "path": "spade_simulation.py",
+      "bytes": 10068,
+      "sha256": "E8425119CADC3332AC862E966D1A7B5C7CE894388D404D2465B637BFD847457D"
+    },
+    {
+      "source_id": "paper_tex",
+      "path": "spade_dfl_v1.tex",
+      "bytes": 89380,
+      "sha256": "4EAFCD1BFD5EBB609F37D056FE0705589495D83C5ABEFCBEEC097737DAB7A9AB"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_calibrated_working/audit_results.py",
+      "bytes": 13958,
+      "sha256": "A7C730C99E899ED87A8EFE74EFF43D54D89CBCC384569E02944135261EE32A17"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_calibrated_working/study_runtime.py",
+      "bytes": 11258,
+      "sha256": "752F2F4E37D41B5B794D05C9E126334B1CC0ECDA018CC437EE7DE3D61951A401"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_final_working/pipeline.py",
+      "bytes": 13580,
+      "sha256": "19453B039FEDC688D938B80FC5A1AA148689BC11E5EAAFAAC3105CFD648FAF17"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_lowdim_working/lowdim.py",
+      "bytes": 1694,
+      "sha256": "4DCF28E6FE12F04F8E24A5C43F2CC203BE23B628C9770DF27E2DFEE306253534"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/configs/alzheimer_fold0_n30_eps8_seed0.json",
+      "bytes": 10930,
+      "sha256": "228C0B2134D1E428BED42FCB6CAFAB922CF06390C0CDC2B31EA46B10BEEC9E69"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/configs/alzheimer_fold1_n30_eps8_seed0.json",
+      "bytes": 10930,
+      "sha256": "CBC6FD29050CD3A37AC98F8A845FD0FDD4C87D94C2B527B6E86BC54F3693C649"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/configs/alzheimer_fold2_n30_eps8_seed0.json",
+      "bytes": 10930,
+      "sha256": "FD7205C893A37AAE4401B585B9BBF249D0CA923FF6303B723E3C5A82BF03C630"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/configs/alzheimer_fold3_n30_eps8_seed0.json",
+      "bytes": 11795,
+      "sha256": "B74FE8458D92907B90BD075138F8E84BC710AC0EA9B832883E28458666A39788"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/configs/alzheimer_fold4_n30_eps8_seed0.json",
+      "bytes": 10930,
+      "sha256": "B2A86C9CD9E0B84E33FF56D53C420EE81D270B222968B5344FE35E1F47668FE4"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/configs/brain_fold0_n30_eps8_seed0.json",
+      "bytes": 11734,
+      "sha256": "43C402544E7A63CFC0FF30D511393611AC52980C5792005833DC739E1AFCCBD2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/configs/fashion_fold0_n30_eps8_seed0.json",
+      "bytes": 11468,
+      "sha256": "28064A36D58F7A0BD2D4EB85618C98C811076C97C7C0A7D66AE47F5D017BB958"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/configs/mnist_fold0_n30_eps8_seed0.json",
+      "bytes": 11144,
+      "sha256": "2542E5708970E40E28E0E7FCB2529315287E408259565C991B5EB9B35F3B986A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/pilot_runtime.py",
+      "bytes": 20667,
+      "sha256": "00B7A3DDE822146BD9894B49943113171AFF5F2AF8377B7CFEED3769B9ECE9DF"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/__init__.py",
+      "bytes": 177,
+      "sha256": "CCC178549BF853A388A9BCF627822F35AAAC711332D3A017C22163C1D5C28CAD"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_audit.py",
+      "bytes": 47094,
+      "sha256": "036588FFDF52A75EB0B9A7D098796C25E5FD9F63D878A82B68AA783FC17721BB"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_contract.py",
+      "bytes": 459,
+      "sha256": "677919CC55BAC27670B20262090656ACE0CAE98C8EBC365E9DB6683A77ACF47C"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_data.py",
+      "bytes": 20632,
+      "sha256": "0E6AEFF63CD88B2284845FB9DF8D9BE4B1EEED9575BE5A45E309A723523EFBD3"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_frozen_config.py",
+      "bytes": 21401,
+      "sha256": "F9461F711199A76F7E112E724D4B91C89C53FE29AAB70E3D392038842E1423CB"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_suite.py",
+      "bytes": 38461,
+      "sha256": "971EF60F90778A690C046A5A368ABA60CE5B0DEFA9D7390C11FE3CAB81D22C9F"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_tuning.py",
+      "bytes": 40294,
+      "sha256": "8588994A354FBA5311EE49735DEDA2A30B257427F06E271EF180280085DA5E82"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_tuning_cache.py",
+      "bytes": 2549,
+      "sha256": "72F59D2F44D8108FACC23A31850E5E26382EFCA294121A15589F9FFF95038E51"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_tuning_protocol.py",
+      "bytes": 5798,
+      "sha256": "F9C9B08B7C13EB1655AA6E257C43098521546C9508C8884BEB479EC821D44E79"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_v2_frozen.py",
+      "bytes": 25047,
+      "sha256": "D9603B42AD8561D842DE337397BE1F9ED4352EA27D09B0F2BC2390E5DDD7429A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_v2_protocol.py",
+      "bytes": 8211,
+      "sha256": "5CF2635517FC2EE75F1FF3B2E4DF19FD7CA15F0DDC564DE6301E868FD8CE03EA"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_v2_tuning.py",
+      "bytes": 29091,
+      "sha256": "85A4CF3C4F4D51FFD1A8FD87DA542CF4841E4AF4882764334474177D7533BCB0"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_v3_protocol.py",
+      "bytes": 9487,
+      "sha256": "1782AA5E3DE19437A81F56BB396F2D5E036B1E4884737AC228AD9A48F4A7E71F"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_v3_tuning.py",
+      "bytes": 30244,
+      "sha256": "67767E53F35D6F7A23BE2ADCD7C8653BEE91BE6EB3DFC6DA37354E0F1C50BDF1"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_v4_audit.py",
+      "bytes": 18890,
+      "sha256": "D06667A88A6FFA00157AF193E0E4C24B02E2E85B8D2B5DE270B45A876902CDF0"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_v4_cross_validation.py",
+      "bytes": 23392,
+      "sha256": "0A1EBE2F86AB361C2261C5857BBC604D240FFEACECB927A83FE9C68B07302790"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_v4_native_budget.py",
+      "bytes": 13709,
+      "sha256": "D386B8CB9E547AFE2C599BCAB2BAE50E01FAE527A7A315168E54CB6CF7F34E99"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/alzheimer_validation_firewall.py",
+      "bytes": 2317,
+      "sha256": "2F27E24583DB6997DD0A3E6A724407AAAA6014DDDE6F7DFD16F813C311E76119"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/artifacts.py",
+      "bytes": 10939,
+      "sha256": "37B09A01E0E4815C6C7904C0D5B8BD50B33E6E66104BBE2DBA4ADCC19513F371"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/baselines.py",
+      "bytes": 1279,
+      "sha256": "80A7AF2AF33C1D1213D849E011D2D600069867A83AD7D852F1EF1FEDB87EBDBB"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/config.py",
+      "bytes": 37850,
+      "sha256": "8C57B2A326CB0F8FAA77286C720D3CB286A59FCDBAE7D3145DFAEFFF569D8BA5"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/data.py",
+      "bytes": 20567,
+      "sha256": "38F1753731780EF7A075979858D75D41973F2DDD1E7CA3211840FDF16FEC89F5"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/dp_baselines.py",
+      "bytes": 18855,
+      "sha256": "326A7541A8CE1F4F5EF135C112F32683792E7C2AB6A40170216FE693285E91E4"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/dsg.py",
+      "bytes": 6158,
+      "sha256": "8856E5C2A364DC41D124BDF94E0EE2072B0B72C0188B9228CB75E067A227CC3B"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/dsgt.py",
+      "bytes": 7605,
+      "sha256": "E165D3176EA3446CF05471665E31293D2F4EA38833125A31FB14E2CD29321E98"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/evaluation.py",
+      "bytes": 1944,
+      "sha256": "998AD6FE9B19EB740C851BB5F8693DC764E5687A569793B2DF95F5BC50A5A5A0"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/first_order_admm.py",
+      "bytes": 11356,
+      "sha256": "99811461E6DB8E07EA04CC4543526CDFD84C5CA90F161255C0BC50DB20CC96FE"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/graph.py",
+      "bytes": 5867,
+      "sha256": "2874A6FC50F1A42CC7139C49167D30C638A7090CF27730A98B31700B549D652B"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/initialization.py",
+      "bytes": 1410,
+      "sha256": "B9E01EC4A68536D0B3B95979614DB00BAD4ACD88F38FC755F297EAAB44A474E3"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/methods.py",
+      "bytes": 17456,
+      "sha256": "649CE76D0F7EED0E013B9873F858B856545CE74CF07C8DC9BBFCCB78286631C9"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/metrics.py",
+      "bytes": 1372,
+      "sha256": "4A4DDFE5032ABC4693616D3AFC0575DA1A27BED8589EE4515B5C8D46C6A78BBE"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/objectives.py",
+      "bytes": 15892,
+      "sha256": "7BE7FCF07F2C2815CB3A90EAD08C76C06813B129B2F2D6637942508FB4EEA537"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/partitioning.py",
+      "bytes": 8438,
+      "sha256": "28270236975403C6EB9D146CCCCB20E80A1CAEFCD946356CD67A45D7F6807F80"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/privacy.py",
+      "bytes": 8207,
+      "sha256": "B735501B3ED33E34060077380EDE5F9AC83C0AC05CB433121063C3C2100C64CA"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/single_client_check.py",
+      "bytes": 6118,
+      "sha256": "A785361144DD02E3E3C929EA3190FF9F8A774DA405D8A3725851FBEC56BC7DF4"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/single_client_diagnosis.py",
+      "bytes": 9064,
+      "sha256": "46691C1811DE04C05975A54AE0C7DBE25254822DAD1187F9311B1C2E7F602F45"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/trainer.py",
+      "bytes": 18663,
+      "sha256": "86C165628438EDB4863D0EC35D3B25A107A934B8D78F5BAFF1C9D9E7DF297213"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/two_point.py",
+      "bytes": 3551,
+      "sha256": "4C57C70463727BBB1140F8F96E07DEEB7DFB6F4BCCCBEB7598FBD15DFB6B032B"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/vr.py",
+      "bytes": 2717,
+      "sha256": "7E47BBE4F91B6BC1FD285C321A2B50FAD398A38FBFA454B0DEA668F3FA7599D2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/alzheimer/src/spade_dfl/zo.py",
+      "bytes": 3130,
+      "sha256": "8054D45608C2BC68572CA03686E6797795815C0C90B4DF833EBDE088B218BC31"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/__init__.py",
+      "bytes": 62,
+      "sha256": "52F03475277AF88D790B0D3C057F57CC0117A81F34A38E1A9A0C7AE19AEAB869"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/artifacts.py",
+      "bytes": 11000,
+      "sha256": "990F8F49E6A1B85D242B6AD51A9E189F24B3CE217EE22E2F334801EE5B0F5622"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/baselines.py",
+      "bytes": 1237,
+      "sha256": "945CF85D6BE1C9D55186687443456B43411FDE28E986FEA788EF52B009602EF6"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_baselines.py",
+      "bytes": 3717,
+      "sha256": "ED011AA22A571CBB26DC6BB46B5513650BD159641C3E12FFDDCF79B035804719"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_contract.py",
+      "bytes": 6165,
+      "sha256": "8CC130476AF702DF897940A6F6671817318031782BF0D0E3E10BFFFB0EA40A2A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_data.py",
+      "bytes": 10134,
+      "sha256": "08AD95DE7D9F8FCDEA8B2595A59227A9A901E577BF019FDF53F087B1226B66A5"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_formal_figures.py",
+      "bytes": 7287,
+      "sha256": "889B5EB018DCA2C57B235CE57DEE800B9999773E0540A62CABE563D6B5D3DDA2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_gate_figures.py",
+      "bytes": 8133,
+      "sha256": "BB7B11C4632A558CDBE245CAF65BAF3EB4E2618CDC1E467938FC09E1DB6AF5C7"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_resnet18_data.py",
+      "bytes": 17148,
+      "sha256": "8F9317746269D10D42AC7B1905089A2972E30D563CA8864CC80748975A8E2D57"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_resnet_gate.py",
+      "bytes": 17608,
+      "sha256": "20203AF5A99327F2CA836D927450935DB7CB5E46C12CDB56A5B482AB2ED54495"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_suite.py",
+      "bytes": 17831,
+      "sha256": "78538F927541B1E044D5505D2091F94D4137B3DC1FE01475AE46897B18F7A652"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/brain_tumor_tuning.py",
+      "bytes": 8334,
+      "sha256": "DB0F2479961EEC7506A60DDC63FFB98D77A189458CB4B6FA179ADE6BFEF2825E"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/config.py",
+      "bytes": 37800,
+      "sha256": "9CA191711F6868E7FE3F2D1C71009E651BC3C6749D72E8C914DFF4133CE85BA2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/data.py",
+      "bytes": 694,
+      "sha256": "D22B372308C2FA881FB7890362D7826DCDA9BF00AB05FEC73B9587CE3EC1A581"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/dp_baselines.py",
+      "bytes": 19475,
+      "sha256": "99CAB8D62FE971348A6A1CD41DB043B42566D74C1CD7C9C6E2BC742F46B18CF4"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/dsg.py",
+      "bytes": 5993,
+      "sha256": "1E5E36F3F256548200D93E0645265B214A55CAAE810A89814BA937323DFA0DB6"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/dsgt.py",
+      "bytes": 7425,
+      "sha256": "35E27755D465C3617F0F35229595FF5C28D3E43E385054143AAA972545D90FEB"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/evaluation.py",
+      "bytes": 1934,
+      "sha256": "8B0E1FA9590FD7305DDCAAFF0879F0E02FD86223124EADB9450FAF2D3ED62463"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/first_order_admm.py",
+      "bytes": 11090,
+      "sha256": "F15508CD476DCFE7A557A2C5C55B298415E38284FA6AC7388E24F93AF07BEFFE"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/graph.py",
+      "bytes": 5732,
+      "sha256": "E7A99138199E76699F5DF4981798A292FC0A5F7718DB79BF9EB254B720E53259"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/initialization.py",
+      "bytes": 1368,
+      "sha256": "1CB46E9CF3409A3987EF2D2882BC0D3C0E96E60813BC76381A1DB8DEEF1F7E28"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/isolation.py",
+      "bytes": 1271,
+      "sha256": "8A0CCE30F78716F337F44B7E5DF9EF88295CA0D2D3A43CB27E3C91ED0427ECF9"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/methods.py",
+      "bytes": 16996,
+      "sha256": "FE5768E97A311CD479C21380921BEEB0BF6DCDAB88E8F03150E837213A974810"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/metrics.py",
+      "bytes": 1339,
+      "sha256": "ACBE8FF193B00997BF836E626E126A067C3B52BF6B872FE2BCFF0E143D5C4C7A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/objectives.py",
+      "bytes": 15481,
+      "sha256": "FBEEE65BA642012B3D96E2F5F826439498C8941D5634EEA01AF40EFDC08BEBC2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/partitioning.py",
+      "bytes": 8290,
+      "sha256": "7EDB10F2F31FA234436E707F08DB73E92FB1E84AB5E7267C72573D76E3804C67"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/privacy.py",
+      "bytes": 7996,
+      "sha256": "C91D090921C37641A472E4902770C2230D6CC616C444B9510E16026DA49B2DA2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/trainer.py",
+      "bytes": 18210,
+      "sha256": "361F3F900208EB9892D3A3552C8830FC8ACF4E52CA1098B966C867993EE0893E"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/two_point.py",
+      "bytes": 3447,
+      "sha256": "6036BBAB842D8A3B30C332D17DA01DF08D39C4E922D5646809D95588C152DAD6"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/vr.py",
+      "bytes": 2655,
+      "sha256": "0FCED808BA6A77246E01F22E8F43629280E21F3D8D4B0E5B882E5C2232B8052C"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/brain/src/spade_dfl/zo.py",
+      "bytes": 3035,
+      "sha256": "B2FF22E2D9A407E8A2809A94E684CD712EB8CFBC16C038A8F46A3E5F707D4CEB"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/__init__.py",
+      "bytes": 171,
+      "sha256": "64066753584270BD4E1A4BC6AAED9B720426E8EF3D3301B4FFBBF607BE1379AD"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/artifacts.py",
+      "bytes": 10443,
+      "sha256": "66AAC2882C236DCF4E810787FE76A1A1DEC5F518E1A830D0D9B09200A4A2EC04"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/baselines.py",
+      "bytes": 1237,
+      "sha256": "945CF85D6BE1C9D55186687443456B43411FDE28E986FEA788EF52B009602EF6"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/config.py",
+      "bytes": 23307,
+      "sha256": "2DDFBAC07AEAC1CA3E5561E9A3A66FFD1BF9FCCB4720C78BA5822A7FF3ECD2C8"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/data.py",
+      "bytes": 5495,
+      "sha256": "52C7364CCDA453EADECE32C56A94F7EEE0DFFFEB45CBC7F394539D379238C996"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/dp_baselines.py",
+      "bytes": 12543,
+      "sha256": "F376AE75CECCE4005E0ACB1181644A3CD379BA046FFD546129464C2F52DBAADE"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/dsg.py",
+      "bytes": 5463,
+      "sha256": "12DE3A6C0C8EA99B27431A3AB75F7063B4D50965A9937B51F175706CE0AA7134"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/dsgt.py",
+      "bytes": 6178,
+      "sha256": "4225BD9D25FBF9A2062B7F37FE0E0205EE4CCA1F7034CD789A5ED9F546A9EF52"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/evaluation.py",
+      "bytes": 1934,
+      "sha256": "8B0E1FA9590FD7305DDCAAFF0879F0E02FD86223124EADB9450FAF2D3ED62463"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/fashion_mnist.py",
+      "bytes": 3681,
+      "sha256": "13046A5AED66C8ADEBC8FD8A4716693F8BA2A508DC77BB33AE66947456BCBB46"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/first_order_admm.py",
+      "bytes": 10715,
+      "sha256": "2E8B5D02E2265A0C9EE2A69EDB518A75F5CDB2B8EDF9F936A58F2F82C30307C8"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/graph.py",
+      "bytes": 5732,
+      "sha256": "E7A99138199E76699F5DF4981798A292FC0A5F7718DB79BF9EB254B720E53259"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/initialization.py",
+      "bytes": 1368,
+      "sha256": "1CB46E9CF3409A3987EF2D2882BC0D3C0E96E60813BC76381A1DB8DEEF1F7E28"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/methods.py",
+      "bytes": 13130,
+      "sha256": "EE5F80E3A53CD5717EB8BF99984EE6DD495BCBAC7820B76C0C2E832F6B0D3EC2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/metrics.py",
+      "bytes": 1339,
+      "sha256": "ACBE8FF193B00997BF836E626E126A067C3B52BF6B872FE2BCFF0E143D5C4C7A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/objectives.py",
+      "bytes": 8519,
+      "sha256": "139C11959E1FBEF987FA9AE47B7DE0332AA699EE3D12BA7648B40C76771CCAB9"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/paper_suite.py",
+      "bytes": 62233,
+      "sha256": "7CC2D733E8AD547E1244C21036790FBA5D3A8CF502583142FEF5A24AECEFFCAC"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/partitioning.py",
+      "bytes": 7333,
+      "sha256": "EF24F86B972869ED061F43F872AA77DA00D6516961295E52C501DBA0DE9F787A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/privacy.py",
+      "bytes": 4914,
+      "sha256": "1176AA85E3DA36A90C1660C170AB613FEEACC168AB6DDA4FB07C8D0236B8DCB3"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/trainer.py",
+      "bytes": 17963,
+      "sha256": "57EC465F395AEC20C624E6EE888F413804BC25E0FA9FF800BB8CD9CC3ED90AF0"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/two_point.py",
+      "bytes": 1184,
+      "sha256": "587083B85501D8B8C873DBEFA4E0A38B6CE4CB01291AFDC6FEDEADF4E0D38112"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/vr.py",
+      "bytes": 2655,
+      "sha256": "0FCED808BA6A77246E01F22E8F43629280E21F3D8D4B0E5B882E5C2232B8052C"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/fashion/src/spade_dfl/zo.py",
+      "bytes": 2936,
+      "sha256": "4DA1FAC9EE7594A4E2DDA0E374F2C26AE0CC75C7820058205546F944ED5C07C1"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/__init__.py",
+      "bytes": 171,
+      "sha256": "64066753584270BD4E1A4BC6AAED9B720426E8EF3D3301B4FFBBF607BE1379AD"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/artifacts.py",
+      "bytes": 5793,
+      "sha256": "C3EB98C7207261ADCAB985B00D9010C1EBB555FCBDA5533B1158A0EB680C5CAB"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/baselines.py",
+      "bytes": 1237,
+      "sha256": "945CF85D6BE1C9D55186687443456B43411FDE28E986FEA788EF52B009602EF6"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/config.py",
+      "bytes": 21905,
+      "sha256": "437A2E61BAF6C3D272A55A440C3E5B7B555B1241EBCA8C33B11954E37291C24A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/data.py",
+      "bytes": 3321,
+      "sha256": "FD438F973F4439D4ACE9D1A121D609F2526CB9D4405D09C5EF94214DC71567AC"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/dp_baselines.py",
+      "bytes": 12543,
+      "sha256": "F376AE75CECCE4005E0ACB1181644A3CD379BA046FFD546129464C2F52DBAADE"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/dsg.py",
+      "bytes": 5463,
+      "sha256": "12DE3A6C0C8EA99B27431A3AB75F7063B4D50965A9937B51F175706CE0AA7134"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/dsgt.py",
+      "bytes": 6178,
+      "sha256": "4225BD9D25FBF9A2062B7F37FE0E0205EE4CCA1F7034CD789A5ED9F546A9EF52"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/evaluation.py",
+      "bytes": 1934,
+      "sha256": "8B0E1FA9590FD7305DDCAAFF0879F0E02FD86223124EADB9450FAF2D3ED62463"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/first_order_admm.py",
+      "bytes": 10715,
+      "sha256": "2E8B5D02E2265A0C9EE2A69EDB518A75F5CDB2B8EDF9F936A58F2F82C30307C8"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/graph.py",
+      "bytes": 5732,
+      "sha256": "E7A99138199E76699F5DF4981798A292FC0A5F7718DB79BF9EB254B720E53259"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/initialization.py",
+      "bytes": 1368,
+      "sha256": "1CB46E9CF3409A3987EF2D2882BC0D3C0E96E60813BC76381A1DB8DEEF1F7E28"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/methods.py",
+      "bytes": 13130,
+      "sha256": "EE5F80E3A53CD5717EB8BF99984EE6DD495BCBAC7820B76C0C2E832F6B0D3EC2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/metrics.py",
+      "bytes": 1339,
+      "sha256": "ACBE8FF193B00997BF836E626E126A067C3B52BF6B872FE2BCFF0E143D5C4C7A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/objectives.py",
+      "bytes": 8519,
+      "sha256": "139C11959E1FBEF987FA9AE47B7DE0332AA699EE3D12BA7648B40C76771CCAB9"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/paper_suite.py",
+      "bytes": 48727,
+      "sha256": "61A8DF0343E7F4C79D4FCDFF7AA3393BE03CAAAAB91BB5F52446734B942713A3"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/partitioning.py",
+      "bytes": 7333,
+      "sha256": "EF24F86B972869ED061F43F872AA77DA00D6516961295E52C501DBA0DE9F787A"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/privacy.py",
+      "bytes": 4914,
+      "sha256": "1176AA85E3DA36A90C1660C170AB613FEEACC168AB6DDA4FB07C8D0236B8DCB3"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/trainer.py",
+      "bytes": 17963,
+      "sha256": "57EC465F395AEC20C624E6EE888F413804BC25E0FA9FF800BB8CD9CC3ED90AF0"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/two_point.py",
+      "bytes": 1184,
+      "sha256": "587083B85501D8B8C873DBEFA4E0A38B6CE4CB01291AFDC6FEDEADF4E0D38112"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/vr.py",
+      "bytes": 2655,
+      "sha256": "0FCED808BA6A77246E01F22E8F43629280E21F3D8D4B0E5B882E5C2232B8052C"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_n30_eps8_working/vendor/mnist/src/spade_dfl/zo.py",
+      "bytes": 2936,
+      "sha256": "4DA1FAC9EE7594A4E2DDA0E374F2C26AE0CC75C7820058205546F944ED5C07C1"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_paired_control16_working/control_runtime.py",
+      "bytes": 15281,
+      "sha256": "C65C7A2082A1FE3F2EF8784153373B00072EE717A44D05598F12E70F936A37E8"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold0/data.npz",
+      "bytes": 397477,
+      "sha256": "B2B4F5B667D02754451209801711B9BF550F75FBC191D9D2EE3EEFEE998B70F0"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold0/metadata.json",
+      "bytes": 7586,
+      "sha256": "F68205BC8921539B0B3B970E5D134B1C3A4F9136D33B061901126B09D8AB328E"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold1/data.npz",
+      "bytes": 397223,
+      "sha256": "44F7676F1DEF823F20B1ECB54D351D19D33A873D64B1B2BC9BB11F55EC779EEE"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold1/metadata.json",
+      "bytes": 7583,
+      "sha256": "D7BC00B50F406145122A456628EE5057D3865CBC0510EBF68852E116494D12C4"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold2/data.npz",
+      "bytes": 397460,
+      "sha256": "0F6256A4F77C8F13AEC05E647E183C908833E463E26DDD14193B2769E264C5F4"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold2/metadata.json",
+      "bytes": 7577,
+      "sha256": "2FF1054C01AC12415BCE959866FC3B8B884E9050C145562C587C53097D932470"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold3/data.npz",
+      "bytes": 397272,
+      "sha256": "6658D35166F96FF85D7A8A5EF38DFBB8CC952AE963E7D9156D263FCC427833E9"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold3/metadata.json",
+      "bytes": 7581,
+      "sha256": "A101AF9F948AB6801AFB1365A781851040E3B1FFE63ED98B2553F709E2E4F67E"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold4/data.npz",
+      "bytes": 397964,
+      "sha256": "F5D4D33D9883BA452E537E1D0FB78B1F6E4831D5DF9A5E48724ED2ECE1DF5227"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/alzheimer_fold4/metadata.json",
+      "bytes": 7569,
+      "sha256": "C5C0372E7CB56BA8805A5A363FCB75B929D5C2DA687E37A2CE95342A59F287EF"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/brain_fold0/data.npz",
+      "bytes": 1322461,
+      "sha256": "9AE6571C4B5263192FE20BAE50552A585B6974258AAAF2D28B5C551D36B9A2DD"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/brain_fold0/metadata.json",
+      "bytes": 5688,
+      "sha256": "F263F2FEEB07CD838EA4649D0BE48D385D048C620AE3A76F25E72E7ACE89B9BA"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/fashion_fold0/data.npz",
+      "bytes": 2860001,
+      "sha256": "9DA95ADA0107307345921D3BB260F63CC73D56BFF9A1DFAE1BA66EFF42F0E791"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/fashion_fold0/metadata.json",
+      "bytes": 5806,
+      "sha256": "E8081BBF393DB897E3B0012F59C59CCDAA4CFAA07EC160060C95B798B669B00D"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/mnist_fold0/data.npz",
+      "bytes": 2891770,
+      "sha256": "833B8AB1EBF5D81CC3876C15E511DDBED8C7CBB707759EA6E4E156C16D509A1C"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_preprocessing_working/prepared/mnist_fold0/metadata.json",
+      "bytes": 5563,
+      "sha256": "8327234D124CB60FA74B44390A7556D3108143D91148FEAF6BD1DF1618808E45"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_release_budget_working/study.py",
+      "bytes": 16848,
+      "sha256": "64B535A1BDE3330A8CC43277A853D23E8094695530F689FA5FDAFAF00D1428E2"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_ring_moderate_working/study_ring.py",
+      "bytes": 16054,
+      "sha256": "44051A350680D68C1BB8A909FD93BDCFA07E0686483F86CAAE1B5969E7B74343"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_true_dimension_working/adapter.py",
+      "bytes": 1635,
+      "sha256": "E0BF5BCA2D46AD48FFCAB9A36D12E6A6F67E6780D7342FFE756DD748B9C24043"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_true_dimension_working/brain_config_working.py",
+      "bytes": 37814,
+      "sha256": "AB56C6D22CD87FE64730352AD4DA4C24AD46C72BBC7BFACEE571C4DB64F65C6C"
+    },
+    {
+      "source_id": "sensitivity_lineage",
+      "path": "table34_true_dimension_working/experiment.py",
+      "bytes": 12321,
+      "sha256": "5470F9EBDF5DBDDABBD659C9EC4E89836D4DBB599A81EEE46FFA4E5E81ED70BA"
+    },
+    {
+      "source_id": "sensitivity_runtime",
+      "path": "PLAN.json",
+      "bytes": 624597,
+      "sha256": "89958A93ECB63F09C4A7849BDCFAA29B1A33F42631149F36BE7F2B9EFB8DB976"
+    },
+    {
+      "source_id": "sensitivity_runtime",
+      "path": "helpers.py",
+      "bytes": 3566,
+      "sha256": "B77BD12E51B627AD1E4C7EE3858B8676DFAC6479B0CC955A6AECB5C3CC891EE0"
+    },
+    {
+      "source_id": "sensitivity_runtime",
+      "path": "study.py",
+      "bytes": 13727,
+      "sha256": "26F1800914413042B23FF6E6A7160A9FD9B4FE64394E1CB1DA138F0E7DC8B1CF"
+    },
+    {
+      "source_id": "sensitivity_tables34",
+      "path": "CELLS.csv",
+      "bytes": 2733,
+      "sha256": "7B17ED8094DD5504AE51619233A452DB195515C175F071DC9DA8CE20FE571490"
+    },
+    {
+      "source_id": "sensitivity_tables34",
+      "path": "PLAN.json",
+      "bytes": 878617,
+      "sha256": "0425DD2BCDC23D86103652F5E1E8E329C23C4C22C10FD78ECA3EF143890E78DF"
+    },
+    {
+      "source_id": "sensitivity_tables34",
+      "path": "RUNS.csv",
+      "bytes": 276142,
+      "sha256": "1E436C0BE09BA723E380EDA03FBC61E5DC4AA3D068ABDC1E7144DE79AFD6EE95"
+    },
+    {
+      "source_id": "server_archive",
+      "path": "SPADE-DFL0828.zip",
+      "bytes": 5562238786,
+      "sha256": "9E3E21FB3191B97BFBACDA15BB4E4631115E02923A89BACEA06D88934B880E35"
+    }
+  ]
+}

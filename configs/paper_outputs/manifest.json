@@ -1,0 +1,515 @@
+{
+  "schema_version": 1,
+  "adapted_renderer_ast": {
+    "names": [
+      "_mnist_renderer",
+      "_fashion_renderer",
+      "_render_alzheimer",
+      "_brain_renderer",
+      "_distribution_renderers",
+      "_volcano_renderer"
+    ],
+    "sha256": "f610dd8ddef2e271db2e605faac9117c32c9111f4053357a279909f114f0a498"
+  },
+  "visual_qa_policy": "PASS-with-reviewed-tool-findings: retain exact historical presentation; preserve automatic collision findings and manual disposition. FONT-FAMILY individually exempted for frozen Times contract; raster QA uses separate 600dpi PNG/TIFF, never published.",
+  "manuscript_sha256": "4eafcd1bfd5ebb609f37d056fe0705589495d83c5abefcbeec097737dab7a9ab",
+  "export": {
+    "svg_hashsalt": "a8046ac75e26ea21eacba27cc77d75301d81d8be9af765c9de2952f1ad523829",
+    "reason": "Frozen from the approved original delivery to stabilize SVG internal IDs; this export salt carries no scientific or manuscript semantics."
+  },
+  "tables": {
+    "table_II.tex": {
+      "template": "\\begin{table*}[htbp!]\n\\centering\n\\caption{Final-round test accuracy after 50 communication rounds.}\n\\label{tab:distribution_final_accuracy}\n\\scriptsize\n\\setlength{\\tabcolsep}{2.2pt}\n\\renewcommand{\\arraystretch}{0.90}\n\\begin{tabular*}{\\textwidth}{@{\\extracolsep{\\fill}}llcccccccc@{}}\n\\toprule\nDataset & Distribution\n& LT-ADMM-VR\n& LT-ADMM\n& DP-SGD\n& DP-FedAvg\n& 1P-DSG\n& 1P-DSGT\n& SPADE-DFL\n& $\\Delta_{\\mathrm{best}}$ \\\\\n\\midrule\n\\multirow{4}{*}{MNIST}\n& IID\n& @@CELL_0@@\n& @@CELL_1@@\n& @@CELL_2@@\n& @@CELL_3@@\n& @@CELL_4@@\n& @@CELL_5@@\n& @@CELL_6@@\n& @@CELL_7@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_8@@\n& @@CELL_9@@\n& @@CELL_10@@\n& @@CELL_11@@\n& @@CELL_12@@\n& @@CELL_13@@\n& @@CELL_14@@\n& @@CELL_15@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_16@@\n& @@CELL_17@@\n& @@CELL_18@@\n& @@CELL_19@@\n& @@CELL_20@@\n& @@CELL_21@@\n& @@CELL_22@@\n& @@CELL_23@@ \\\\\n& Pathological\n& @@CELL_24@@\n& @@CELL_25@@\n& @@CELL_26@@\n& @@CELL_27@@\n& @@CELL_28@@\n& @@CELL_29@@\n& @@CELL_30@@\n& @@CELL_31@@ \\\\\n\\midrule\n\\multirow{4}{*}{Fashion-MNIST}\n& IID\n& @@CELL_32@@\n& @@CELL_33@@\n& @@CELL_34@@\n& @@CELL_35@@\n& @@CELL_36@@\n& @@CELL_37@@\n& @@CELL_38@@\n& @@CELL_39@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_40@@\n& @@CELL_41@@\n& @@CELL_42@@\n& @@CELL_43@@\n& @@CELL_44@@\n& @@CELL_45@@\n& @@CELL_46@@\n& @@CELL_47@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_48@@\n& @@CELL_49@@\n& @@CELL_50@@\n& @@CELL_51@@\n& @@CELL_52@@\n& @@CELL_53@@\n& @@CELL_54@@\n& @@CELL_55@@ \\\\\n& Pathological\n& @@CELL_56@@\n& @@CELL_57@@\n& @@CELL_58@@\n& @@CELL_59@@\n& @@CELL_60@@\n& @@CELL_61@@\n& @@CELL_62@@\n& @@CELL_63@@ \\\\\n\\midrule\n\\multirow{4}{*}{Alzheimer disease}\n& IID\n& @@CELL_64@@\n& @@CELL_65@@\n& @@CELL_66@@\n& @@CELL_67@@\n& @@CELL_68@@\n& @@CELL_69@@\n& @@CELL_70@@\n& @@CELL_71@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_72@@\n& @@CELL_73@@\n& @@CELL_74@@\n& @@CELL_75@@\n& @@CELL_76@@\n& @@CELL_77@@\n& @@CELL_78@@\n& @@CELL_79@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_80@@\n& @@CELL_81@@\n& @@CELL_82@@\n& @@CELL_83@@\n& @@CELL_84@@\n& @@CELL_85@@\n& @@CELL_86@@\n& @@CELL_87@@ \\\\\n& Pathological\n& @@CELL_88@@\n& @@CELL_89@@\n& @@CELL_90@@\n& @@CELL_91@@\n& @@CELL_92@@\n& @@CELL_93@@\n& @@CELL_94@@\n& @@CELL_95@@ \\\\\n\\midrule\n\\multirow{4}{*}{Brain Tumor MRI}\n& IID\n& @@CELL_96@@\n& @@CELL_97@@\n& @@CELL_98@@\n& @@CELL_99@@\n& @@CELL_100@@\n& @@CELL_101@@\n& @@CELL_102@@\n& @@CELL_103@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_104@@\n& @@CELL_105@@\n& @@CELL_106@@\n& @@CELL_107@@\n& @@CELL_108@@\n& @@CELL_109@@\n& @@CELL_110@@\n& @@CELL_111@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_112@@\n& @@CELL_113@@\n& @@CELL_114@@\n& @@CELL_115@@\n& @@CELL_116@@\n& @@CELL_117@@\n& @@CELL_118@@\n& @@CELL_119@@ \\\\\n& Pathological\n& @@CELL_120@@\n& @@CELL_121@@\n& @@CELL_122@@\n& @@CELL_123@@\n& @@CELL_124@@\n& @@CELL_125@@\n& @@CELL_126@@\n& @@CELL_127@@ \\\\\n\\bottomrule\n\\end{tabular*}\n\\end{table*}",
+      "rendered_sha256": "9f9ef1684697b2a49429a40e853b4e790ea7587755ad360a2c1c6b01c864f623",
+      "cells": 128
+    },
+    "table_III.tex": {
+      "template": "\\begin{table}[htbp!]\n\\centering\n\n\\caption{Validation accuracy under varying client counts ($\\varepsilon=32$).}\n\\label{tab:client_count_accuracy}\n\n\\scriptsize\n\\setlength{\\tabcolsep}{1.5pt}\n\\setlength{\\medmuskip}{0mu}\n\\renewcommand{\\arraystretch}{0.95}\n\n\\resizebox{\\columnwidth}{!}{%\n\\begin{tabular}{@{}lccccc@{}}\n\\toprule\nDataset & $N=30$ & $N=40$ & $N=50$ & $N=75$ & $N=100$ \\\\\n\\midrule\nMNIST\n& @@CELL_0@@ & @@CELL_1@@ & @@CELL_2@@\n& @@CELL_3@@ & @@CELL_4@@ \\\\\nFashion-MNIST\n& @@CELL_5@@ & @@CELL_6@@ & @@CELL_7@@\n& @@CELL_8@@ & @@CELL_9@@ \\\\\nAlzheimer disease\n& @@CELL_10@@ & @@CELL_11@@ & @@CELL_12@@\n& @@CELL_13@@ & @@CELL_14@@ \\\\\nBrain Tumor MRI\n& @@CELL_15@@ & @@CELL_16@@ & @@CELL_17@@\n& @@CELL_18@@ & @@CELL_19@@ \\\\\n\\bottomrule\n\\end{tabular}%\n}\n\\end{table}",
+      "rendered_sha256": "01ee68a223cf809d2c0ccff97a51a2ac1fed0e464df031be675253c445c7d503",
+      "cells": 20
+    },
+    "table_IV.tex": {
+      "template": "\\begin{table}[htbp!]\n\\centering\n\\caption{Validation accuracy under varying privacy budgets ($N=100$).}\n\\label{tab:privacy_budget_accuracy}\n\n\\scriptsize\n\\setlength{\\tabcolsep}{1.5pt}\n\\setlength{\\medmuskip}{0mu}\n\\renewcommand{\\arraystretch}{0.95}\n\n\\resizebox{\\columnwidth}{!}{%\n\\begin{tabular}{@{}lccccc@{}}\n\\toprule\nDataset\n& $\\varepsilon=4$ & $\\varepsilon=8$ & $\\varepsilon=16$\n& $\\varepsilon=24$ & $\\varepsilon=32$ \\\\\n\\midrule\nMNIST\n& @@CELL_0@@ & @@CELL_1@@ & @@CELL_2@@\n& @@CELL_3@@ & @@CELL_4@@ \\\\\nFashion-MNIST\n& @@CELL_5@@ & @@CELL_6@@ & @@CELL_7@@\n& @@CELL_8@@ & @@CELL_9@@ \\\\\nAlzheimer disease\n& @@CELL_10@@ & @@CELL_11@@ & @@CELL_12@@\n& @@CELL_13@@ & @@CELL_14@@ \\\\\nBrain Tumor MRI\n& @@CELL_15@@ & @@CELL_16@@ & @@CELL_17@@\n& @@CELL_18@@ & @@CELL_19@@ \\\\\n\\bottomrule\n\\end{tabular}%\n}\n\n\\end{table}",
+      "rendered_sha256": "d76ccc1965d7163d43b2b27bd6dc0c17ffae94e414ce025e99d2dd9a1efdc655",
+      "cells": 20
+    }
+  },
+  "inputs": {
+    "communication_summary.csv": {
+      "sha256": "f8fc0830abdadc8043000d899893b4d10482977d25c9f7bdbd4147ed3b4402b6",
+      "rows": 8,
+      "columns": [
+        "T",
+        "tau",
+        "n_seeds",
+        "diagnostic",
+        "paired_by",
+        "schedule",
+        "rounds",
+        "local_steps",
+        "query_count",
+        "transmitted_scalars",
+        "communication_reduction_vs_tau1",
+        "criterion_mean",
+        "criterion_ci95_low",
+        "criterion_ci95_high",
+        "stationarity_mean",
+        "stationarity_ci95_low",
+        "stationarity_ci95_high",
+        "consensus_mean",
+        "consensus_ci95_low",
+        "consensus_ci95_high"
+      ]
+    },
+    "main_final_accuracy.csv": {
+      "sha256": "cc85ba8769515c7a2b9f88ed3079b7a7318fbe1721ce625fce68d7072a90c3e6",
+      "rows": 112,
+      "columns": [
+        "dataset",
+        "partition",
+        "method",
+        "n_trajectories",
+        "ddof",
+        "source_id",
+        "source_member_prefix",
+        "round",
+        "mean_percent",
+        "sd_percent"
+      ]
+    },
+    "main_roundwise.csv": {
+      "sha256": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1",
+      "rows": 5712,
+      "columns": [
+        "dataset",
+        "partition",
+        "method",
+        "n_trajectories",
+        "ddof",
+        "source_id",
+        "source_member_prefix",
+        "round",
+        "mean_percent",
+        "sd_percent"
+      ]
+    },
+    "s15_client_proportions.csv": {
+      "sha256": "f02b1947f0433fd66c25781acedaae9a5e6124f14dd73cd37af93d9c279de8a9",
+      "rows": 150000,
+      "columns": [
+        "partition",
+        "seed",
+        "client",
+        "p_y7"
+      ]
+    },
+    "s15_roundwise.csv": {
+      "sha256": "e7b091212c74154f3fc967a6070d546db13164d52343e6dcc2837d474fc7d93c",
+      "rows": 50490,
+      "columns": [
+        "suite",
+        "partition",
+        "method",
+        "seed",
+        "round",
+        "accuracy",
+        "axis_semantics",
+        "communication_round",
+        "n_clients"
+      ]
+    },
+    "s15_wilcoxon_bh.csv": {
+      "sha256": "506e8559b5d4b94cbc254abff21a6b3adf135a4f6e1cdd3440f919b75061e867",
+      "rows": 1200,
+      "columns": [
+        "partition",
+        "method",
+        "round",
+        "n_pairs",
+        "mean_paired_accuracy_difference_pp",
+        "wilcoxon_statistic",
+        "raw_p_value",
+        "paired_differences_pp",
+        "adjusted_q_value",
+        "minus_log10_q",
+        "classification"
+      ]
+    },
+    "sensitivity_cells.csv": {
+      "sha256": "3d02dace0baa73f7993c4cb90f6cce49774f3c311ab58628a65f1127e368aed0",
+      "rows": 36,
+      "columns": [
+        "dataset",
+        "n",
+        "epsilon",
+        "mean_percent",
+        "sd_percent",
+        "n_seed",
+        "n_fold_seed",
+        "ddof",
+        "rounds",
+        "origin",
+        "validation_only",
+        "formal_authorized",
+        "previous_test_exposure"
+      ]
+    }
+  },
+  "renderer_lineage": {
+    "mnist": {
+      "source_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/paper_suite.py",
+      "sha256": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+      "bytes": 48727,
+      "segments": [
+        {
+          "symbol": "plot_black_box_accuracy",
+          "start": 634,
+          "end": 861
+        },
+        {
+          "symbol": "BLACK_BOX_LEGEND_ORDER",
+          "start": 68,
+          "end": 76
+        },
+        {
+          "symbol": "BLACK_BOX_LEGEND_LABELS",
+          "start": 59,
+          "end": 67
+        },
+        {
+          "symbol": "PANEL_TITLES",
+          "start": 31,
+          "end": 36
+        }
+      ]
+    },
+    "mnist_styles": {
+      "source_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/methods.py",
+      "sha256": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2",
+      "bytes": 13130,
+      "segments": [
+        {
+          "symbol": "METHOD_REGISTRY",
+          "start": 25,
+          "end": 51
+        },
+        {
+          "symbol": "MethodSpec",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    "fashion": {
+      "source_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/paper_suite.py",
+      "sha256": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+      "bytes": 62233,
+      "segments": [
+        {
+          "symbol": "plot_black_box_accuracy",
+          "start": 634,
+          "end": 860
+        },
+        {
+          "symbol": "BLACK_BOX_LEGEND_ORDER",
+          "start": 68,
+          "end": 76
+        },
+        {
+          "symbol": "BLACK_BOX_LEGEND_LABELS",
+          "start": 59,
+          "end": 67
+        },
+        {
+          "symbol": "PANEL_TITLES",
+          "start": 31,
+          "end": 36
+        }
+      ]
+    },
+    "fashion_styles": {
+      "source_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/methods.py",
+      "sha256": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2",
+      "bytes": 13130,
+      "segments": [
+        {
+          "symbol": "METHOD_REGISTRY",
+          "start": 25,
+          "end": 51
+        },
+        {
+          "symbol": "MethodSpec",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    "alzheimer": {
+      "source_path": "S72_run/S72/alzheimer_spade_dfl/scripts/replot_accuracy_1x4.py",
+      "sha256": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+      "bytes": 4122,
+      "segments": [
+        {
+          "symbol": "titles",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "symbol": "ymin",
+          "start": 44,
+          "end": 44
+        },
+        {
+          "symbol": "ymax",
+          "start": 45,
+          "end": 45
+        },
+        {
+          "symbol": "rc",
+          "start": 47,
+          "end": 57
+        },
+        {
+          "symbol": "selected plotting with block",
+          "start": 61,
+          "end": 130
+        }
+      ]
+    },
+    "alzheimer_styles": {
+      "source_path": "S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_suite.py",
+      "sha256": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7",
+      "bytes": 38930,
+      "segments": [
+        {
+          "symbol": "ALZHEIMER_PARTITIONS",
+          "start": 41,
+          "end": 41
+        },
+        {
+          "symbol": "FIGURE_STYLES",
+          "start": 61,
+          "end": 69
+        },
+        {
+          "symbol": "DISPLAY_LABELS",
+          "start": 49,
+          "end": 57
+        }
+      ]
+    },
+    "alzheimer_order": {
+      "source_path": "S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_contract.py",
+      "sha256": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+      "bytes": 459,
+      "segments": [
+        {
+          "symbol": "ALZHEIMER_METHOD_IDS",
+          "start": 3,
+          "end": 11
+        }
+      ]
+    },
+    "brain": {
+      "source_path": "historical_sources/brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_formal_figures.py",
+      "sha256": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+      "bytes": 7352,
+      "segments": [
+        {
+          "symbol": "write_formal_accuracy_figures",
+          "start": 90,
+          "end": 199
+        },
+        {
+          "symbol": "FORMAL_PANEL_ORDER",
+          "start": 16,
+          "end": 16
+        },
+        {
+          "symbol": "FORMAL_PANEL_LABELS",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "symbol": "formal_accuracy_ylim_percent",
+          "start": 31,
+          "end": 49
+        }
+      ],
+      "source_path_kind": "public provenance alias; original relative label retained in the private release mapping"
+    },
+    "brain_styles": {
+      "source_path": "historical_sources/brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_suite.py",
+      "sha256": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652",
+      "bytes": 17831,
+      "segments": [
+        {
+          "symbol": "FIGURE_STYLES",
+          "start": 43,
+          "end": 51
+        },
+        {
+          "symbol": "VISIBLE_METHOD_LABELS",
+          "start": 31,
+          "end": 39
+        }
+      ],
+      "source_path_kind": "public provenance alias; original relative label retained in the private release mapping"
+    },
+    "brain_order": {
+      "source_path": "historical_sources/brain_tumor_resnet18_pca10/src/spade_dfl/isolation.py",
+      "sha256": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+      "bytes": 1271,
+      "segments": [
+        {
+          "symbol": "BRAIN_TUMOR_METHOD_IDS",
+          "start": 7,
+          "end": 15
+        }
+      ],
+      "source_path_kind": "public provenance alias; original relative label retained in the private release mapping"
+    },
+    "distribution": {
+      "source_path": "src/spade_dfl_release/vendor/heterogeneity/src/spade_dfl/mnist67_spade_distribution.py",
+      "sha256": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f",
+      "bytes": 19647,
+      "segments": [
+        {
+          "symbol": "PARTITION_ORDER",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "symbol": "HETEROGENEITY_ORDER",
+          "start": 26,
+          "end": 32
+        },
+        {
+          "symbol": "LABELS",
+          "start": 33,
+          "end": 39
+        },
+        {
+          "symbol": "COLORS",
+          "start": 40,
+          "end": 46
+        },
+        {
+          "symbol": "MARKERS",
+          "start": 47,
+          "end": 53
+        },
+        {
+          "symbol": "LINESTYLES",
+          "start": 54,
+          "end": 60
+        },
+        {
+          "symbol": "_plot_context",
+          "start": 475,
+          "end": 492
+        },
+        {
+          "symbol": "_mean_t_ci",
+          "start": 446,
+          "end": 450
+        },
+        {
+          "symbol": "_round_count",
+          "start": 453,
+          "end": 454
+        },
+        {
+          "symbol": "_validate",
+          "start": 457,
+          "end": 472
+        },
+        {
+          "symbol": "empirical_heterogeneity_order",
+          "start": 247,
+          "end": 266
+        },
+        {
+          "symbol": "plot_accuracy_with_iid_inset",
+          "start": 78,
+          "end": 168
+        },
+        {
+          "symbol": "plot_label_heterogeneity",
+          "start": 171,
+          "end": 244
+        },
+        {
+          "symbol": "_plot_context",
+          "start": 475,
+          "end": 492
+        }
+      ]
+    },
+    "volcano": {
+      "source_path": "src/spade_dfl_release/vendor/heterogeneity/src/spade_dfl/mnist67_method_volcano.py",
+      "sha256": "306648d99dedd27b38ebbbab34b3d2e8527112ceb483fc9fc14551f0af1fac23",
+      "bytes": 14137,
+      "segments": [
+        {
+          "symbol": "plot_method_volcano",
+          "start": 168,
+          "end": 245
+        },
+        {
+          "symbol": "METHOD_LABELS",
+          "start": 29,
+          "end": 37
+        },
+        {
+          "symbol": "PARTITION_LABELS",
+          "start": 38,
+          "end": 43
+        },
+        {
+          "symbol": "_annotate",
+          "start": 255,
+          "end": 321
+        }
+      ]
+    },
+    "communication": {
+      "source_path": "src/spade_dfl_release/communication/plotting.py",
+      "sha256": "350ab919b53c15f465f912e2a778140b47e361af243da3cbe76c419344c7cefc",
+      "segments": [
+        "build_figure",
+        "verify_figure",
+        "saving_label"
+      ],
+      "manifest_sha256": "c7711939089c8520d6f6bd7373f54f4b0f4898e93b75b3822e40a0d29ee8eb92"
+    }
+  },
+  "adaptations": [
+    "Presentation-only AST extraction; remove historical file I/O and sidecars, return live figures for verification and PDF/SVG export.",
+    "Main normalized arrays are already percentages; remove redundant multiply-by-100 without fraction round-trip.",
+    "Times New Roman by installed family; DejaVu Serif fallback; no font distribution.",
+    "Figure 7 actual inset title: (pp) -> (percentage points); title position and size unchanged.",
+    "Minimum glyph QA: Figure 7 inset tick labelsize 4.9 -> 5.0; Figure 9 annotation fontsize 4.5 -> 5.0; no other style changes.",
+    "Figure 9 uses the independently verified normalized records from the current-environment aggregate verification.",
+    "Figure 10 uses the verified communication renderer and derives the saving label from the plotted values.",
+    "Release metadata migration: historical Brain renderer paths use explicit public aliases; original content hashes remain unchanged. No renderer, statistical rule, figure or table bytes were changed by this migration."
+  ],
+  "evidence_boundaries": [
+    "Main aggregate CSVs record trajectory counts. Individual seed and fold identities are checked by the frozen source-verification evidence.",
+    "The pooled-fold sensitivity estimator is supported by the hash-locked source-verification record; the 36 aggregate cells alone are insufficient to reconstruct it.",
+    "No cross-environment binary PDF identity is claimed.",
+    "Each manuscript panel is a separate output. Inset axes are intentionally non-comparable; alignment is not applicable."
+  ],
+  "semantics": {
+    "main_sd_ddof": 0,
+    "alzheimer_main": "150 direct fold-seed trajectories",
+    "sensitivity_sd_ddof": 1,
+    "alzheimer_sensitivity": "pool correct/eval_count within each seed",
+    "sensitivity_validation_only": true,
+    "sensitivity_formal_authorized": false,
+    "sensitivity_previous_test_exposure": true,
+    "dp_sgd": "centralized optimizer step; N=1; zero communication",
+    "volcano_reference": "zo2_lt_admm_vr"
+  },
+  "verification_sha256": "6ca441d19e25d5e78db6edae61c9a12b47d2c20059f681571287919246d61fdb"
+}

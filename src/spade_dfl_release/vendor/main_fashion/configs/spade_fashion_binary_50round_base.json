@@ -1,0 +1,263 @@
+{
+  "batch_size": 16,
+  "beta": 0.0,
+  "clip_exponent": 0.0,
+  "clip_norm": 1.0,
+  "data_path": "data/fashion-mnist.npz",
+  "dataset_name": "fashion_mnist",
+  "dimension": 10,
+  "dirichlet_alpha": 0.3,
+  "download_url": "",
+  "dp_noise_std": 0.0,
+  "eta0": 0.01,
+  "eta_exponent": 0.51,
+  "exact_eta0": 2.5,
+  "graph_probability": 0.3,
+  "graph_topology": "erdos_renyi",
+  "initialization": "shared_zero",
+  "local_epochs": 1,
+  "mu0": 3.5,
+  "mu_exponent": 0.17,
+  "n_clients": 31,
+  "n_rounds": 50,
+  "negative_class": 0,
+  "negative_class_name": "T-shirt/top",
+  "objective_model": "paper_sigmoid",
+  "output_dir": "results/spade_fashion_binary",
+  "parameter_sources": {
+    "batch_size": {
+      "name": "batch_size",
+      "source": "Selected from {1, 16} on the Fashion-MNIST training-only holdout",
+      "source_type": "Validation",
+      "value": 16
+    },
+    "beta": {
+      "name": "beta",
+      "source": "Midpoint 1.5/(tau*lambda_u*rho) of LT-ADMM theorem interval",
+      "source_type": "TheoryDerived",
+      "value": "derived"
+    },
+    "clip_exponent": {
+      "name": "clip_exponent",
+      "source": "SPADE Eq. (20) permits {C_k} but does not provide a numerical decay exponent",
+      "source_type": "Validation",
+      "value": 0.0
+    },
+    "clip_norm": {
+      "name": "clip_norm",
+      "source": "SPADE Eq. (20) gives no numerical MNIST model-update clipping radius",
+      "source_type": "Assumed",
+      "value": 1.0
+    },
+    "dataset_name": {
+      "name": "dataset_name",
+      "source": "Experiment dataset selected by the declared comparison protocol",
+      "source_type": "Assumed",
+      "value": "fashion_mnist"
+    },
+    "dimension": {
+      "name": "dimension",
+      "source": "Controlled transfer from Reference [20] MNIST: lossy encoding to d=10; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 10
+    },
+    "dirichlet_alpha": {
+      "name": "dirichlet_alpha",
+      "source": "User-required supplemental Dirichlet alpha values 0.3 and 0.6",
+      "source_type": "Assumed",
+      "value": 0.3
+    },
+    "dp_noise_std": {
+      "name": "dp_noise_std",
+      "source": "Direct SPADE model-release noise; no numerical value is supplied by the paper",
+      "source_type": "Assumed",
+      "value": 0.0
+    },
+    "eta0": {
+      "name": "eta0",
+      "source": "Selected from the preregistered Fashion-MNIST training-only holdout grid",
+      "source_type": "Validation",
+      "value": 0.01
+    },
+    "eta_exponent": {
+      "name": "eta_exponent",
+      "source": "Controlled transfer from Reference [20] Sec. 5.1 MNIST schedule; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 0.51
+    },
+    "graph_probability": {
+      "name": "graph_probability",
+      "source": "Controlled transfer from Reference [20] Sec. 5.1 MNIST graph probability p=0.3; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 0.3
+    },
+    "graph_topology": {
+      "name": "graph_topology",
+      "source": "Controlled transfer from Reference [20] Sec. 5.1 MNIST connected Erdos-Renyi topology; a common comparison assumption for Fashion-MNIST",
+      "source_type": "Assumed",
+      "value": "erdos_renyi"
+    },
+    "initialization": {
+      "name": "initialization",
+      "source": "Controlled common equal zero initialization assumption shared fairly by all methods",
+      "source_type": "Assumed",
+      "value": "shared_zero"
+    },
+    "local_epochs": {
+      "name": "local_epochs",
+      "source": "DP-FedAvg local epoch count for common outer-round comparison",
+      "source_type": "Assumed",
+      "value": 1
+    },
+    "mu0": {
+      "name": "mu0",
+      "source": "Controlled transfer from Reference [20] Sec. 5.1 MNIST smoothing constant; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 3.5
+    },
+    "mu_exponent": {
+      "name": "mu_exponent",
+      "source": "Controlled transfer from Reference [20] Sec. 5.1 MNIST smoothing exponent; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 0.17
+    },
+    "n_clients": {
+      "name": "n_clients",
+      "source": "Controlled transfer of N=31 from Reference [20] Sec. 5.1 MNIST digits 6/7; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 31
+    },
+    "n_rounds": {
+      "name": "n_rounds",
+      "source": "Fixed total privacy-budget horizon selected by MNIST stability ablation",
+      "source_type": "Assumed",
+      "value": 50
+    },
+    "negative_class": {
+      "name": "negative_class",
+      "source": "Declared binary task class mapped to -1",
+      "source_type": "Assumed",
+      "value": 0
+    },
+    "objective_model": {
+      "name": "objective_model",
+      "source": "Reference [20], Eq. (21)",
+      "source_type": "Reference",
+      "value": "paper_sigmoid"
+    },
+    "partition_mode": {
+      "name": "partition_mode",
+      "source": "User-required supplemental IID/non-IID comparison factor",
+      "source_type": "Assumed",
+      "value": "iid"
+    },
+    "pathological_minor_fraction": {
+      "name": "pathological_minor_fraction",
+      "source": "Legacy binary mixed-label pathological option; not used by the reference-consistent profile",
+      "source_type": "Assumed",
+      "value": 0.1
+    },
+    "pca": {
+      "name": "pca",
+      "source": "Autoencoder architecture is absent; train-only PCA replacement",
+      "source_type": "Assumed",
+      "value": true
+    },
+    "positive_class": {
+      "name": "positive_class",
+      "source": "Declared binary task class mapped to +1",
+      "source_type": "Assumed",
+      "value": 1
+    },
+    "privacy_allocation": {
+      "name": "privacy_allocation",
+      "source": "Per-round zCDP allocation policy; total privacy follows SPADE Eqs. (25)-(27)",
+      "source_type": "Assumed",
+      "value": "theorem_weighted"
+    },
+    "query_noise_std": {
+      "name": "query_noise_std",
+      "source": "Controlled transfer from Reference [20] Sec. 5.1 MNIST query-noise scale; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 1.0
+    },
+    "regularization": {
+      "name": "regularization",
+      "source": "Controlled transfer of the numerical coefficient from Reference [20] Eq. (21) and Sec. 5.1 MNIST; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 0.1
+    },
+    "rho": {
+      "name": "rho",
+      "source": "Fixed at 1.0; derived beta remained inside the SPADE interval",
+      "source_type": "Validation",
+      "value": 1.0
+    },
+    "seeds": {
+      "name": "seeds",
+      "source": "Plan-mandated three-seed local validation set",
+      "source_type": "Assumed",
+      "value": [
+        0,
+        1,
+        2
+      ]
+    },
+    "shared_initialization": {
+      "name": "shared_initialization",
+      "source": "SPADE-DFL Algorithm 1 permits a common initial x_i,0; enabled only after empirical validation",
+      "source_type": "Assumed",
+      "value": false
+    },
+    "sigma_u": {
+      "name": "sigma_u",
+      "source": "Controlled transfer from Reference [20] Sec. 5.1 MNIST multiplicative-noise scale; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 0.01
+    },
+    "target_delta": {
+      "name": "target_delta",
+      "source": "Unified DP comparison uses delta=1e-5 from Reference [24] MNIST",
+      "source_type": "Assumed",
+      "value": 0.0
+    },
+    "target_epsilon": {
+      "name": "target_epsilon",
+      "source": "When positive, sigma is derived exactly from SPADE Eqs. (25)-(27)",
+      "source_type": "Assumed",
+      "value": 0.0
+    },
+    "tau": {
+      "name": "tau",
+      "source": "Controlled transfer of tau=2 from Reference [13] Sec. IV; not a direct Fashion-MNIST value",
+      "source_type": "Assumed",
+      "value": 2
+    },
+    "vr_mode": {
+      "name": "vr_mode",
+      "source": "Sec. X-A practical persistent-SAGA variant",
+      "source_type": "SPADE-DFL",
+      "value": "persistent_saga"
+    }
+  },
+  "partition_mode": "iid",
+  "pathological_minor_fraction": 0.1,
+  "positive_class": 1,
+  "positive_class_name": "Trouser",
+  "privacy_allocation": "theorem_weighted",
+  "query_noise_std": 1.0,
+  "regularization": 0.1,
+  "rho": 1.0,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "shared_initialization": false,
+  "sigma_u": 0.01,
+  "stage": "spade_dfl",
+  "target_delta": 0.0,
+  "target_epsilon": 0.0,
+  "tau": 2,
+  "vr_mode": "persistent_saga"
+}
