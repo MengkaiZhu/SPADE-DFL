@@ -1,7 +1,0 @@
-{
-  "algorithm_source": {
-    "all_python_module_hash_map_sha256": "1f6a3fdfbcfcabedf4f66e34707e8b3ce8a2f4cb80e1917abb991d409ba80749"
-  },
-  "dataset": "mnist",
-  "fold": 0
-}

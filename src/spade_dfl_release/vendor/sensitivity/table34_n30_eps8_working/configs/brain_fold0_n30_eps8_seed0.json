@@ -1,7 +1,0 @@
-{
-  "algorithm_source": {
-    "all_python_module_hash_map_sha256": "8e54474f53ae64ca5a6c73c61e4e4cca70889a2731f79c289b975589ffc31597"
-  },
-  "dataset": "brain",
-  "fold": 0
-}
