@@ -1,0 +1,174 @@
+{
+  "description": "Recovered functions verified against the historical frozen source. Full source paths and exact diffs are retained outside the anonymous package.",
+  "functions": [
+    {
+      "source_sha256": "00b7a3dde822146bd9894b49943113171aff5f2af8377b7cfeed3769b9ece9df",
+      "function": "sha",
+      "first_line": 25,
+      "last_line": 30,
+      "function_source_sha256": "6146cb7a2c7f8ca3d5ffeb73a724ec383f4e9527aa7ce05e5b52bedf0482d124",
+      "extracted_sha256": "6146cb7a2c7f8ca3d5ffeb73a724ec383f4e9527aa7ce05e5b52bedf0482d124",
+      "ast_identical": true,
+      "source_role": "historical_preparation_dependency",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "00b7a3dde822146bd9894b49943113171aff5f2af8377b7cfeed3769b9ece9df",
+      "function": "array_hash",
+      "first_line": 33,
+      "last_line": 38,
+      "function_source_sha256": "8a38469a7ee4833ee42063fc98fe54dacbf313c9091521cbe52fdfbdeba413ed",
+      "extracted_sha256": "8a38469a7ee4833ee42063fc98fe54dacbf313c9091521cbe52fdfbdeba413ed",
+      "ast_identical": true,
+      "source_role": "historical_preparation_dependency",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "00b7a3dde822146bd9894b49943113171aff5f2af8377b7cfeed3769b9ece9df",
+      "function": "save_npz",
+      "first_line": 48,
+      "last_line": 50,
+      "function_source_sha256": "ded2535caee63c5d5465e70581eef119b92f086821e63cc6039e693f0b64e15b",
+      "extracted_sha256": "ded2535caee63c5d5465e70581eef119b92f086821e63cc6039e693f0b64e15b",
+      "ast_identical": true,
+      "source_role": "historical_preparation_dependency",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "00b7a3dde822146bd9894b49943113171aff5f2af8377b7cfeed3769b9ece9df",
+      "function": "split_training",
+      "first_line": 70,
+      "last_line": 91,
+      "function_source_sha256": "2d96c1dcf1212561d8057933975d5af2be6aaa9b2ceb9cfcb4b7d8a2d5a12e19",
+      "extracted_sha256": "2d96c1dcf1212561d8057933975d5af2be6aaa9b2ceb9cfcb4b7d8a2d5a12e19",
+      "ast_identical": true,
+      "source_role": "historical_preparation_dependency",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "00b7a3dde822146bd9894b49943113171aff5f2af8377b7cfeed3769b9ece9df",
+      "function": "verify_modules",
+      "first_line": 133,
+      "last_line": 139,
+      "function_source_sha256": "d757ba5882c2aa23d041445839192a6bba0c711fdc9fc90e475aeb6152857718",
+      "extracted_sha256": "648584c47c713a0a6825a28eb3056c75e0ac8b3088f0fc6cf9599ab15c0f51da",
+      "ast_identical": false,
+      "source_role": "historical_preparation_dependency",
+      "path_adapter_applied": true
+    },
+    {
+      "source_sha256": "752f2f4e37d41b5b794d05c9e126334b1cc0ecda018cc437ee7de3d61951a401",
+      "function": "read",
+      "first_line": 25,
+      "last_line": 26,
+      "function_source_sha256": "da444c519d54be02359f167369073830c46866ff31cb93110a3dea0b1a4b4606",
+      "extracted_sha256": "da444c519d54be02359f167369073830c46866ff31cb93110a3dea0b1a4b4606",
+      "ast_identical": true,
+      "source_role": "historical_preparation_dependency",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "752f2f4e37d41b5b794d05c9e126334b1cc0ecda018cc437ee7de3d61951a401",
+      "function": "save",
+      "first_line": 29,
+      "last_line": 33,
+      "function_source_sha256": "fb9933021ed0f853a1f4698256bbe4cde8d68354fea39a2977ad552c676155e2",
+      "extracted_sha256": "fb9933021ed0f853a1f4698256bbe4cde8d68354fea39a2977ad552c676155e2",
+      "ast_identical": true,
+      "source_role": "historical_preparation_dependency",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "6985c264351223c4e5dd87e42eb394b83f14aeacfdf59e10a9af39142364d1c0",
+      "function": "image_training",
+      "first_line": 24,
+      "last_line": 29,
+      "function_source_sha256": "07201dc33e2ac20bce4a14ccb73fc56de39bc9a27ffcae1a099a5f5c6027bd68",
+      "extracted_sha256": "07201dc33e2ac20bce4a14ccb73fc56de39bc9a27ffcae1a099a5f5c6027bd68",
+      "ast_identical": true,
+      "source_role": "historical_nested_preparation",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "6985c264351223c4e5dd87e42eb394b83f14aeacfdf59e10a9af39142364d1c0",
+      "function": "norm_stats",
+      "first_line": 34,
+      "last_line": 37,
+      "function_source_sha256": "ac26a81a8be321159fcf76e8fd00791d7fccc1460e7bab80c588bb6d2b89979f",
+      "extracted_sha256": "ac26a81a8be321159fcf76e8fd00791d7fccc1460e7bab80c588bb6d2b89979f",
+      "ast_identical": true,
+      "source_role": "historical_nested_preparation",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "6985c264351223c4e5dd87e42eb394b83f14aeacfdf59e10a9af39142364d1c0",
+      "function": "build_group",
+      "first_line": 39,
+      "last_line": 113,
+      "function_source_sha256": "8ca32d34f9265593a5684814b6606ca5926553c13ae7e269c251a574c4d82947",
+      "extracted_sha256": "6d219f4d809da85db1691eced0b953ce89e30d8d7f7d276ef9c5fd6ced274ce1",
+      "ast_identical": false,
+      "source_role": "historical_nested_preparation",
+      "path_adapter_applied": true
+    },
+    {
+      "source_sha256": "6985c264351223c4e5dd87e42eb394b83f14aeacfdf59e10a9af39142364d1c0",
+      "function": "prepare_group",
+      "first_line": 115,
+      "last_line": 120,
+      "function_source_sha256": "d296769e3d06c5fd4f2eb6c35d5bae8e52ae7819e29ac55825b4e6aed6162dcc",
+      "extracted_sha256": "7db32a01bfb2ea8610fb9ca6090ae5612c2bd45325846449e275dcf97bd687b3",
+      "ast_identical": false,
+      "source_role": "historical_nested_preparation",
+      "path_adapter_applied": true
+    },
+    {
+      "source_sha256": "e8f9e3dc7554424601cf6b4d8a1d1c2c780cc437dfdd7fdfa980268de981da1e",
+      "function": "matrix",
+      "first_line": 4,
+      "last_line": 8,
+      "function_source_sha256": "e87dbcdddf4e5dc1b7cf3a790115d609e2fdb70b4e03c2ebffebfdaefd3aa637",
+      "extracted_sha256": "e87dbcdddf4e5dc1b7cf3a790115d609e2fdb70b4e03c2ebffebfdaefd3aa637",
+      "ast_identical": true,
+      "source_role": "historical_nested_preparation",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "e8f9e3dc7554424601cf6b4d8a1d1c2c780cc437dfdd7fdfa980268de981da1e",
+      "function": "fit_scale",
+      "first_line": 10,
+      "last_line": 32,
+      "function_source_sha256": "7321d90c05c09ecda3f64120580546b4e0be6da39de8e488867d53b8fd641f40",
+      "extracted_sha256": "7321d90c05c09ecda3f64120580546b4e0be6da39de8e488867d53b8fd641f40",
+      "ast_identical": true,
+      "source_role": "historical_nested_preparation",
+      "path_adapter_applied": false
+    },
+    {
+      "source_sha256": "e8f9e3dc7554424601cf6b4d8a1d1c2c780cc437dfdd7fdfa980268de981da1e",
+      "function": "apply_scale",
+      "first_line": 34,
+      "last_line": 44,
+      "function_source_sha256": "d5e4e1b4b8154c848a53d3238725233e9400673c9d3cd91e047f20782beff689",
+      "extracted_sha256": "d5e4e1b4b8154c848a53d3238725233e9400673c9d3cd91e047f20782beff689",
+      "ast_identical": true,
+      "source_role": "historical_nested_preparation",
+      "path_adapter_applied": false
+    }
+  ],
+  "dependency_closure": [
+    "numpy",
+    "Pillow (Brain data-module import)",
+    "preserved vendor dataset modules selected by dataset and checked against historical module-map SHA256"
+  ],
+  "preparation_executed_this_release": false,
+  "bitwise_raw_to_prepared_verified": false,
+  "patient_independence_verified": false,
+  "extraction_record_version": "2026-09-18 initial release candidate; extracted_sha256 fields describe that extraction",
+  "publication_integrity_adapter": {
+    "path": "data/preprocessing/prepare_sensitivity.py",
+    "current_sha256": "b4a635a7e330351b5348350c3bad972f09fc1a1859513dff51f491674f6a72b6",
+    "changes": "verify_modules uses verified current-to-historical module identities; input path and preprocessing calculations unchanged.",
+    "provenance_document": "README.md"
+  }
+}

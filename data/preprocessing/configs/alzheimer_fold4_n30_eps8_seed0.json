@@ -1,0 +1,38 @@
+{
+  "job_id": "alzheimer_fold4_n30_eps8_seed0",
+  "dataset": "alzheimer",
+  "fold": 4,
+  "holdout": {
+    "fraction": 0.1,
+    "seed": 20260715,
+    "source_sha256": "91e46db7ddac1d1d23e3a6d206eae1dcaec53527f55c2d79d1b839c9e731d6d8",
+    "indices_computed_in_memory": true,
+    "PCA_fitted_this_turn": false
+  },
+  "training_data": {
+    "path": "inputs/outer_train/alzheimer_fold4.npz",
+    "sha256": "1ecc06d3935659359619c47e5df94ce11fe9ce7ab61f8e1cfa4528a3d61e6ec0",
+    "feature_key": "train_x",
+    "label_key": "train_y",
+    "source_role": "outer_train_only",
+    "preprocessing": "frozen_outer_training_features_exploratory_not_fully_nested",
+    "source_dataset_sha256": "280aa4437eedf969cb910e7e246b91a23477df3fba6519a771aeae2db3395cec",
+    "source_training_shape": [
+      1720,
+      39
+    ],
+    "training_features_sha256": "f1bc81ee618d767f210568c4a14c26b5c149a41d03c94df187d7a7684e0118f0",
+    "training_labels_sha256": "234953d6a7d1b7bcaecdf6047381384dd6253ce122dddb83b75acadb36a06ed4",
+    "outer_test_arrays_loaded": false,
+    "inner_train_count": 1548,
+    "validation_count": 172,
+    "inner_indices_sha256": "e449c1f6284843eeadea77a7bcc1f00732d80367616c0a748970f945952357e0",
+    "validation_indices_sha256": "383252cecb3b98813ba95ce13ab1aa64f3aa313e9a3fc3d0f92c6947e93b0ba0",
+    "prepared_bundle": null
+  },
+  "algorithm_source": {
+    "all_python_module_hash_map_sha256": "53b22f9811210639c7f340c1d89304305cef70635b9bbebe1c07e152fb33e5f4",
+    "module_count": 40
+  }
+}
+

@@ -1,0 +1,94 @@
+{
+  "description": "Eight additional preparation prerequisites, outside the 23 runtime inputs. No payloads included.",
+  "inputs": [
+    {
+      "group": "mnist_fold0",
+      "purpose": "Historical outer-training cache used for label and feature consistency checks before nested preparation",
+      "filename": "mnist.npz",
+      "placement": "data/preprocessing/inputs/outer_train/mnist.npz",
+      "sha256": "1c96c2713eec8bdd7b25afc99aacabd1f0bf7bbd19fc8ff1a42b5f83a873194c",
+      "public_exact_route": "unresolved",
+      "acquisition_conditions": "Requires lawful access to the exact historical cache; not redistributed",
+      "source_version": "historical cache pinned by SHA256; upstream version unknown",
+      "differs_from_main_brain_cache": false
+    },
+    {
+      "group": "fashion_fold0",
+      "purpose": "Historical outer-training cache used for label and feature consistency checks before nested preparation",
+      "filename": "fashion.npz",
+      "placement": "data/preprocessing/inputs/outer_train/fashion.npz",
+      "sha256": "806c88675127ca8cd4ad902f89def3f7c2d8cc3dc0a33a95cebdf6d7394ecf28",
+      "public_exact_route": "unresolved",
+      "acquisition_conditions": "Requires lawful access to the exact historical cache; not redistributed",
+      "source_version": "historical cache pinned by SHA256; upstream version unknown",
+      "differs_from_main_brain_cache": false
+    },
+    {
+      "group": "alzheimer_fold0",
+      "purpose": "Historical outer-training cache used for label and feature consistency checks before nested preparation",
+      "filename": "alzheimer_fold0.npz",
+      "placement": "data/preprocessing/inputs/outer_train/alzheimer_fold0.npz",
+      "sha256": "5a34e2ddb3e3292b8b591c20614d7854dd00815e59aa21f96b6e6e17e858542b",
+      "public_exact_route": "unresolved",
+      "acquisition_conditions": "Requires lawful access to the exact historical cache; not redistributed",
+      "source_version": "historical cache pinned by SHA256; upstream version unknown",
+      "differs_from_main_brain_cache": false
+    },
+    {
+      "group": "alzheimer_fold1",
+      "purpose": "Historical outer-training cache used for label and feature consistency checks before nested preparation",
+      "filename": "alzheimer_fold1.npz",
+      "placement": "data/preprocessing/inputs/outer_train/alzheimer_fold1.npz",
+      "sha256": "f31857904a4eaa7b6ab96ac04fe373fd2e966c059ce6b5227ebf3ebbd5441ae5",
+      "public_exact_route": "unresolved",
+      "acquisition_conditions": "Requires lawful access to the exact historical cache; not redistributed",
+      "source_version": "historical cache pinned by SHA256; upstream version unknown",
+      "differs_from_main_brain_cache": false
+    },
+    {
+      "group": "alzheimer_fold2",
+      "purpose": "Historical outer-training cache used for label and feature consistency checks before nested preparation",
+      "filename": "alzheimer_fold2.npz",
+      "placement": "data/preprocessing/inputs/outer_train/alzheimer_fold2.npz",
+      "sha256": "73f73f22f37537caa57b3b9f8ced1a9f1b4aa3f5b93a96e3c2947700ccdc8f3f",
+      "public_exact_route": "unresolved",
+      "acquisition_conditions": "Requires lawful access to the exact historical cache; not redistributed",
+      "source_version": "historical cache pinned by SHA256; upstream version unknown",
+      "differs_from_main_brain_cache": false
+    },
+    {
+      "group": "alzheimer_fold3",
+      "purpose": "Historical outer-training cache used for label and feature consistency checks before nested preparation",
+      "filename": "alzheimer_fold3.npz",
+      "placement": "data/preprocessing/inputs/outer_train/alzheimer_fold3.npz",
+      "sha256": "ede42d12d957f0e16590133bce06ff7b508646266709bf752d937c0434c50530",
+      "public_exact_route": "unresolved",
+      "acquisition_conditions": "Requires lawful access to the exact historical cache; not redistributed",
+      "source_version": "historical cache pinned by SHA256; upstream version unknown",
+      "differs_from_main_brain_cache": false
+    },
+    {
+      "group": "alzheimer_fold4",
+      "purpose": "Historical outer-training cache used for label and feature consistency checks before nested preparation",
+      "filename": "alzheimer_fold4.npz",
+      "placement": "data/preprocessing/inputs/outer_train/alzheimer_fold4.npz",
+      "sha256": "1ecc06d3935659359619c47e5df94ce11fe9ce7ab61f8e1cfa4528a3d61e6ec0",
+      "public_exact_route": "unresolved",
+      "acquisition_conditions": "Requires lawful access to the exact historical cache; not redistributed",
+      "source_version": "historical cache pinned by SHA256; upstream version unknown",
+      "differs_from_main_brain_cache": false
+    },
+    {
+      "group": "brain_fold0",
+      "purpose": "Historical outer-training cache used for label and feature consistency checks before nested preparation",
+      "filename": "resnet18_v1_training_512d.npz",
+      "placement": "data/preprocessing/inputs/outer_train/resnet18_v1_training_512d.npz",
+      "sha256": "03c357ea6f7e3aff70e2537fc0a723fcd3659b02757a14d3327f701e1cc03cac",
+      "public_exact_route": "unresolved",
+      "acquisition_conditions": "Requires lawful access to the exact historical cache; not redistributed",
+      "source_version": "historical cache pinned by SHA256; upstream version unknown",
+      "differs_from_main_brain_cache": true
+    }
+  ]
+}
+

@@ -1,0 +1,1247 @@
+{
+  "adaptations": [
+    "Presentation-only AST extraction; remove historical file I/O and sidecars, return live figures for verification and PDF/SVG export.",
+    "Main normalized arrays are already percentages; remove redundant multiply-by-100 without fraction round-trip.",
+    "Times New Roman by installed family; DejaVu Serif fallback; no font distribution.",
+    "Figure 7 actual inset title: (pp) -> (percentage points); title position and size unchanged.",
+    "Minimum glyph QA: Figure 7 inset tick labelsize 4.9 -> 5.0; Figure 9 annotation fontsize 4.5 -> 5.0; no other style changes.",
+    "Figure 9 uses the independently verified normalized records from the current-environment aggregate verification.",
+    "Figure 10 uses the verified communication renderer and derives the saving label from the plotted values."
+  ],
+  "counts": {
+    "figure_files": 40,
+    "source_csvs": 9,
+    "table_cells": 168,
+    "table_numeric_scalars": 320
+  },
+  "evidence_boundaries": [
+    "Main aggregate CSVs record trajectory counts. Individual seed and fold identities are checked by the frozen source-verification evidence.",
+    "The pooled-fold sensitivity estimator is supported by the hash-locked source-verification record; the 36 aggregate cells alone are insufficient to reconstruct it.",
+    "No cross-environment binary PDF identity is claimed.",
+    "Each manuscript panel is a separate output. Inset axes are intentionally non-comparable; alignment is not applicable."
+  ],
+  "export": {
+    "reason": "Keeps exported SVG identifiers stable.",
+    "svg_hashsalt": "a8046ac75e26ea21eacba27cc77d75301d81d8be9af765c9de2952f1ad523829"
+  },
+  "figure_evidence": {
+    "figure10": {
+      "rows": 8,
+      "saving_label": "90.0\u201396.8% saved"
+    },
+    "figure7": {
+      "ci_bands": 5,
+      "confidence": "two-sided Student-t 95%; 30 paired seeds",
+      "curves": 5,
+      "paired_inset_curves": 4,
+      "rows": 7650
+    },
+    "figure8": {
+      "display_points_per_partition": 1400,
+      "display_seed": 20260827,
+      "partitions": 5,
+      "rows": 150000
+    },
+    "figure9": {
+      "classifications": {
+        "better": 424,
+        "unresolved": 366,
+        "worse": 410
+      },
+      "comparisons": 1200,
+      "raw_rows": 42840,
+      "reference": "zo2_lt_admm_vr"
+    },
+    "main": {
+      "curves": 112,
+      "ddof": 0,
+      "panels": 16,
+      "points_per_curve": 51,
+      "rows": 5712
+    }
+  },
+  "files": {
+    "figure_10/communication_summary.csv": {
+      "bytes": 2394,
+      "input_rows_by_file": {
+        "communication_summary.csv": 8
+      },
+      "inputs": {
+        "communication_summary.csv": "f8fc0830abdadc8043000d899893b4d10482977d25c9f7bdbd4147ed3b4402b6"
+      },
+      "renderer_sources": {
+        "communication": "350ab919b53c15f465f912e2a778140b47e361af243da3cbe76c419344c7cefc"
+      },
+      "sha256": "f8fc0830abdadc8043000d899893b4d10482977d25c9f7bdbd4147ed3b4402b6",
+      "source_rows": 8,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "figure_10/fig_communication_saving_band.pdf": {
+      "bytes": 52531,
+      "input_rows_by_file": {
+        "communication_summary.csv": 8
+      },
+      "inputs": {
+        "communication_summary.csv": "f8fc0830abdadc8043000d899893b4d10482977d25c9f7bdbd4147ed3b4402b6"
+      },
+      "renderer_sources": {
+        "communication": "350ab919b53c15f465f912e2a778140b47e361af243da3cbe76c419344c7cefc"
+      },
+      "sha256": "9fe442967ec7daefa4cf6d5e96425d03eacfd196586aaf75d06c66d0267b9a57",
+      "source_rows": 8,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_10/fig_communication_saving_band.svg": {
+      "bytes": 22359,
+      "input_rows_by_file": {
+        "communication_summary.csv": 8
+      },
+      "inputs": {
+        "communication_summary.csv": "f8fc0830abdadc8043000d899893b4d10482977d25c9f7bdbd4147ed3b4402b6"
+      },
+      "renderer_sources": {
+        "communication": "350ab919b53c15f465f912e2a778140b47e361af243da3cbe76c419344c7cefc"
+      },
+      "sha256": "b6e0e572d352c1cc23b3f5416c1dc863ce8249992559a18d0bd4ba3ed3c3739b",
+      "source_rows": 8,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/MNIST-dir 0.3.pdf": {
+      "bytes": 44856,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "30f1f9af1d3fe31b1d8aacdcdf1006a1d1e30442f9fe968bbc15d5c83ab635ef",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/MNIST-dir 0.3.svg": {
+      "bytes": 57802,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "c5ae75a48a51982147a8715e4527b0c4e110027043f7c5d670290a9947d9ae8b",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/MNIST-dir 0.6.pdf": {
+      "bytes": 44906,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "5b64d89c7b00f772ea4cecfb0e33158e6c3092183e06cf47cda25c483345689e",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/MNIST-dir 0.6.svg": {
+      "bytes": 57804,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "dca3746c0f5f4447288ed89d0ff9eeb53668c536ce3a0d0fca2b4b123abf058a",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/MNIST-iid.pdf": {
+      "bytes": 51785,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "4008aa322432fe8b186e90b555b33792704ee864e8d8799ca662afa175124ba0",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/MNIST-iid.svg": {
+      "bytes": 93847,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "aa555e64bb1d3d8d128a97cdaae85376a00e4a3f263faac9055f0dbe1bf79622",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/MNIST-pathological.pdf": {
+      "bytes": 45165,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "4d16875aa30bfaab2c790ba41633fda6835be9fa3a1c5658932f68e8dc271818",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/MNIST-pathological.svg": {
+      "bytes": 57807,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "a0704b5ffc43cdd3a9765c79c30bcbfcc033894bc8e96ce40bdbf62f0a2e6155",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_3/main_roundwise.csv": {
+      "bytes": 237981,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "mnist": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+        "mnist_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "6aca721cdcdd441da8e92631371b5ddd2743adbd825db847532f45fc81a337ed",
+      "source_rows": 1428,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "figure_4/Fashion MNIST-dir 0.3.pdf": {
+      "bytes": 44765,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "f33ade6c87a8f55a0325a668dd2e64a06c9d7e063fb0d3a731ed1d9c22ca6dc9",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_4/Fashion MNIST-dir 0.3.svg": {
+      "bytes": 57218,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "696e91152880392496c45fd3096dca30ecc109e5fd583bc664f3f6e80647243b",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_4/Fashion MNIST-dir 0.6.pdf": {
+      "bytes": 44732,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "be5a68b703457b5c6c5f8d0ecb68b837cbc1e869c11cf02a3d8be86eabfc4eb3",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_4/Fashion MNIST-dir 0.6.svg": {
+      "bytes": 57219,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "6579367eef719c94cb59addcbf3686599c5754d59214aae23993716431dc53d8",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_4/Fashion MNIST-iid.pdf": {
+      "bytes": 43358,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "829a01dde9b88644548ddc79c3d915cdf49d7fc31ed4ecda315c2e0fec0c517d",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_4/Fashion MNIST-iid.svg": {
+      "bytes": 57196,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "90ca2474dc0af47bf1b481fabedc1d2c5f1c2bace07cd380313c201569cf57b0",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_4/Fashion MNIST-pathological.pdf": {
+      "bytes": 45058,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "9c1436c8920a02bdb78ddaa577f2d8318e497b72c7bfea69b3f531d7772ac104",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_4/Fashion MNIST-pathological.svg": {
+      "bytes": 57216,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "6168469b973f5a2db9d87a430eed2d3569eec078e028a69e50ff435d705ceb39",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_4/main_roundwise.csv": {
+      "bytes": 231918,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "fashion": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+        "fashion_styles": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2"
+      },
+      "sha256": "8a6d58e19de2209efd3ccbb1ba00745d5ed427d383f952b58bece07a8f29ecf9",
+      "source_rows": 1428,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "figure_5/Alzheimer-dir 0.3.pdf": {
+      "bytes": 44896,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "8c3e2f4e317cca57dcb5057bb54869bc37ba76277fbc7a4d6b923c68b650b51f",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_5/Alzheimer-dir 0.3.svg": {
+      "bytes": 57321,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "039f78e92e483a0b1a497adc5eb303d92e3becd1d4a764e32c6dee068f718a00",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_5/Alzheimer-dir 0.6.pdf": {
+      "bytes": 44983,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "a424d522632178ae84a125704219db13f856209ce3ecc66dac09d298cbdc8bdc",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_5/Alzheimer-dir 0.6.svg": {
+      "bytes": 57301,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "4eefde6823031a10d8cbc34f35aec0dd97447e99d8b54b4b92984f9e118189ab",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_5/Alzheimer-iid.pdf": {
+      "bytes": 43690,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "348f0cfe2c7d2962b8b32f6fdf15834cbf97461996255328f20f20b9c54aeb34",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_5/Alzheimer-iid.svg": {
+      "bytes": 57330,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "7852bff8dcf10a243881efc0e04c554f2b355c508b98ac70b8423fda6cc2c91d",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_5/Alzheimer-pathological.pdf": {
+      "bytes": 45298,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "8e8ee63e10346a222b618b1ebcb882291777743bac0d3381439f4d95245e3b56",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_5/Alzheimer-pathological.svg": {
+      "bytes": 57319,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "31432746e271c679d80def186459cdffd8d003e4c621988421b14d3802c114e8",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_5/main_roundwise.csv": {
+      "bytes": 220536,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "alzheimer": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+        "alzheimer_order": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+        "alzheimer_styles": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7"
+      },
+      "sha256": "235286db4371e6601d590dd86ced3937b273f0918b1e65576340b923f8cd852d",
+      "source_rows": 1428,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "figure_6/Brain Tumor-dir 0.3.pdf": {
+      "bytes": 45147,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "f7934af72016196632596b4231ebceb336e93c9bdd6e05056b18df9f629990eb",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_6/Brain Tumor-dir 0.3.svg": {
+      "bytes": 63622,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "ebf4d13fcd4eb9a47f884b71df0ec4015b452762f78f2bd429ff06722e0558d1",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_6/Brain Tumor-dir 0.6.pdf": {
+      "bytes": 45082,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "607abe7d383dd76655e12a72bb57c85d96502b5a22a3cd4211ada84d0deb5021",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_6/Brain Tumor-dir 0.6.svg": {
+      "bytes": 63653,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "a3fac1e620a5f0fbb083cbeddcf9289e31c66af1374f06999a5daae3c450c004",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_6/Brain Tumor-iid.pdf": {
+      "bytes": 43803,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "04d0c2f27b40d4b061a8fe0252a4f2f4991a34352778c2ffd030e622204e08bc",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_6/Brain Tumor-iid.svg": {
+      "bytes": 63666,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "15997257b08e4e59152cc020e81b4f947ff00a6588e98698687d5f0cbedd045a",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_6/Brain Tumor-pathological.pdf": {
+      "bytes": 45447,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "8443f7284050897d8832807ae3f4bb7033074a16c0361c2dafec856114996f58",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_6/Brain Tumor-pathological.svg": {
+      "bytes": 63652,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "82428658882ff137876770aedd164dbf866f7ea08d053a76fc3d0ac8340e3331",
+      "source_rows": 1428,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_6/main_roundwise.csv": {
+      "bytes": 201029,
+      "input_rows_by_file": {
+        "main_roundwise.csv": 1428
+      },
+      "inputs": {
+        "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1"
+      },
+      "renderer_sources": {
+        "brain": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+        "brain_order": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+        "brain_styles": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652"
+      },
+      "sha256": "9c66c95359971f5bf34cbbcba385ba5793bae3714190a1403a1b0f892f15a39f",
+      "source_rows": 1428,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "figure_7/fig-distribution-accuracy.pdf": {
+      "bytes": 44218,
+      "input_rows_by_file": {
+        "s15_roundwise.csv": 7650
+      },
+      "inputs": {
+        "s15_roundwise.csv": "e7b091212c74154f3fc967a6070d546db13164d52343e6dcc2837d474fc7d93c"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f"
+      },
+      "sha256": "990955455708de08e7730af19942f4a97279bae94af8e03d86d3787e3764daa6",
+      "source_rows": 7650,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_7/fig-distribution-accuracy.svg": {
+      "bytes": 52507,
+      "input_rows_by_file": {
+        "s15_roundwise.csv": 7650
+      },
+      "inputs": {
+        "s15_roundwise.csv": "e7b091212c74154f3fc967a6070d546db13164d52343e6dcc2837d474fc7d93c"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f"
+      },
+      "sha256": "eca6e9a3aa2ed822b5dbf1ac7bc224dd96ab1dd40f97301042f90eccf283994d",
+      "source_rows": 7650,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_7/s15_roundwise.csv": {
+      "bytes": 698872,
+      "input_rows_by_file": {
+        "s15_roundwise.csv": 7650
+      },
+      "inputs": {
+        "s15_roundwise.csv": "e7b091212c74154f3fc967a6070d546db13164d52343e6dcc2837d474fc7d93c"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f"
+      },
+      "sha256": "34b49f19b5b09a3b8fdb94fa2d492631b36463997ae6baec913de43589ab0add",
+      "source_rows": 7650,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "figure_8/fig-client-label-heterogeneity.pdf": {
+      "bytes": 93124,
+      "input_rows_by_file": {
+        "s15_client_proportions.csv": 150000
+      },
+      "inputs": {
+        "s15_client_proportions.csv": "f02b1947f0433fd66c25781acedaae9a5e6124f14dd73cd37af93d9c279de8a9"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f"
+      },
+      "sha256": "ecb89fbd3b7ca244e2d777de93e1c78df219a4f44fcddd6542fe645b7e3cdca4",
+      "source_rows": 150000,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_8/fig-client-label-heterogeneity.svg": {
+      "bytes": 754823,
+      "input_rows_by_file": {
+        "s15_client_proportions.csv": 150000
+      },
+      "inputs": {
+        "s15_client_proportions.csv": "f02b1947f0433fd66c25781acedaae9a5e6124f14dd73cd37af93d9c279de8a9"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f"
+      },
+      "sha256": "2fbf5eb2e6160411a60cc709223fc764b3ed48b0c0859fa0dc4186e562c6c44a",
+      "source_rows": 150000,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_8/s15_client_proportions.csv": {
+      "bytes": 3993268,
+      "input_rows_by_file": {
+        "s15_client_proportions.csv": 150000
+      },
+      "inputs": {
+        "s15_client_proportions.csv": "f02b1947f0433fd66c25781acedaae9a5e6124f14dd73cd37af93d9c279de8a9"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f"
+      },
+      "sha256": "f02b1947f0433fd66c25781acedaae9a5e6124f14dd73cd37af93d9c279de8a9",
+      "source_rows": 150000,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "figure_9/fig-method-volcano.pdf": {
+      "bytes": 57792,
+      "input_rows_by_file": {
+        "s15_roundwise.csv": 42840,
+        "s15_wilcoxon_bh.csv": 1200
+      },
+      "inputs": {
+        "s15_roundwise.csv": "e7b091212c74154f3fc967a6070d546db13164d52343e6dcc2837d474fc7d93c",
+        "s15_wilcoxon_bh.csv": "506e8559b5d4b94cbc254abff21a6b3adf135a4f6e1cdd3440f919b75061e867"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f",
+        "volcano": "306648d99dedd27b38ebbbab34b3d2e8527112ceb483fc9fc14551f0af1fac23"
+      },
+      "sha256": "84ce189f46e463fd535ebe5f0b0253fdd7c890cc4a4edf318263ec4759e4289d",
+      "source_rows": 44040,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_9/fig-method-volcano.svg": {
+      "bytes": 152014,
+      "input_rows_by_file": {
+        "s15_roundwise.csv": 42840,
+        "s15_wilcoxon_bh.csv": 1200
+      },
+      "inputs": {
+        "s15_roundwise.csv": "e7b091212c74154f3fc967a6070d546db13164d52343e6dcc2837d474fc7d93c",
+        "s15_wilcoxon_bh.csv": "506e8559b5d4b94cbc254abff21a6b3adf135a4f6e1cdd3440f919b75061e867"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f",
+        "volcano": "306648d99dedd27b38ebbbab34b3d2e8527112ceb483fc9fc14551f0af1fac23"
+      },
+      "sha256": "cb6da2c23349f400e1883f6ae5bc53507d9a7eb561b944408a2072846d711344",
+      "source_rows": 44040,
+      "source_rows_semantics": "combined_figure_input_rows"
+    },
+    "figure_9/s15_roundwise.csv": {
+      "bytes": 3391290,
+      "input_rows_by_file": {
+        "s15_roundwise.csv": 42840
+      },
+      "inputs": {
+        "s15_roundwise.csv": "e7b091212c74154f3fc967a6070d546db13164d52343e6dcc2837d474fc7d93c"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f",
+        "volcano": "306648d99dedd27b38ebbbab34b3d2e8527112ceb483fc9fc14551f0af1fac23"
+      },
+      "sha256": "d63582323ef1d97d12a00a21448823ce4260f79db65312d2de65cf2fb0922643",
+      "source_rows": 42840,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "figure_9/s15_wilcoxon_bh.csv": {
+      "bytes": 830709,
+      "input_rows_by_file": {
+        "s15_wilcoxon_bh.csv": 1200
+      },
+      "inputs": {
+        "s15_wilcoxon_bh.csv": "506e8559b5d4b94cbc254abff21a6b3adf135a4f6e1cdd3440f919b75061e867"
+      },
+      "renderer_sources": {
+        "distribution": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f",
+        "volcano": "306648d99dedd27b38ebbbab34b3d2e8527112ceb483fc9fc14551f0af1fac23"
+      },
+      "sha256": "506e8559b5d4b94cbc254abff21a6b3adf135a4f6e1cdd3440f919b75061e867",
+      "source_rows": 1200,
+      "source_rows_semantics": "csv_data_rows"
+    },
+    "tables/table_II.tex": {
+      "bytes": 3579,
+      "inputs": {
+        "main_final_accuracy.csv": "cc85ba8769515c7a2b9f88ed3079b7a7318fbe1721ce625fce68d7072a90c3e6"
+      },
+      "manuscript_sha256": "4eafcd1bfd5ebb609f37d056fe0705589495d83c5abefcbeec097737dab7a9ab",
+      "result_cells": 128,
+      "sha256": "4a8dcd3fbd35887c6d7065684037e70a342b860932957ed2e44862f7e95572ca"
+    },
+    "tables/table_III.tex": {
+      "bytes": 833,
+      "inputs": {
+        "sensitivity_cells.csv": "3d02dace0baa73f7993c4cb90f6cce49774f3c311ab58628a65f1127e368aed0"
+      },
+      "manuscript_sha256": "4eafcd1bfd5ebb609f37d056fe0705589495d83c5abefcbeec097737dab7a9ab",
+      "result_cells": 20,
+      "sha256": "01ee68a223cf809d2c0ccff97a51a2ac1fed0e464df031be675253c445c7d503"
+    },
+    "tables/table_IV.tex": {
+      "bytes": 875,
+      "inputs": {
+        "sensitivity_cells.csv": "3d02dace0baa73f7993c4cb90f6cce49774f3c311ab58628a65f1127e368aed0"
+      },
+      "manuscript_sha256": "4eafcd1bfd5ebb609f37d056fe0705589495d83c5abefcbeec097737dab7a9ab",
+      "result_cells": 20,
+      "sha256": "d76ccc1965d7163d43b2b27bd6dc0c17ffae94e414ce025e99d2dd9a1efdc655"
+    }
+  },
+  "input_sha256": {
+    "communication_summary.csv": "f8fc0830abdadc8043000d899893b4d10482977d25c9f7bdbd4147ed3b4402b6",
+    "main_final_accuracy.csv": "cc85ba8769515c7a2b9f88ed3079b7a7318fbe1721ce625fce68d7072a90c3e6",
+    "main_roundwise.csv": "ee30efb57a59c3bd8eedc8af1a49ca27a3067f89b2aad6ba4763902bad7874b1",
+    "s15_client_proportions.csv": "f02b1947f0433fd66c25781acedaae9a5e6124f14dd73cd37af93d9c279de8a9",
+    "s15_roundwise.csv": "e7b091212c74154f3fc967a6070d546db13164d52343e6dcc2837d474fc7d93c",
+    "s15_wilcoxon_bh.csv": "506e8559b5d4b94cbc254abff21a6b3adf135a4f6e1cdd3440f919b75061e867",
+    "sensitivity_cells.csv": "3d02dace0baa73f7993c4cb90f6cce49774f3c311ab58628a65f1127e368aed0"
+  },
+  "presentation_manifest_sha256": "692063fe62987550fb3f384309cf8eaf0a8893495001d5a861edc421d1b4758f",
+  "reference_verification_sha256": "6ca441d19e25d5e78db6edae61c9a12b47d2c20059f681571287919246d61fdb",
+  "renderer_lineage": {
+    "alzheimer": {
+      "bytes": 4122,
+      "segments": [
+        {
+          "end": 25,
+          "start": 20,
+          "symbol": "titles"
+        },
+        {
+          "end": 44,
+          "start": 44,
+          "symbol": "ymin"
+        },
+        {
+          "end": 45,
+          "start": 45,
+          "symbol": "ymax"
+        },
+        {
+          "end": 57,
+          "start": 47,
+          "symbol": "rc"
+        },
+        {
+          "end": 130,
+          "start": 61,
+          "symbol": "selected plotting with block"
+        }
+      ],
+      "sha256": "1cfb3c8b0e32fa07247a9d51f5e28a4cf18712d7ca6e99f02d610c4ed451967a",
+      "source_path": "S72_run/S72/alzheimer_spade_dfl/scripts/replot_accuracy_1x4.py"
+    },
+    "alzheimer_order": {
+      "bytes": 459,
+      "segments": [
+        {
+          "end": 11,
+          "start": 3,
+          "symbol": "ALZHEIMER_METHOD_IDS"
+        }
+      ],
+      "sha256": "677919cc55bac27670b20262090656ace0cae98c8ebc365e9db6683a77acf47c",
+      "source_path": "S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_contract.py"
+    },
+    "alzheimer_styles": {
+      "bytes": 38930,
+      "segments": [
+        {
+          "end": 41,
+          "start": 41,
+          "symbol": "ALZHEIMER_PARTITIONS"
+        },
+        {
+          "end": 69,
+          "start": 61,
+          "symbol": "FIGURE_STYLES"
+        },
+        {
+          "end": 57,
+          "start": 49,
+          "symbol": "DISPLAY_LABELS"
+        }
+      ],
+      "sha256": "18265d1c46a505e243bccfc144b48281c2ac73e1d5ed37272e169b47f5999ad7",
+      "source_path": "S72_run/S72/alzheimer_spade_dfl/src/spade_dfl/alzheimer_suite.py"
+    },
+    "brain": {
+      "bytes": 7352,
+      "segments": [
+        {
+          "end": 199,
+          "start": 90,
+          "symbol": "write_formal_accuracy_figures"
+        },
+        {
+          "end": 16,
+          "start": 16,
+          "symbol": "FORMAL_PANEL_ORDER"
+        },
+        {
+          "end": 22,
+          "start": 17,
+          "symbol": "FORMAL_PANEL_LABELS"
+        },
+        {
+          "end": 49,
+          "start": 31,
+          "symbol": "formal_accuracy_ylim_percent"
+        }
+      ],
+      "sha256": "5b360936482d070e3ca579320d94d38261c5897aad8c226f08c4d1e23a645ace",
+      "source_path": "historical_sources/brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_formal_figures.py",
+      "source_path_kind": "source alias"
+    },
+    "brain_order": {
+      "bytes": 1271,
+      "segments": [
+        {
+          "end": 15,
+          "start": 7,
+          "symbol": "BRAIN_TUMOR_METHOD_IDS"
+        }
+      ],
+      "sha256": "8a0cce30f78716f337f44b7e5df9ef88295ca0d2d3a43cb27e3c91ed0427ecf9",
+      "source_path": "historical_sources/brain_tumor_resnet18_pca10/src/spade_dfl/isolation.py",
+      "source_path_kind": "source alias"
+    },
+    "brain_styles": {
+      "bytes": 17831,
+      "segments": [
+        {
+          "end": 51,
+          "start": 43,
+          "symbol": "FIGURE_STYLES"
+        },
+        {
+          "end": 39,
+          "start": 31,
+          "symbol": "VISIBLE_METHOD_LABELS"
+        }
+      ],
+      "sha256": "78538f927541b1e044d5505d2091f94d4137b3dc1fe01475ae46897b18f7a652",
+      "source_path": "historical_sources/brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_suite.py",
+      "source_path_kind": "source alias"
+    },
+    "communication": {
+      "manifest_sha256": "c7711939089c8520d6f6bd7373f54f4b0f4898e93b75b3822e40a0d29ee8eb92",
+      "segments": [
+        "build_figure",
+        "verify_figure",
+        "saving_label"
+      ],
+      "sha256": "350ab919b53c15f465f912e2a778140b47e361af243da3cbe76c419344c7cefc",
+      "source_path": "src/spade_dfl_release/communication/plotting.py"
+    },
+    "distribution": {
+      "bytes": 19647,
+      "segments": [
+        {
+          "end": 25,
+          "start": 19,
+          "symbol": "PARTITION_ORDER"
+        },
+        {
+          "end": 32,
+          "start": 26,
+          "symbol": "HETEROGENEITY_ORDER"
+        },
+        {
+          "end": 39,
+          "start": 33,
+          "symbol": "LABELS"
+        },
+        {
+          "end": 46,
+          "start": 40,
+          "symbol": "COLORS"
+        },
+        {
+          "end": 53,
+          "start": 47,
+          "symbol": "MARKERS"
+        },
+        {
+          "end": 60,
+          "start": 54,
+          "symbol": "LINESTYLES"
+        },
+        {
+          "end": 492,
+          "start": 475,
+          "symbol": "_plot_context"
+        },
+        {
+          "end": 450,
+          "start": 446,
+          "symbol": "_mean_t_ci"
+        },
+        {
+          "end": 454,
+          "start": 453,
+          "symbol": "_round_count"
+        },
+        {
+          "end": 472,
+          "start": 457,
+          "symbol": "_validate"
+        },
+        {
+          "end": 266,
+          "start": 247,
+          "symbol": "empirical_heterogeneity_order"
+        },
+        {
+          "end": 168,
+          "start": 78,
+          "symbol": "plot_accuracy_with_iid_inset"
+        },
+        {
+          "end": 244,
+          "start": 171,
+          "symbol": "plot_label_heterogeneity"
+        },
+        {
+          "end": 492,
+          "start": 475,
+          "symbol": "_plot_context"
+        }
+      ],
+      "sha256": "716f0a4bbe47d0bd3e5c9d5471630e1df976e82a2389bf82ab85e3bb2a218d4f",
+      "source_path": "src/spade_dfl_release/vendor/heterogeneity/src/spade_dfl/mnist67_spade_distribution.py"
+    },
+    "fashion": {
+      "bytes": 62233,
+      "segments": [
+        {
+          "end": 860,
+          "start": 634,
+          "symbol": "plot_black_box_accuracy"
+        },
+        {
+          "end": 76,
+          "start": 68,
+          "symbol": "BLACK_BOX_LEGEND_ORDER"
+        },
+        {
+          "end": 67,
+          "start": 59,
+          "symbol": "BLACK_BOX_LEGEND_LABELS"
+        },
+        {
+          "end": 36,
+          "start": 31,
+          "symbol": "PANEL_TITLES"
+        }
+      ],
+      "sha256": "7cc2d733e8ad547e1244c21036790fba5d3a8cf502583142fef5a24aeceffcac",
+      "source_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/paper_suite.py"
+    },
+    "fashion_styles": {
+      "bytes": 13130,
+      "segments": [
+        {
+          "end": 51,
+          "start": 25,
+          "symbol": "METHOD_REGISTRY"
+        },
+        {
+          "end": 22,
+          "start": 17,
+          "symbol": "MethodSpec"
+        }
+      ],
+      "sha256": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2",
+      "source_path": "src/spade_dfl_release/vendor/main_fashion/src/spade_dfl/methods.py"
+    },
+    "mnist": {
+      "bytes": 48727,
+      "segments": [
+        {
+          "end": 861,
+          "start": 634,
+          "symbol": "plot_black_box_accuracy"
+        },
+        {
+          "end": 76,
+          "start": 68,
+          "symbol": "BLACK_BOX_LEGEND_ORDER"
+        },
+        {
+          "end": 67,
+          "start": 59,
+          "symbol": "BLACK_BOX_LEGEND_LABELS"
+        },
+        {
+          "end": 36,
+          "start": 31,
+          "symbol": "PANEL_TITLES"
+        }
+      ],
+      "sha256": "61a8df0343e7f4c79d4fcdff7aa3393be03caaaab91bb5f52446734b942713a3",
+      "source_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/paper_suite.py"
+    },
+    "mnist_styles": {
+      "bytes": 13130,
+      "segments": [
+        {
+          "end": 51,
+          "start": 25,
+          "symbol": "METHOD_REGISTRY"
+        },
+        {
+          "end": 22,
+          "start": 17,
+          "symbol": "MethodSpec"
+        }
+      ],
+      "sha256": "ee5f80e3a53cd5717eb8bf99984ee6dd495bcbac7820b76c0c2e832f6b0d3ec2",
+      "source_path": "src/spade_dfl_release/vendor/main_mnist/src/spade_dfl/methods.py"
+    },
+    "volcano": {
+      "bytes": 14137,
+      "segments": [
+        {
+          "end": 245,
+          "start": 168,
+          "symbol": "plot_method_volcano"
+        },
+        {
+          "end": 37,
+          "start": 29,
+          "symbol": "METHOD_LABELS"
+        },
+        {
+          "end": 43,
+          "start": 38,
+          "symbol": "PARTITION_LABELS"
+        },
+        {
+          "end": 321,
+          "start": 255,
+          "symbol": "_annotate"
+        }
+      ],
+      "sha256": "306648d99dedd27b38ebbbab34b3d2e8527112ceb483fc9fc14551f0af1fac23",
+      "source_path": "src/spade_dfl_release/vendor/heterogeneity/src/spade_dfl/mnist67_method_volcano.py"
+    }
+  },
+  "schema_version": 1,
+  "semantics": {
+    "alzheimer_main": "150 direct fold-seed trajectories",
+    "alzheimer_sensitivity": "pool correct/eval_count within each seed",
+    "dp_sgd": "centralized optimizer step; N=1; zero communication",
+    "main_sd_ddof": 0,
+    "sensitivity_formal_authorized": false,
+    "sensitivity_previous_test_exposure": true,
+    "sensitivity_sd_ddof": 1,
+    "sensitivity_validation_only": true,
+    "volcano_reference": "zo2_lt_admm_vr"
+  },
+  "status": "completed",
+  "verification": {
+    "figure_series_differences": 0,
+    "missing_outputs": 0,
+    "table_cell_differences": 0
+  }
+}

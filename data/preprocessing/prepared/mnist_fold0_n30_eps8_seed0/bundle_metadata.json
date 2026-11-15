@@ -1,0 +1,9 @@
+{
+  "source_path": "inputs/outer_train/mnist.npz",
+  "sha256": "731c5ac602752760c8e48fbffcf8c3b850d9dc2a2aedcf2cc48468fc17b673d1",
+  "original_train_count": 10965,
+  "filtered_train_count": 10965,
+  "original_test_count": 1218,
+  "filtered_test_count": 1218
+}
+

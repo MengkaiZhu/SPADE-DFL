@@ -1,0 +1,7 @@
+{
+  "algorithm_source": {
+    "all_python_module_hash_map_sha256": "40e2c9206fa72ebe4b19187a014353715c3e9dfa8f399798fa3138a72668a499"
+  },
+  "dataset": "fashion",
+  "fold": 0
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spade-dfl-brain-tumor"
+version = "0.1.0"
+description = "Isolated SPADE-DFL Brain Tumor MRI simulation"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "matplotlib>=3.4",
+  "Pillow>=9.0",
+  "python-docx>=1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

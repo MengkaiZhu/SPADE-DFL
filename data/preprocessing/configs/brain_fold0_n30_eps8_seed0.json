@@ -1,0 +1,38 @@
+{
+  "job_id": "brain_fold0_n30_eps8_seed0",
+  "dataset": "brain",
+  "fold": 0,
+  "holdout": {
+    "fraction": 0.1,
+    "seed": 20260715,
+    "source_sha256": "91e46db7ddac1d1d23e3a6d206eae1dcaec53527f55c2d79d1b839c9e731d6d8",
+    "indices_computed_in_memory": true,
+    "PCA_fitted_this_turn": false
+  },
+  "training_data": {
+    "path": "inputs/outer_train/resnet18_v1_training_512d.npz",
+    "sha256": "03c357ea6f7e3aff70e2537fc0a723fcd3659b02757a14d3327f701e1cc03cac",
+    "feature_key": "features",
+    "label_key": "labels",
+    "source_role": "Training_only_frozen_ResNet18_512d",
+    "preprocessing": "PCA10_and_scale_fit_on_inner_train_only",
+    "source_dataset_sha256": "882817250048c78ef7a759cf23e540d7b581f2327b16663c9d3db12f5d2ffdb4",
+    "source_training_shape": [
+      5600,
+      512
+    ],
+    "training_features_sha256": "0eda55518e44c76bdd276ea6d4847aa97de081a08032a2b7dc40b570f86daf52",
+    "training_labels_sha256": "063ed688c16f4109ec8dfd9a8e2106fb470723517d9585b9abc012270abbe9b3",
+    "outer_test_arrays_loaded": false,
+    "inner_train_count": 5040,
+    "validation_count": 560,
+    "inner_indices_sha256": "b84f2d86d8738da8968155272979749bfc5355679dcadb0cb8225f17b89daf8d",
+    "validation_indices_sha256": "66186f1cc199f19221eae7d413fa045ed18d59bbc148f742ba7f2835f5171dd9",
+    "prepared_bundle": null
+  },
+  "algorithm_source": {
+    "all_python_module_hash_map_sha256": "8e54474f53ae64ca5a6c73c61e4e4cca70889a2731f79c289b975589ffc31597",
+    "module_count": 31
+  }
+}
+

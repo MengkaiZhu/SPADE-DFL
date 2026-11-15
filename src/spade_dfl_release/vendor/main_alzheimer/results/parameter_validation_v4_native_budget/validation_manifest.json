@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "protocol_version": "alzheimer_v4_native_budget",
+  "test_set_accessed": false,
+  "forbidden_access_count": 0,
+  "firewall_evidence": {
+    "forbidden_access_count": 0,
+    "forbidden_access_fields": [],
+    "forbidden_fields": [
+      "test_x",
+      "test_y",
+      "test_indices"
+    ],
+    "outer_fields_structurally_absent": true,
+    "exposed_fields": [
+      "bundle",
+      "model_indices",
+      "validation_indices"
+    ]
+  },
+  "expected_candidate_count": 10,
+  "expected_run_count": 400,
+  "evaluated_run_count": 400,
+  "completed_run_count": 400,
+  "finite_run_count": 400,
+  "partitions": [
+    "dir_0.3",
+    "dir_0.6",
+    "iid",
+    "pathological"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "rounds": 50,
+  "lt_tau": 2,
+  "lt_tau_source": "Reference [13], Sec. IV numerical algorithm comparisons use tau=2",
+  "v3_artifact_sha256": {
+    "validation_manifest.json": "79479b2cce017d9f009ccfd2af90a9cd6c53976d1c8835383ac08815fb3da073",
+    "selected_parameters.json": "498689f035cdd3334eec71390e74a9f2070f139c8e22ed13f03e79d246ee03cd",
+    "baseline_winners.json": "3386bb413b1a911bbb2ab627d21a55dd490ae7bcfbe2f6cf0d9836250f5897d2"
+  },
+  "split_audit": {
+    "model_indices_sha256": "5add00d33fecd3dbf05c68b2be8cf146b71dc69d0dbcc593f374c1262e02f40f",
+    "validation_indices_sha256": "af9d38c2b0e8c208d6c782969197cd95c11db0bbfc5ff37dbd7e1fbfd9776688",
+    "indices_disjoint": true
+  }
+}

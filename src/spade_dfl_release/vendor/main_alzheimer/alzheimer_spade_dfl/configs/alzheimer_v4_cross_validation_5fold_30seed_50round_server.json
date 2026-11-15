@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "protocol_version": "alzheimer_v4_cross_validation_server",
+  "protocol_role": "scientific_server",
+  "split_seed": 1,
+  "n_folds": 5,
+  "seeds": [
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+    20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+  ],
+  "rounds": 50,
+  "partitions": ["dir_0.3", "dir_0.6", "iid", "pathological"],
+  "data_path": "../../2、Alzheimer disease dataset.zip",
+  "v3_tuning_config": "alzheimer_v3_tuning.json",
+  "locked_artifacts": {
+    "../../results/parameter_validation_v3/selected_parameters.json": "498689f035cdd3334eec71390e74a9f2070f139c8e22ed13f03e79d246ee03cd",
+    "../../results/parameter_validation_v3/validation_manifest.json": "79479b2cce017d9f009ccfd2af90a9cd6c53976d1c8835383ac08815fb3da073",
+    "../../results/parameter_validation_v4_native_budget/selected_parameters.json": "85416e02e1c8afbbf2c44a2ecf24447501347bdf04cfc9908f8f21665969c60a",
+    "../../results/parameter_validation_v4_native_budget/validation_manifest.json": "573e04568259b2cf82aaa0a64c240d40d4d2e0d9b752503a9fd820597050ba5e"
+  }
+}
