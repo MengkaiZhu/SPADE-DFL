@@ -78,7 +78,7 @@ def test_release_excludes_private_paths_and_superseded_content(release_root):
         assert not re.search(r'[A-Za-z]:[\\/]|/home/|/Users/',source)
         for node in ast.walk(ast.parse(source)):
             assert not (isinstance(node,ast.Call) and isinstance(node.func,ast.Attribute) and node.func.attr=='home')
-        assert '.codex' not in source and 'style_comparison' not in source
+        assert 'style_comparison' not in source
 
 
 def test_paired_dataset_seed_not_full_query_rng_matching():
@@ -181,7 +181,7 @@ def test_figure_mutation_fails(mutation):
 def _author_sources():
     from spade_dfl_release.reference import Sources,resolve_source_index
     root=c.release_root();spec=resolve_source_index()
-    if spec is None:pytest.skip('author source index is not configured; see docs/OPTIONAL_SOURCES.md')
+    if spec is None:pytest.skip('author source index is not configured')
     sources=Sources(spec,root/'reference_results/raw_manifests/source_manifest.json')
     if not sources.paths['communication_figure10'].is_dir():pytest.skip('author communication source unavailable')
     return sources

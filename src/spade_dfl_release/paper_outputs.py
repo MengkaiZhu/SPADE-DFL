@@ -35,7 +35,7 @@ CLIENT_COUNTS = (30, 40, 50, 75, 100)
 EPSILONS = (4, 8, 16, 24, 32)
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST_PATH = ROOT / "configs/paper_outputs/manifest.json"
-MANIFEST_SHA256 = "5a184c73b1c8dd4509a450e08c6ba4f8b48b21e5f51bffdc4b56b3370f8ed009"
+MANIFEST_SHA256 = "692063fe62987550fb3f384309cf8eaf0a8893495001d5a861edc421d1b4758f"
 # Stable internal SVG IDs from the approved original delivery, not paper identity.
 SVG_HASHSALT = "a8046ac75e26ea21eacba27cc77d75301d81d8be9af765c9de2952f1ad523829"
 
@@ -347,7 +347,7 @@ def validate_figures(figures, data):
             axis = figures[f"figure_{number}/{prefix}-{suffix}"].axes[0]
             if axis.get_xlabel() != "Rounds" or axis.get_ylabel() != "Accuracy (%)":
                 raise ValueError("main visible axis text changed")
-            if [t.get_text() for t in axis.get_legend().get_texts()] != ["LT-ADMM-VR", "LT-ADMM", "DP-SGD", "DP-FedAvg", "1P-DSG", "1P-DSGT", "SPADE-DFL"]:
+            if [t.get_text() for t in axis.get_legend().get_texts()] != ["LT-ADMM-VR", "LT-ADMM-DP", "DP-SGD", "DP-FedAvg", "1P-DSG", "1P-DSGT", "SPADE-DFL"]:
                 raise ValueError("main legend identity/order changed")
             if len(axis.lines) != 7 or len(axis.collections) != 7:
                 raise ValueError("main curve/band count")
@@ -641,9 +641,9 @@ def _mnist_renderer():
 
     METHOD_REGISTRY: Dict[str, MethodSpec] = {'spade_dfl': MethodSpec('SPADE-DFL', '#ef5350', '-', 2.5, 'v'), 'one_point_dsg': MethodSpec('1P-DSG', '#ffb74d'), 'one_point_dsgt': MethodSpec('1P-DSGT', '#ff8a65'), 'zo2_lt_admm_vr': MethodSpec('2P-LT-ADMM-VR', '#3182bd', '-', 1.7, 'o'), 'zo2_lt_admm': MethodSpec('2P-LT-ADMM', '#6baed6', '--', 1.7, 's'), 'zo2_dp_sgd': MethodSpec('2P-DP-SGD', '#31a354', '-.', 1.7, '^'), 'zo2_dp_fedavg': MethodSpec('2P-DP-FedAvg', '#74c476', '--', 1.7, 'D')}
 
-    BLACK_BOX_LEGEND_ORDER = ('LT-ADMM-VR', 'LT-ADMM', 'DP-SGD', 'DP-FedAvg', '1P-DSG', '1P-DSGT', 'SPADE-DFL')
+    BLACK_BOX_LEGEND_ORDER = ('LT-ADMM-VR', 'LT-ADMM-DP', 'DP-SGD', 'DP-FedAvg', '1P-DSG', '1P-DSGT', 'SPADE-DFL')
 
-    BLACK_BOX_LEGEND_LABELS = {'2P-LT-ADMM-VR': 'LT-ADMM-VR', '2P-LT-ADMM': 'LT-ADMM', '2P-DP-SGD': 'DP-SGD', '2P-DP-FedAvg': 'DP-FedAvg', '1P-DSG': '1P-DSG', '1P-DSGT': '1P-DSGT', 'SPADE-DFL': 'SPADE-DFL'}
+    BLACK_BOX_LEGEND_LABELS = {'2P-LT-ADMM-VR': 'LT-ADMM-VR', '2P-LT-ADMM': 'LT-ADMM-DP', '2P-DP-SGD': 'DP-SGD', '2P-DP-FedAvg': 'DP-FedAvg', '1P-DSG': '1P-DSG', '1P-DSGT': '1P-DSGT', 'SPADE-DFL': 'SPADE-DFL'}
 
     PANEL_TITLES = {'dir_0.3': 'Non-IID: Dir 0.3', 'dir_0.6': 'Non-IID: Dir 0.6', 'iid': 'IID', 'pathological': 'Pathological'}
 
@@ -743,9 +743,9 @@ def _fashion_renderer():
 
     METHOD_REGISTRY: Dict[str, MethodSpec] = {'spade_dfl': MethodSpec('SPADE-DFL', '#ef5350', '-', 2.5, 'v'), 'one_point_dsg': MethodSpec('1P-DSG', '#ffb74d'), 'one_point_dsgt': MethodSpec('1P-DSGT', '#ff8a65'), 'zo2_lt_admm_vr': MethodSpec('2P-LT-ADMM-VR', '#3182bd', '-', 1.7, 'o'), 'zo2_lt_admm': MethodSpec('2P-LT-ADMM', '#6baed6', '--', 1.7, 's'), 'zo2_dp_sgd': MethodSpec('2P-DP-SGD', '#31a354', '-.', 1.7, '^'), 'zo2_dp_fedavg': MethodSpec('2P-DP-FedAvg', '#74c476', '--', 1.7, 'D')}
 
-    BLACK_BOX_LEGEND_ORDER = ('LT-ADMM-VR', 'LT-ADMM', 'DP-SGD', 'DP-FedAvg', '1P-DSG', '1P-DSGT', 'SPADE-DFL')
+    BLACK_BOX_LEGEND_ORDER = ('LT-ADMM-VR', 'LT-ADMM-DP', 'DP-SGD', 'DP-FedAvg', '1P-DSG', '1P-DSGT', 'SPADE-DFL')
 
-    BLACK_BOX_LEGEND_LABELS = {'2P-LT-ADMM-VR': 'LT-ADMM-VR', '2P-LT-ADMM': 'LT-ADMM', '2P-DP-SGD': 'DP-SGD', '2P-DP-FedAvg': 'DP-FedAvg', '1P-DSG': '1P-DSG', '1P-DSGT': '1P-DSGT', 'SPADE-DFL': 'SPADE-DFL'}
+    BLACK_BOX_LEGEND_LABELS = {'2P-LT-ADMM-VR': 'LT-ADMM-VR', '2P-LT-ADMM': 'LT-ADMM-DP', '2P-DP-SGD': 'DP-SGD', '2P-DP-FedAvg': 'DP-FedAvg', '1P-DSG': '1P-DSG', '1P-DSGT': '1P-DSGT', 'SPADE-DFL': 'SPADE-DFL'}
 
     PANEL_TITLES = {'dir_0.3': 'Non-IID: Dir 0.3', 'dir_0.6': 'Non-IID: Dir 0.6', 'iid': 'IID', 'pathological': 'Pathological'}
 
@@ -821,7 +821,7 @@ def _render_alzheimer(aggregates):
 
     FIGURE_STYLES = {'zo2_lt_admm_vr': ('#2166ac', '-', 'o'), 'zo2_lt_admm': ('#67a9cf', '--', 's'), 'zo2_dp_sgd': ('#1b9e77', '-.', '^'), 'zo2_dp_fedavg': ('#66c2a5', '--', 'D'), 'one_point_dsg': ('#e6ab02', '-', 'P'), 'one_point_dsgt': ('#f46d43', '-.', 'X'), 'spade_dfl': ('#d73027', '-', 'v')}
 
-    DISPLAY_LABELS = {'zo2_lt_admm_vr': 'LT-ADMM-VR', 'zo2_lt_admm': 'LT-ADMM', 'zo2_dp_sgd': 'DP-SGD', 'zo2_dp_fedavg': 'DP-FedAvg', 'one_point_dsg': '1P-DSG', 'one_point_dsgt': '1P-DSGT', 'spade_dfl': 'SPADE-DFL'}
+    DISPLAY_LABELS = {'zo2_lt_admm_vr': 'LT-ADMM-VR', 'zo2_lt_admm': 'LT-ADMM-DP', 'zo2_dp_sgd': 'DP-SGD', 'zo2_dp_fedavg': 'DP-FedAvg', 'one_point_dsg': '1P-DSG', 'one_point_dsgt': '1P-DSGT', 'spade_dfl': 'SPADE-DFL'}
 
     ALZHEIMER_METHOD_IDS = ('zo2_lt_admm_vr', 'zo2_lt_admm', 'zo2_dp_sgd', 'zo2_dp_fedavg', 'one_point_dsg', 'one_point_dsgt', 'spade_dfl')
 
@@ -868,7 +868,7 @@ def _render_alzheimer(aggregates):
 def _brain_renderer():
     FIGURE_STYLES = {'zo2_lt_admm_vr': ('#2166ac', '-', 'o'), 'zo2_lt_admm': ('#67a9cf', '--', 's'), 'zo2_dp_sgd': ('#1b9e77', '-.', '^'), 'zo2_dp_fedavg': ('#66c2a5', '--', 'D'), 'one_point_dsg': ('#e6ab02', '-', 'P'), 'one_point_dsgt': ('#f46d43', '-.', 'X'), 'spade_dfl': ('#d73027', '-', 'v')}
 
-    VISIBLE_METHOD_LABELS = {'zo2_lt_admm_vr': 'LT-ADMM-VR', 'zo2_lt_admm': 'LT-ADMM', 'zo2_dp_sgd': 'DP-SGD', 'zo2_dp_fedavg': 'DP-FedAvg', 'one_point_dsg': '1P-DSG', 'one_point_dsgt': '1P-DSGT', 'spade_dfl': 'SPADE-DFL'}
+    VISIBLE_METHOD_LABELS = {'zo2_lt_admm_vr': 'LT-ADMM-VR', 'zo2_lt_admm': 'LT-ADMM-DP', 'zo2_dp_sgd': 'DP-SGD', 'zo2_dp_fedavg': 'DP-FedAvg', 'one_point_dsg': '1P-DSG', 'one_point_dsgt': '1P-DSGT', 'spade_dfl': 'SPADE-DFL'}
 
     BRAIN_TUMOR_METHOD_IDS = ('zo2_lt_admm_vr', 'zo2_lt_admm', 'zo2_dp_sgd', 'zo2_dp_fedavg', 'one_point_dsg', 'one_point_dsgt', 'spade_dfl')
 
@@ -1044,7 +1044,7 @@ def _volcano_renderer():
     def _plot_context():
         return plt.rc_context({'font.family': 'serif', 'font.serif': ['Times New Roman', 'DejaVu Serif'], 'font.size': 7.0, 'axes.labelsize': 8.0, 'xtick.labelsize': 6.5, 'ytick.labelsize': 6.5, 'axes.linewidth': 0.8, 'axes.spines.top': False, 'axes.spines.right': False, 'legend.frameon': False, 'pdf.fonttype': 42, 'ps.fonttype': 42, 'svg.fonttype': 'none'})
 
-    METHOD_LABELS = {'zo2_lt_admm_vr': 'LT-ADMM-VR', 'zo2_lt_admm': 'LT-ADMM', 'zo2_dp_sgd': 'DP-SGD', 'zo2_dp_fedavg': 'DP-FedAvg', 'one_point_dsg': '1P-DSG', 'one_point_dsgt': '1P-DSGT', 'spade_dfl': 'SPADE-DFL'}
+    METHOD_LABELS = {'zo2_lt_admm_vr': 'LT-ADMM-VR', 'zo2_lt_admm': 'LT-ADMM-DP', 'zo2_dp_sgd': 'DP-SGD', 'zo2_dp_fedavg': 'DP-FedAvg', 'one_point_dsg': '1P-DSG', 'one_point_dsgt': '1P-DSGT', 'spade_dfl': 'SPADE-DFL'}
 
     PARTITION_LABELS = {'iid': 'IID', 'dir_0.6': 'Dir. 0.6', 'dir_0.3': 'Dir. 0.3', 'pathological': 'Pathological'}
 

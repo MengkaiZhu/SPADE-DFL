@@ -1740,7 +1740,7 @@ L 132.413644 65.455438
      </g>
     </g>
     <g id="text_25">
-     <text style="font: 5px 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="134.163644" y="67.205438" transform="rotate(-0 134.163644 67.205438)">LT-ADMM</text>
+     <text style="font: 5px 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="134.163644" y="67.205438" transform="rotate(-0 134.163644 67.205438)">LT-ADMM-DP</text>
     </g>
     <g id="line2d_50">
      <path d="M 124.413644 71.024969 

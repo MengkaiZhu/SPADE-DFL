@@ -196,7 +196,7 @@ def test_normalized_mutation_rejected_independently(reference_root,tmp_path,fiel
 def test_all_scientific_jobs_match_hash_frozen_sources():
     from spade_dfl_release.reference import Sources,resolve_source_index
     spec_path=resolve_source_index()
-    if spec_path is None:pytest.skip('author-only source index is not configured; see docs/OPTIONAL_SOURCES.md')
+    if spec_path is None:pytest.skip('author-only source index is not configured')
     sources=Sources(spec_path,s.release_root()/'reference_results/raw_manifests/source_manifest.json')
     plan=s.load_plan()
     for spec in plan['sources']:
@@ -230,7 +230,7 @@ def test_golden(dataset,tmp_path):
 def _golden(dataset,tmp_path):
     from spade_dfl_release.reference import Sources,resolve_source_index,verify_hash
     source_index=resolve_source_index()
-    if source_index is None:pytest.skip('author-only source index is not configured; see docs/OPTIONAL_SOURCES.md')
+    if source_index is None:pytest.skip('author-only source index is not configured')
     sources=Sources(source_index,s.release_root()/'reference_results/raw_manifests/source_manifest.json')
     source_root=sources.paths['sensitivity_runtime'].parent
     manifest=s.load_manifest();plan=s.load_plan()

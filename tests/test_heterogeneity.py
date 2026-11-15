@@ -107,7 +107,7 @@ def test_author_archive_qa_all_runtime_and_990_run_evidence(release_root):
     from spade_dfl_release.publication import verify_publication_file
     from spade_dfl_release.reference import Sources,resolve_source_index
     spec=resolve_source_index()
-    if spec is None:pytest.skip('author source index is not configured; see docs/OPTIONAL_SOURCES.md')
+    if spec is None:pytest.skip('author source index is not configured')
     source=Sources(spec,release_root/'reference_results/raw_manifests/source_manifest.json')
     if not source.paths['server_archive'].is_file():pytest.skip('hash-frozen server archive unavailable')
     try:
@@ -287,7 +287,7 @@ def _golden(suite,tmp_path):
     from spade_dfl_release.reference import Sources,resolve_source_index
     root=h.release_root();manifest=h.load_manifest()
     source_index=resolve_source_index()
-    if source_index is None:pytest.skip('author source index is not configured; see docs/OPTIONAL_SOURCES.md')
+    if source_index is None:pytest.skip('author source index is not configured')
     sources=Sources(source_index,root/'reference_results/raw_manifests/source_manifest.json')
     archive=sources.archive('server_archive');original=tmp_path/'original'
     for row in manifest['files']:

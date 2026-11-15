@@ -9,18 +9,18 @@
       "_distribution_renderers",
       "_volcano_renderer"
     ],
-    "sha256": "f610dd8ddef2e271db2e605faac9117c32c9111f4053357a279909f114f0a498"
+    "sha256": "316e77560db6ce3c3a2e5f6de03686d9408b273684f730e258c540515d621d35"
   },
   "visual_qa_policy": "PASS-with-reviewed-tool-findings: retain exact historical presentation; preserve automatic collision findings and manual disposition. FONT-FAMILY individually exempted for frozen Times contract; raster QA uses separate 600dpi PNG/TIFF, never published.",
   "manuscript_sha256": "4eafcd1bfd5ebb609f37d056fe0705589495d83c5abefcbeec097737dab7a9ab",
   "export": {
     "svg_hashsalt": "a8046ac75e26ea21eacba27cc77d75301d81d8be9af765c9de2952f1ad523829",
-    "reason": "Frozen from the approved original delivery to stabilize SVG internal IDs; this export salt carries no scientific or manuscript semantics."
+    "reason": "Keeps exported SVG identifiers stable."
   },
   "tables": {
     "table_II.tex": {
-      "template": "\\begin{table*}[htbp!]\n\\centering\n\\caption{Final-round test accuracy after 50 communication rounds.}\n\\label{tab:distribution_final_accuracy}\n\\scriptsize\n\\setlength{\\tabcolsep}{2.2pt}\n\\renewcommand{\\arraystretch}{0.90}\n\\begin{tabular*}{\\textwidth}{@{\\extracolsep{\\fill}}llcccccccc@{}}\n\\toprule\nDataset & Distribution\n& LT-ADMM-VR\n& LT-ADMM\n& DP-SGD\n& DP-FedAvg\n& 1P-DSG\n& 1P-DSGT\n& SPADE-DFL\n& $\\Delta_{\\mathrm{best}}$ \\\\\n\\midrule\n\\multirow{4}{*}{MNIST}\n& IID\n& @@CELL_0@@\n& @@CELL_1@@\n& @@CELL_2@@\n& @@CELL_3@@\n& @@CELL_4@@\n& @@CELL_5@@\n& @@CELL_6@@\n& @@CELL_7@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_8@@\n& @@CELL_9@@\n& @@CELL_10@@\n& @@CELL_11@@\n& @@CELL_12@@\n& @@CELL_13@@\n& @@CELL_14@@\n& @@CELL_15@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_16@@\n& @@CELL_17@@\n& @@CELL_18@@\n& @@CELL_19@@\n& @@CELL_20@@\n& @@CELL_21@@\n& @@CELL_22@@\n& @@CELL_23@@ \\\\\n& Pathological\n& @@CELL_24@@\n& @@CELL_25@@\n& @@CELL_26@@\n& @@CELL_27@@\n& @@CELL_28@@\n& @@CELL_29@@\n& @@CELL_30@@\n& @@CELL_31@@ \\\\\n\\midrule\n\\multirow{4}{*}{Fashion-MNIST}\n& IID\n& @@CELL_32@@\n& @@CELL_33@@\n& @@CELL_34@@\n& @@CELL_35@@\n& @@CELL_36@@\n& @@CELL_37@@\n& @@CELL_38@@\n& @@CELL_39@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_40@@\n& @@CELL_41@@\n& @@CELL_42@@\n& @@CELL_43@@\n& @@CELL_44@@\n& @@CELL_45@@\n& @@CELL_46@@\n& @@CELL_47@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_48@@\n& @@CELL_49@@\n& @@CELL_50@@\n& @@CELL_51@@\n& @@CELL_52@@\n& @@CELL_53@@\n& @@CELL_54@@\n& @@CELL_55@@ \\\\\n& Pathological\n& @@CELL_56@@\n& @@CELL_57@@\n& @@CELL_58@@\n& @@CELL_59@@\n& @@CELL_60@@\n& @@CELL_61@@\n& @@CELL_62@@\n& @@CELL_63@@ \\\\\n\\midrule\n\\multirow{4}{*}{Alzheimer disease}\n& IID\n& @@CELL_64@@\n& @@CELL_65@@\n& @@CELL_66@@\n& @@CELL_67@@\n& @@CELL_68@@\n& @@CELL_69@@\n& @@CELL_70@@\n& @@CELL_71@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_72@@\n& @@CELL_73@@\n& @@CELL_74@@\n& @@CELL_75@@\n& @@CELL_76@@\n& @@CELL_77@@\n& @@CELL_78@@\n& @@CELL_79@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_80@@\n& @@CELL_81@@\n& @@CELL_82@@\n& @@CELL_83@@\n& @@CELL_84@@\n& @@CELL_85@@\n& @@CELL_86@@\n& @@CELL_87@@ \\\\\n& Pathological\n& @@CELL_88@@\n& @@CELL_89@@\n& @@CELL_90@@\n& @@CELL_91@@\n& @@CELL_92@@\n& @@CELL_93@@\n& @@CELL_94@@\n& @@CELL_95@@ \\\\\n\\midrule\n\\multirow{4}{*}{Brain Tumor MRI}\n& IID\n& @@CELL_96@@\n& @@CELL_97@@\n& @@CELL_98@@\n& @@CELL_99@@\n& @@CELL_100@@\n& @@CELL_101@@\n& @@CELL_102@@\n& @@CELL_103@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_104@@\n& @@CELL_105@@\n& @@CELL_106@@\n& @@CELL_107@@\n& @@CELL_108@@\n& @@CELL_109@@\n& @@CELL_110@@\n& @@CELL_111@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_112@@\n& @@CELL_113@@\n& @@CELL_114@@\n& @@CELL_115@@\n& @@CELL_116@@\n& @@CELL_117@@\n& @@CELL_118@@\n& @@CELL_119@@ \\\\\n& Pathological\n& @@CELL_120@@\n& @@CELL_121@@\n& @@CELL_122@@\n& @@CELL_123@@\n& @@CELL_124@@\n& @@CELL_125@@\n& @@CELL_126@@\n& @@CELL_127@@ \\\\\n\\bottomrule\n\\end{tabular*}\n\\end{table*}",
-      "rendered_sha256": "9f9ef1684697b2a49429a40e853b4e790ea7587755ad360a2c1c6b01c864f623",
+      "template": "\\begin{table*}[htbp!]\n\\centering\n\\caption{Final-round test accuracy after 50 communication rounds.}\n\\label{tab:distribution_final_accuracy}\n\\scriptsize\n\\setlength{\\tabcolsep}{2.2pt}\n\\renewcommand{\\arraystretch}{0.90}\n\\begin{tabular*}{\\textwidth}{@{\\extracolsep{\\fill}}llcccccccc@{}}\n\\toprule\nDataset & Distribution\n& LT-ADMM-VR\n& LT-ADMM-DP\n& DP-SGD\n& DP-FedAvg\n& 1P-DSG\n& 1P-DSGT\n& SPADE-DFL\n& $\\Delta_{\\mathrm{best}}$ \\\\\n\\midrule\n\\multirow{4}{*}{MNIST}\n& IID\n& @@CELL_0@@\n& @@CELL_1@@\n& @@CELL_2@@\n& @@CELL_3@@\n& @@CELL_4@@\n& @@CELL_5@@\n& @@CELL_6@@\n& @@CELL_7@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_8@@\n& @@CELL_9@@\n& @@CELL_10@@\n& @@CELL_11@@\n& @@CELL_12@@\n& @@CELL_13@@\n& @@CELL_14@@\n& @@CELL_15@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_16@@\n& @@CELL_17@@\n& @@CELL_18@@\n& @@CELL_19@@\n& @@CELL_20@@\n& @@CELL_21@@\n& @@CELL_22@@\n& @@CELL_23@@ \\\\\n& Pathological\n& @@CELL_24@@\n& @@CELL_25@@\n& @@CELL_26@@\n& @@CELL_27@@\n& @@CELL_28@@\n& @@CELL_29@@\n& @@CELL_30@@\n& @@CELL_31@@ \\\\\n\\midrule\n\\multirow{4}{*}{Fashion-MNIST}\n& IID\n& @@CELL_32@@\n& @@CELL_33@@\n& @@CELL_34@@\n& @@CELL_35@@\n& @@CELL_36@@\n& @@CELL_37@@\n& @@CELL_38@@\n& @@CELL_39@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_40@@\n& @@CELL_41@@\n& @@CELL_42@@\n& @@CELL_43@@\n& @@CELL_44@@\n& @@CELL_45@@\n& @@CELL_46@@\n& @@CELL_47@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_48@@\n& @@CELL_49@@\n& @@CELL_50@@\n& @@CELL_51@@\n& @@CELL_52@@\n& @@CELL_53@@\n& @@CELL_54@@\n& @@CELL_55@@ \\\\\n& Pathological\n& @@CELL_56@@\n& @@CELL_57@@\n& @@CELL_58@@\n& @@CELL_59@@\n& @@CELL_60@@\n& @@CELL_61@@\n& @@CELL_62@@\n& @@CELL_63@@ \\\\\n\\midrule\n\\multirow{4}{*}{Alzheimer disease}\n& IID\n& @@CELL_64@@\n& @@CELL_65@@\n& @@CELL_66@@\n& @@CELL_67@@\n& @@CELL_68@@\n& @@CELL_69@@\n& @@CELL_70@@\n& @@CELL_71@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_72@@\n& @@CELL_73@@\n& @@CELL_74@@\n& @@CELL_75@@\n& @@CELL_76@@\n& @@CELL_77@@\n& @@CELL_78@@\n& @@CELL_79@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_80@@\n& @@CELL_81@@\n& @@CELL_82@@\n& @@CELL_83@@\n& @@CELL_84@@\n& @@CELL_85@@\n& @@CELL_86@@\n& @@CELL_87@@ \\\\\n& Pathological\n& @@CELL_88@@\n& @@CELL_89@@\n& @@CELL_90@@\n& @@CELL_91@@\n& @@CELL_92@@\n& @@CELL_93@@\n& @@CELL_94@@\n& @@CELL_95@@ \\\\\n\\midrule\n\\multirow{4}{*}{Brain Tumor MRI}\n& IID\n& @@CELL_96@@\n& @@CELL_97@@\n& @@CELL_98@@\n& @@CELL_99@@\n& @@CELL_100@@\n& @@CELL_101@@\n& @@CELL_102@@\n& @@CELL_103@@ \\\\\n& Dir. ($\\alpha=0.6$)\n& @@CELL_104@@\n& @@CELL_105@@\n& @@CELL_106@@\n& @@CELL_107@@\n& @@CELL_108@@\n& @@CELL_109@@\n& @@CELL_110@@\n& @@CELL_111@@ \\\\\n& Dir. ($\\alpha=0.3$)\n& @@CELL_112@@\n& @@CELL_113@@\n& @@CELL_114@@\n& @@CELL_115@@\n& @@CELL_116@@\n& @@CELL_117@@\n& @@CELL_118@@\n& @@CELL_119@@ \\\\\n& Pathological\n& @@CELL_120@@\n& @@CELL_121@@\n& @@CELL_122@@\n& @@CELL_123@@\n& @@CELL_124@@\n& @@CELL_125@@\n& @@CELL_126@@\n& @@CELL_127@@ \\\\\n\\bottomrule\n\\end{tabular*}\n\\end{table*}",
+      "rendered_sha256": "4a8dcd3fbd35887c6d7065684037e70a342b860932957ed2e44862f7e95572ca",
       "cells": 128
     },
     "table_III.tex": {
@@ -336,7 +336,7 @@
           "end": 49
         }
       ],
-      "source_path_kind": "public provenance alias; original relative label retained in the private release mapping"
+      "source_path_kind": "source alias"
     },
     "brain_styles": {
       "source_path": "historical_sources/brain_tumor_resnet18_pca10/src/spade_dfl/brain_tumor_suite.py",
@@ -354,7 +354,7 @@
           "end": 39
         }
       ],
-      "source_path_kind": "public provenance alias; original relative label retained in the private release mapping"
+      "source_path_kind": "source alias"
     },
     "brain_order": {
       "source_path": "historical_sources/brain_tumor_resnet18_pca10/src/spade_dfl/isolation.py",
@@ -367,7 +367,7 @@
           "end": 15
         }
       ],
-      "source_path_kind": "public provenance alias; original relative label retained in the private release mapping"
+      "source_path_kind": "source alias"
     },
     "distribution": {
       "source_path": "src/spade_dfl_release/vendor/heterogeneity/src/spade_dfl/mnist67_spade_distribution.py",
@@ -491,8 +491,7 @@
     "Figure 7 actual inset title: (pp) -> (percentage points); title position and size unchanged.",
     "Minimum glyph QA: Figure 7 inset tick labelsize 4.9 -> 5.0; Figure 9 annotation fontsize 4.5 -> 5.0; no other style changes.",
     "Figure 9 uses the independently verified normalized records from the current-environment aggregate verification.",
-    "Figure 10 uses the verified communication renderer and derives the saving label from the plotted values.",
-    "Release metadata migration: historical Brain renderer paths use explicit public aliases; original content hashes remain unchanged. No renderer, statistical rule, figure or table bytes were changed by this migration."
+    "Figure 10 uses the verified communication renderer and derives the saving label from the plotted values."
   ],
   "evidence_boundaries": [
     "Main aggregate CSVs record trajectory counts. Individual seed and fold identities are checked by the frozen source-verification evidence.",

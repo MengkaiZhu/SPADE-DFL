@@ -146,7 +146,7 @@ def test_golden_historical_vs_release_seed0_iid(tmp_path, dataset):
     spec = manifest['datasets'][dataset]
     source_index = resolve_source_index()
     if source_index is None:
-        pytest.skip('Author source index is not configured; see docs/OPTIONAL_SOURCES.md')
+        pytest.skip('Author source index is not configured')
     sources = Sources(source_index, release/'reference_results/raw_manifests/source_manifest.json')
     historical = tmp_path/'historical'
     packaged = tmp_path/'packaged'

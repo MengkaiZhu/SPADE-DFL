@@ -207,13 +207,13 @@ def test_public_documentation_contract_and_parseable_commands():
     ]
     protocols = (ROOT / 'docs/EXPERIMENT_PROTOCOLS.md').read_text(encoding='utf-8')
     assert re.findall(r'^## .+$', protocols, re.M) == [
-        '## Main comparison: Figures 3–6 and Table II',
-        '## Sensitivity: Tables III–IV',
+        '## Main comparison: Figures 3–6 and Table 1',
+        '## Sensitivity: Table 2',
         '## Heterogeneity: Figures 7–9',
         '## Communication: Figure 10',
     ]
     required_links = {'docs/KNOWN_LIMITATIONS.md', 'docs/EXPERIMENT_PROTOCOLS.md',
-                      'docs/REPRODUCIBILITY.md', 'IMPLEMENTATION_NOTE.md', 'NOTICE.md',
+                      'configs/publication_adaptations.json', 'IMPLEMENTATION_NOTE.md', 'NOTICE.md',
                       'data/README.md', 'data/README.md#sensitivity-inputs-and-recovered-producer',
                       'reference_results/main_seed_records/run_index.csv'}
     links = set(re.findall(r'\]\(([^)]+)\)', content))

@@ -396,7 +396,7 @@ def test_dynamic_communication_label(frozen_data):
 
 def test_renderer_closure_and_mutation(tmp_path, monkeypatch):
     assert p.verify_renderer_lineage() == 13
-    assert p.MANIFEST_SHA256 == "5a184c73b1c8dd4509a450e08c6ba4f8b48b21e5f51bffdc4b56b3370f8ed009"
+    assert p.MANIFEST_SHA256 == "692063fe62987550fb3f384309cf8eaf0a8893495001d5a861edc421d1b4758f"
     source = Path(p.__file__).read_text(encoding="utf-8")
     assert "linewidth=1.05" in source
     altered = tmp_path / "altered.py"

@@ -169,6 +169,6 @@
     "path": "data/preprocessing/prepare_sensitivity.py",
     "current_sha256": "b4a635a7e330351b5348350c3bad972f09fc1a1859513dff51f491674f6a72b6",
     "changes": "verify_modules uses verified current-to-historical module identities; input path and preprocessing calculations unchanged.",
-    "provenance_document": "docs/SOURCE_PROVENANCE.md"
+    "provenance_document": "README.md"
   }
 }

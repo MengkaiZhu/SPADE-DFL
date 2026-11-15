@@ -9,7 +9,7 @@ The cited source pages are:
 - [Alzheimer disease](https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset): binary diagnosis with the frozen encoding and fold protocol.
 - [Brain Tumor MRI](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset): glioma, meningioma, no-tumor, and pituitary classes, preserving the official Training/Testing split.
 
-These pages identify the datasets cited by the paper, but not necessarily the exact historical file versions. Exact release identifiers, acquisition routes for prepared files, and redistribution rights remain unresolved. Obtain each input lawfully and compare its SHA-256 before placing it in the package tree. In PowerShell:
+These pages identify the datasets cited by the paper. Exact release identifiers, acquisition routes for prepared files, and redistribution rights remain unresolved. Obtain each input lawfully and compare its SHA-256 before placing it in the package tree. In PowerShell:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 <file>
@@ -19,7 +19,7 @@ A different hash means different bytes and must not be substituted silently.
 
 ## Existing results
 
-Saved-result verification and statistics/figure reconstruction use the included reference results. They do not require external datasets, image preprocessing, or model training. Passing those checks does not establish reproduction from raw data. See [reproducibility](../docs/REPRODUCIBILITY.md) and [known limitations](../docs/KNOWN_LIMITATIONS.md).
+Saved-result verification and statistics/figure reconstruction use the included reference results. They do not require external datasets, image preprocessing, or model training.
 
 <a id="main-inputs"></a>
 ## Main comparison inputs
@@ -35,13 +35,13 @@ Install the optional versions in `requirements-resnet18-cpu.txt` for this workfl
 
 Sensitivity uses 16 runtime inputs: `data.npz` and `metadata.json` for MNIST, Fashion, Brain, and five Alzheimer folds. Their destinations are under `src/spade_dfl_release/vendor/sensitivity/table34_preprocessing_working/prepared/<group>/` and their identities are fixed by the checklist hashes.
 
-[preprocessing/prepare_sensitivity.py](preprocessing/prepare_sensitivity.py) exposes the recovered preparation functions. It preserves the historical splits, hash assertions, scaling, and fitting calculations; only imports, paths, and the preparation entry point were adapted for the package. [SOURCE_LINEAGE.json](preprocessing/SOURCE_LINEAGE.json) records source hashes, line intervals, and abstract syntax tree (AST) comparisons. An AST is the parsed structure of the Python code.
+[preprocessing/prepare_sensitivity.py](preprocessing/prepare_sensitivity.py) exposes the recovered preparation functions. It preserves the historical splits, hash assertions, scaling, and fitting calculations; only imports, paths, and the preparation entry point were adapted for the package. [SOURCE_LINEAGE.json](preprocessing/SOURCE_LINEAGE.json) records source hashes, line intervals, and syntax tree comparisons. Of 14 recovered functions, 11 have identical syntax trees and three have path adaptations. The configuration and metadata used by the producer are in `data/preprocessing/configs/`, `data/preprocessing/data/`, and `data/preprocessing/prepared/`.
 
 Preparation requires eight additional outer-training caches listed in [UPSTREAM_INPUTS.json](preprocessing/UPSTREAM_INPUTS.json). These are prerequisites beyond the 23 runtime placements. Their payloads and exact public acquisition routes are not included.
 
 The Brain sensitivity cache `resnet18_v1_training_512d.npz` has SHA-256 `03c357ea6f7e3aff70e2537fc0a723fcd3659b02757a14d3327f701e1cc03cac`. The main-comparison cache with the same filename has SHA-256 `9aaaccdba667743dc65d38110785e0a4e062830216c66eba7621d742a49be985`. They are different files and must not be interchanged.
 
-Inspect the interface without processing data:
+Use `--check-code` to verify the module hashes without processing data.
 
 ```powershell
 python -B data/preprocessing/prepare_sensitivity.py --help
